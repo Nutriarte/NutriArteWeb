@@ -1,4 +1,4 @@
- jQuery(document).ready(function($) {
+     jQuery(document).ready(function($) {
  
     $(".scroll a, .navbar-brand, .gototop").click(function(event){   
     event.preventDefault();

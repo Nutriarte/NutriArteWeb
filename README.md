@@ -1,3 +1,1 @@
-- NutriArte WebApp -
-
-Instrucciones:
+Nutriarte web

@@ -33,10 +33,10 @@
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
-                        (i[r].q = i[r].q || []).push(arguments)
-                    }, i[r].l = 1 * new Date();
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
             a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0];
+                m = s.getElementsByTagName(o)[0];
             a.async = 1;
             a.src = g;
             m.parentNode.insertBefore(a, m)
@@ -69,10 +69,9 @@
             <div class="container">
                 <div class="navbar-header">
                     <!-- Logo Starts -->
-                    <a class="navbar-brand" href="#home" style=" margin-left: -40px;"><img src="images/logo.png"
-                                                                                           alt="NutriArte"></a>
+                    <a class="navbar-brand" onclick="window.location.href='index.html#home'">
+                        <img src="images/logo.png" alt="NutriArte"></a>
                     <!-- #Logo Ends -->
-
 
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target=".navbar-collapse">
@@ -87,22 +86,15 @@
                 <!-- Nav Starts -->
                 <div class="navbar-collapse  collapse">
                     <ul class="nav navbar-nav navbar-right scroll">
-                        <li style="cursor:pointer;"><a onclick="window.location.href='index.html#home'">Principal</a>
-                        </li>
-                        <li style="cursor:pointer;"><a onclick="window.location.href='index.html#about'">Que
-                            hacemos?</a></li>
-                        <li class="active" style="cursor:pointer;"><a onclick="window.location.href='index.html#works'">Recetas</a>
-                        </li>
-                        <li style="cursor:pointer;"><a
-                                onclick="window.location.href='index.html#products'">Ejemplares</a></li>
-                        <li style="cursor: pointer;"><a class="cmn-t-pulse" onclick="window.location.href='fiestas.html'">Fiestas</a></li>
-                        <li style="cursor: pointer;"><a onclick="window.location.href='requisitos.html'">Ed.
-                            alimentaria</a></li>
-                        <li style="cursor: pointer;"><a onclick="window.location.href='social.html'">Blog</a></li>
-                        <li style="cursor:pointer;"><a onclick="window.location.href='index.html#team'">El equipo</a>
-                        </li>
-                        <li style="cursor:pointer;"><a onclick="window.location.href='index.html#contact'">Contacto</a>
-                        </li>
+                        <li class="cursor"><a onclick="window.location.href='index.html#home'">Principal</a></li>
+                        <li class="cursor"><a onclick="window.location.href='index.html#about'">Que hacemos?</a></li>
+                        <li class="cursor active"><a onclick="window.location.href='index.html#works'">Recetas</a></li>
+                        <li class="cursor"><a onclick="window.location.href='tienda.html'">Tienda</a></li>
+                        <li class="cursor"><a class="cmn-t-pulse"
+                                              onclick="window.location.href='fiestas.html'">Fiestas</a></li>
+                        <li class="cursor"><a onclick="window.location.href='social.html'">Blog</a></li>
+                        <li class="cursor"><a onclick="window.location.href='index.html#team'">El equipo</a></li>
+                        <li class="cursor"><a onclick="window.location.href='index.html#contact'">Contacto</a></li>
                     </ul>
                 </div>
                 <!-- #Nav Ends -->

@@ -605,3 +605,11 @@ p {
 .img-center {
     margin: 0 auto;
 }
+
+.bottom-product{
+    margin-bottom: 5px;
+}
+
+.cursor{
+    cursor: pointer;
+}
