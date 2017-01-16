@@ -13580,7 +13580,7 @@ function CalendarEventPopup()
 	this.repeatPeriodOptions = ko.observableArray(this.getDisplayedPeriods());
 	this.repeatWeekIntervalOptions = ko.observableArray([1, 2, 3, 4]);
 	this.repeatMonthIntervalOptions = ko.observableArray(this.getDisplayedIntervals());
-	this.defaultAlarms = ko.observableArray([5, 10, 15, 30, 60, 120, 180, 240, 300, 360, 420, 480, 540, 600, 660, 720, 1080, 1440, 2880, 4320, 5760, 10080, 20160]);
+	this.defaultAlarms = ko.observableArray([5, 10, 15, 30, 60, 120, 180, 240, 300, 360, 420, 480, 540, 600, 660, 720, 1080, 1440, 2880, 4320, 5760, 10080, 20170]);
 	this.alarmOptions = ko.observableArray([]);
 	this.timeOptions = ko.observableArray(Utils.Calendar.getTimeListStepHalfHour((AppData.User.defaultTimeFormat() !== Enums.TimeFormat.F24) ? 'hh:mm A' : 'HH:mm'));
 	AppData.User.defaultTimeFormat.subscribe(function () {
