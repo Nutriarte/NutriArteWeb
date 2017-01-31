@@ -613,3 +613,9 @@ p {
 .cursor{
     cursor: pointer;
 }
+
+.center-buttons {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
