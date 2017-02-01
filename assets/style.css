@@ -510,6 +510,10 @@ p {
         color: #A52F2D !important;;
     }
 
+    .color7 {
+        color: white !important;;
+    }
+
 }
 
 .cmn-t-shake {
@@ -606,11 +610,11 @@ p {
     margin: 0 auto;
 }
 
-.bottom-product{
+.bottom-product {
     margin-bottom: 5px;
 }
 
-.cursor{
+.cursor {
     cursor: pointer;
 }
 
@@ -618,4 +622,8 @@ p {
     margin: 0;
     background-color: transparent;
     text-align: center;
+}
+
+.price {
+    color: #FF3296;
 }
