@@ -280,7 +280,19 @@ p {
 }
 
 .highlight-info .overlay {
+    background: url("../assets/app/img/template/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-btn-pink {
     background: #ff3296;
+}
+
+.background-btn-pink:hover, .background-btn-pink:active, .background-btn-pink:focus {
+    background: #dc71d6;
+    box-shadow: none;
 }
 
 .highlight-info h4 {
@@ -631,6 +643,7 @@ p {
 .price {
     color: #FF3296;
     margin: 0px;
+    padding: 5px 0px 5px 0px;
 }
 
 .wrapper {
@@ -704,7 +717,6 @@ p {
     margin: 0px 0px 0px 0px;
 }
 
-
 .ribbon-wrapper-new {
     width: 85px;
     height: 88px;
@@ -756,5 +768,75 @@ p {
 .ribbon-new:after {
     right: 0;
 }
+
+
+.cmn-t-magazine-one {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #DC3441;
+}
+
+.cmn-t-magazine-two {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #017DBE;
+}
+
+.cmn-t-magazine-three {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #F7BA12;
+}
+
+.cmn-t-magazine-four {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #E96029;
+}
+
+.cmn-t-magazine-five {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #52A82D;
+}
+
+.cmn-t-magazine-six {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #A45D25;
+}
+
+.cmn-t-magazine-seven {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #D486AE;
+}
+
+.cmn-t-magazine-eight {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #75216F;
+}
+
+.cmn-t-magazine-nine {
+     padding: 20px 40px;
+     color: #fff;
+     background-color: #B5DFEF;
+ }
+
+.cmn-t-magazine-ten {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+
+
 
 ​
