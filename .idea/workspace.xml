@@ -2,10 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c478a9a2-2339-4ab2-b149-9df5cf34615a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portadaCompleta.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portadaEan.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portadaPack.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_I.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_II.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_III.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_IV.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_IX.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_V.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_VI.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_VII.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_VIII.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_X.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_fiestas.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/ejemplar/portada_verano.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaFiestas.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaI.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaII.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaIII.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaIV.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaIX.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaV.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaVI.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaVII.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaVIII.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaVerano.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portadaX.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portada_completa.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portada_ean.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/ejemplar/portada_pack.jpg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/stylesheet.css" afterPath="$PROJECT_DIR$/assets/stylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bmi.html" afterPath="$PROJECT_DIR$/bmi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/correo/templates/views/Mail/PrintMessageViewModel.html" afterPath="$PROJECT_DIR$/correo/templates/views/Mail/PrintMessageViewModel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pagoEnProceso.html" afterPath="$PROJECT_DIR$/pagoEnProceso.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pagoExitoso.html" afterPath="$PROJECT_DIR$/pagoExitoso.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta1.html" afterPath="$PROJECT_DIR$/receta1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta10.html" afterPath="$PROJECT_DIR$/receta10.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta11.html" afterPath="$PROJECT_DIR$/receta11.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta12.html" afterPath="$PROJECT_DIR$/receta12.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta2.html" afterPath="$PROJECT_DIR$/receta2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta3.html" afterPath="$PROJECT_DIR$/receta3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta4.html" afterPath="$PROJECT_DIR$/receta4.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta5.html" afterPath="$PROJECT_DIR$/receta5.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta6.html" afterPath="$PROJECT_DIR$/receta6.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta7.html" afterPath="$PROJECT_DIR$/receta7.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta8.html" afterPath="$PROJECT_DIR$/receta8.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/receta9.html" afterPath="$PROJECT_DIR$/receta9.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requisitos.html" afterPath="$PROJECT_DIR$/requisitos.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services_details.html" afterPath="$PROJECT_DIR$/services_details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social.html" afterPath="$PROJECT_DIR$/social.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tienda.html" afterPath="$PROJECT_DIR$/tienda.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/stylesheet.css" afterPath="$PROJECT_DIR$/assets/style.css" />
     </list>
     <ignored path="NutriArteWeb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,14 +77,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="services_details.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="services_details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services_details.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="644" column="57" lean-forward="false" selection-start-line="644" selection-start-column="57" selection-end-line="644" selection-end-column="57" />
+            <state relative-caret-position="597">
+              <caret line="778" column="77" lean-forward="false" selection-start-line="778" selection-start-column="77" selection-end-line="778" selection-end-column="77" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#a#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -48,23 +98,54 @@
                 <element signature="n#div#9;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#10;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#11;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#12;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tienda.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="requisitos.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requisitos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="184" column="57" lean-forward="false" selection-start-line="184" selection-start-column="57" selection-end-line="184" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nutripack.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nutripack.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="172" column="49" lean-forward="false" selection-start-line="172" selection-start-column="49" selection-end-line="172" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="832" column="1" lean-forward="false" selection-start-line="832" selection-start-column="1" selection-end-line="832" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tienda.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tienda.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="339" column="68" lean-forward="false" selection-start-line="339" selection-start-column="68" selection-end-line="339" selection-end-column="68" />
+            <state relative-caret-position="517">
+              <caret line="226" column="43" lean-forward="false" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
               <folding>
                 <element signature="n#script#1;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -97,13 +178,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>assets</find>
-      <find>card-blue</find>
-      <find>friends</find>
-      <find>img/app</find>
-      <find>filter-gradient blu</find>
-      <find>ejem</find>
-      <find>tienda</find>
       <find>under</find>
       <find>vol</find>
       <find>125</find>
@@ -116,7 +190,6 @@
       <find>recetas</find>
       <find>$200</find>
       <find>eL</find>
-      <find>fiestas</find>
       <find>lo mas</find>
       <find>inici</find>
       <find>nuevo</find>
@@ -127,6 +200,14 @@
       <find>$150</find>
       <find>services_details.html</find>
       <find>$100</find>
+      <find>verano</find>
+      <find>fiestas</find>
+      <find>NUTRIP</find>
+      <find>REQUISI</find>
+      <find>tienda</find>
+      <find>Volver a la tienda</find>
+      <find>digital</find>
+      <find>comprar</find>
     </findStrings>
     <replaceStrings>
       <replace>effect-oscar bottom-product</replace>
@@ -174,12 +255,14 @@
         <option value="$PROJECT_DIR$/social.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/style.css" />
-        <option value="$PROJECT_DIR$/requisitos.html" />
         <option value="$PROJECT_DIR$/coleccion.html" />
-        <option value="$PROJECT_DIR$/assets/stylesheet.css" />
         <option value="$PROJECT_DIR$/coleccionI.html" />
         <option value="$PROJECT_DIR$/ejemplares.html" />
+        <option value="$PROJECT_DIR$/assets/stylesheet.css" />
         <option value="$PROJECT_DIR$/tienda.html" />
+        <option value="$PROJECT_DIR$/requisitos.html" />
+        <option value="$PROJECT_DIR$/nutripack.html" />
+        <option value="$PROJECT_DIR$/services_details.html" />
       </list>
     </option>
   </component>
@@ -210,6 +293,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,10 +320,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NutriArteWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NutriArteWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ejemplar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NutriArteWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NutriArteWeb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,19 +368,19 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PROJECTS\NutriArteWeb\images\ejemplar" />
-      <recent name="D:\PROJECTS\NutriArteWeb\assets\app\img\patterns" />
-      <recent name="D:\PROJECTS\NutriArteWeb\images\slider" />
-      <recent name="D:\PROJECTS\NutriArteWeb\images\promo" />
-      <recent name="C:\Users\damia\Desktop\PROJECTS\NutriArteWeb\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\PROJECTS\NutriArteWeb\images\promo" />
       <recent name="D:\PROJECTS\NutriArteWeb\assets\app\img\template" />
       <recent name="$PROJECT_DIR$/images/educacion" />
       <recent name="$PROJECT_DIR$/assets/app/img/template" />
       <recent name="$PROJECT_DIR$/assets/app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PROJECTS\NutriArteWeb\images\ejemplar" />
+      <recent name="D:\PROJECTS\NutriArteWeb\assets\app\img\patterns" />
+      <recent name="D:\PROJECTS\NutriArteWeb\images\slider" />
+      <recent name="D:\PROJECTS\NutriArteWeb\images\promo" />
+      <recent name="C:\Users\damia\Desktop\PROJECTS\NutriArteWeb\images" />
     </key>
   </component>
   <component name="RunManager">
@@ -374,12 +489,13 @@
       <workItem from="1487683356509" duration="13120000" />
       <workItem from="1487703888994" duration="48000" />
       <workItem from="1487703947436" duration="4818000" />
-      <workItem from="1487709045559" duration="1561000" />
+      <workItem from="1487709045559" duration="1680000" />
+      <workItem from="1487766646257" duration="8953000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124212000" />
+    <option name="totallyTimeSpent" value="133284000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -388,19 +504,19 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18282403" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22318527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22318527" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3261105" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -424,7 +540,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/app/img/faces/face-1.jpg" />
     <entry file="file://$PROJECT_DIR$/assets/app/img/faces/face-2.jpg" />
     <entry file="file://$PROJECT_DIR$/assets/app/img/showcases/showcase-1/iphones.png" />
     <entry file="file://$PROJECT_DIR$/assets/app/img/showcases/showcase-1/iphone.png" />
@@ -626,21 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requisitos.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="72" column="87" lean-forward="false" selection-start-line="72" selection-start-column="51" selection-end-line="72" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14042">
-          <caret line="826" column="19" lean-forward="false" selection-start-line="826" selection-start-column="19" selection-end-line="826" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pagoExitoso.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1445">
@@ -648,40 +748,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services_details.html">
+    <entry file="file://$PROJECT_DIR$/assets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="644" column="57" lean-forward="false" selection-start-line="644" selection-start-column="57" selection-end-line="644" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#5;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#5;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#6;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#7;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#8;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#9;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#10;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#11;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#12;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="832" column="1" lean-forward="false" selection-start-line="832" selection-start-column="1" selection-end-line="832" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tienda.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="339" column="68" lean-forward="false" selection-start-line="339" selection-start-column="68" selection-end-line="339" selection-end-column="68" />
+        <state relative-caret-position="517">
+          <caret line="226" column="43" lean-forward="false" selection-start-line="226" selection-start-column="43" selection-end-line="226" selection-end-column="43" />
           <folding>
             <element signature="n#script#1;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -698,6 +781,49 @@
             <element signature="n#div#3;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#div#1;n#div#3;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nutripack.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="172" column="49" lean-forward="false" selection-start-line="172" selection-start-column="49" selection-end-line="172" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requisitos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="184" column="57" lean-forward="false" selection-start-line="184" selection-start-column="57" selection-end-line="184" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="778" column="77" lean-forward="false" selection-start-line="778" selection-start-column="77" selection-end-line="778" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#a#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#5;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#5;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#7;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#9;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#10;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#11;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
