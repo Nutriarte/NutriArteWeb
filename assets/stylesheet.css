@@ -769,7 +769,6 @@ p {
     right: 0;
 }
 
-
 .ribbon-wrapper-pink {
     width: 85px;
     height: 88px;
@@ -822,8 +821,6 @@ p {
     right: 0;
 }
 
-
-
 .cmn-t-magazine-one {
     padding: 20px 40px;
     color: #fff;
@@ -873,10 +870,10 @@ p {
 }
 
 .cmn-t-magazine-nine {
-     padding: 20px 40px;
-     color: #fff;
-     background-color: #B5DFEF;
- }
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #B5DFEF;
+}
 
 .cmn-t-magazine-ten {
     padding: 20px 40px;
@@ -890,12 +887,18 @@ p {
     background-color: #69B1C9;
 }
 
-.description-products{
+.cmn-t-magazine-two-collection-two {
+    padding: 20px 40px;
+    color: #fff;
+    background-color: #7664A2;
+}
+
+.description-products {
     margin-left: 10px;
 }
 
 .shake-new:before {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both !important;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both !important;
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     perspective: 1000px;
@@ -919,9 +922,7 @@ p {
     }
 }
 
-
-
-
-
-
-​
+.background-resto {
+    background-color: black;
+    background-image: url('../images/empresas/food.png');
+}
