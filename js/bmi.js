@@ -28,7 +28,7 @@ function BMICalculate()
     }
 
     var bmi = Math.round((weight / (heightft * heightft )));
-    swal({title: "Tu IMC es...", text: getDescription(bmi), imageUrl: "images/calcoLogo.png"});
+    swal({title: "Tu IMC es...", text: getDescription(bmi), imageUrl: "images/logo.png"});
 }
 
 /* Interpretation of BMI value */
