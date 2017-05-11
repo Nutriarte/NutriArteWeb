@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c478a9a2-2339-4ab2-b149-9df5cf34615a" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/empresas/food.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/empresas/restos/1.jpg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/images/empresas/restos/2.jpg" afterPath="" />
@@ -18,6 +19,14 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services_details.html" afterPath="$PROJECT_DIR$/services_details.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tienda.html" afterPath="$PROJECT_DIR$/tienda.html" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/images/ejemplar/portada_ejemplar1_coleccion2.jpg" afterPath="$PROJECT_DIR$/images/ejemplar/ej1col2.jpg" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/educacion/info_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/educacion/info_2.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/app/css/landing-page.css" afterPath="$PROJECT_DIR$/assets/app/css/landing-page.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/requisitos.html" afterPath="$PROJECT_DIR$/requisitos.html" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="NutriArteWeb.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,6 +48,7 @@
     <favorites_list name="NutriArteWeb" />
   </component>
   <component name="FileEditorManager">
+<<<<<<< Updated upstream
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="services_details.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/services_details.html">
@@ -80,12 +90,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="467">
               <caret line="985" column="34" lean-forward="true" selection-start-line="985" selection-start-column="34" selection-end-line="985" selection-end-column="34" />
+=======
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1328">
+              <caret line="316" column="22" lean-forward="true" selection-start-line="316" selection-start-column="22" selection-end-line="316" selection-end-column="22" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#meta#4;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#1516#1595#0" expanded="false" />
                 <element signature="n#script#1;n#head#0;n#html#0;n#!!top" expanded="false" />
+<<<<<<< Updated upstream
                 <element signature="e#2103#2676#0" expanded="false" />
                 <element signature="e#2147#2190#0" expanded="false" />
                 <element signature="e#2305#2352#0" expanded="false" />
@@ -286,11 +305,53 @@
                 <element signature="n#a#0;n#p#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#i#0;n#a#0;n#p#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
+=======
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
+=======
+      <file leaf-file-name="requisitos.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requisitos.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="318" column="7" lean-forward="true" selection-start-line="318" selection-start-column="7" selection-end-line="318" selection-end-column="7" />
+              <folding>
+                <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#1;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#4;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#1;n#div#4;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#1;n#div#4;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="landing-page.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/app/css/landing-page.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="1080" column="38" lean-forward="false" selection-start-line="1080" selection-start-column="18" selection-end-line="1080" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> Stashed changes
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -302,6 +363,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< Updated upstream
       <find>viewp</find>
       <find>requis</find>
       <find>LANZA</find>
@@ -311,6 +373,8 @@
       <find>NUEVO!</find>
       <find>fa</find>
       <find>hr</find>
+=======
+>>>>>>> Stashed changes
       <find>etas</find>
       <find>155</find>
       <find>our bre</find>
@@ -328,10 +392,25 @@
       <find>&lt;li class=&quot;cursor&quot;&gt;&lt;a onclick=&quot;window.location.href='bmi.html'&quot;&gt;IMC&lt;/a&gt;&lt;/li&gt;</find>
       <find>verano</find>
       <find>especiales</find>
+<<<<<<< Updated upstream
       <find>nuevo</find>
       <find>EJEMPLAR iii</find>
       <find>ejemplar 2</find>
       <find>ejemplar 3</find>
+=======
+      <find>ogg</find>
+      <find>margin: 20px 0;</find>
+      <find>mas</find>
+      <find>inform</find>
+      <find>160</find>
+      <find>BUTTON</find>
+      <find>usalo</find>
+      <find>section-presentation</find>
+      <find>descargar</find>
+      <find>obt</find>
+      <find>comprar</find>
+      <find>compra</find>
+>>>>>>> Stashed changes
     </findStrings>
     <replaceStrings>
       <replace>effect-oscar bottom-product</replace>
@@ -359,7 +438,6 @@
         <option value="$PROJECT_DIR$/fiestas.html" />
         <option value="$PROJECT_DIR$/asd.php" />
         <option value="$PROJECT_DIR$/sender.php" />
-        <option value="$PROJECT_DIR$/assets/app/css/landing-page.css" />
         <option value="$PROJECT_DIR$/assets/animate/set.css" />
         <option value="$PROJECT_DIR$/receta10.html" />
         <option value="$PROJECT_DIR$/receta11.html" />
@@ -377,7 +455,6 @@
         <option value="$PROJECT_DIR$/receta5.html" />
         <option value="$PROJECT_DIR$/receta6.html" />
         <option value="$PROJECT_DIR$/receta3.html" />
-        <option value="$PROJECT_DIR$/requisitos.html" />
         <option value="$PROJECT_DIR$/entrepreneurship.html" />
         <option value="$PROJECT_DIR$/company.html" />
         <option value="$PROJECT_DIR$/company/css/bootstrap.css" />
@@ -391,7 +468,6 @@
         <option value="$PROJECT_DIR$/bmi.html" />
         <option value="$PROJECT_DIR$/js/bmi.js" />
         <option value="$PROJECT_DIR$/taller.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/nutripack.html" />
         <option value="$PROJECT_DIR$/pagoEnProceso.html" />
         <option value="$PROJECT_DIR$/pagoExitoso.html" />
@@ -403,8 +479,14 @@
         <option value="$PROJECT_DIR$/recipe6.html" />
         <option value="$PROJECT_DIR$/social.html" />
         <option value="$PROJECT_DIR$/tienda.html" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/assets/stylesheet.css" />
         <option value="$PROJECT_DIR$/services_details.html" />
+=======
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/app/css/landing-page.css" />
+        <option value="$PROJECT_DIR$/requisitos.html" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -415,9 +497,16 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< Updated upstream
     <option name="x" value="-8" />
     <option name="width" value="1932" />
     <option name="height" value="1056" />
+=======
+    <option name="x" value="-1535" />
+    <option name="y" value="24" />
+    <option name="width" value="1535" />
+    <option name="height" value="876" />
+>>>>>>> Stashed changes
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -474,7 +563,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+<<<<<<< Updated upstream
               <option name="myItemId" value="ejemplar" />
+=======
+              <option name="myItemId" value="educacion" />
+>>>>>>> Stashed changes
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -485,7 +578,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nutriDashboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -495,6 +588,7 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+<<<<<<< Updated upstream
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\PROJECTS\NutriArteWeb\images\ejemplar" />
       <recent name="D:\PROJECTS\NutriArteWeb\company\pdfs" />
@@ -502,12 +596,21 @@
       <recent name="D:\PROJECTS\NutriArteWeb\images\slider" />
       <recent name="D:\PROJECTS\NutriArteWeb\images" />
     </key>
+=======
+>>>>>>> Stashed changes
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/educacion" />
       <recent name="D:\PROJECTS\NutriArteWeb\company\images" />
       <recent name="D:\PROJECTS\NutriArteWeb\company" />
       <recent name="D:\PROJECTS\NutriArteWeb\images\ejemplar" />
       <recent name="D:\PROJECTS\NutriArteWeb\images\promo" />
-      <recent name="D:\PROJECTS\NutriArteWeb\images\empresas" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images/educacion" />
+      <recent name="D:\PROJECTS\NutriArteWeb\images\share" />
+      <recent name="D:\PROJECTS\NutriArteWeb\images\slider" />
+      <recent name="D:\PROJECTS\NutriArteWeb\images" />
+      <recent name="D:\PROJECTS\NutriArteWeb\company\pdfs" />
     </key>
   </component>
   <component name="RunManager">
@@ -635,16 +738,25 @@
       <workItem from="1491422632906" duration="684000" />
       <workItem from="1491572096760" duration="2640000" />
       <workItem from="1491842793703" duration="3385000" />
+<<<<<<< Updated upstream
       <workItem from="1492461837683" duration="996000" />
       <workItem from="1492608418489" duration="3046000" />
       <workItem from="1492782607153" duration="22000" />
       <workItem from="1493036201619" duration="1193000" />
       <workItem from="1493129716753" duration="929000" />
       <workItem from="1493642488166" duration="3897000" />
+=======
+      <workItem from="1492277459705" duration="906000" />
+      <workItem from="1492462136565" duration="388000" />
+      <workItem from="1492782962120" duration="87000" />
+      <workItem from="1492999737013" duration="279000" />
+      <workItem from="1494522326171" duration="5534000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="211647000" />
   </component>
   <component name="ToolWindowManager">
@@ -652,12 +764,22 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20644139" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+    <option name="totallyTimeSpent" value="208758000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1535" y="24" width="1535" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23809524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> Stashed changes
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32286024" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17984831" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42673522" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -665,7 +787,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< Updated upstream
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32286024" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> Stashed changes
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -715,6 +840,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< Updated upstream
+=======
+    <entry file="file://$PROJECT_DIR$/images/recetas/receta2.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/recetas/receta3.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/recetas/receta1.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/recetas/receta4.jpg" />
+>>>>>>> Stashed changes
     <entry file="file://$PROJECT_DIR$/images/ejemplar/portada_IX.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -875,58 +1007,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recipe1.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1581">
+=======
+        <state relative-caret-position="1674">
+>>>>>>> Stashed changes
           <caret line="93" column="29" lean-forward="false" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recipe2.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1581">
+=======
+        <state relative-caret-position="1674">
+>>>>>>> Stashed changes
           <caret line="93" column="29" lean-forward="false" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recipe3.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1581">
+=======
+        <state relative-caret-position="1674">
+>>>>>>> Stashed changes
           <caret line="93" column="29" lean-forward="false" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recipe4.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1564">
+=======
+        <state relative-caret-position="1656">
+>>>>>>> Stashed changes
           <caret line="92" column="29" lean-forward="false" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recipe5.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1564">
+=======
+        <state relative-caret-position="1656">
+>>>>>>> Stashed changes
           <caret line="92" column="29" lean-forward="false" selection-start-line="92" selection-start-column="29" selection-end-line="92" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/recipe6.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1547">
+=======
+        <state relative-caret-position="1638">
+>>>>>>> Stashed changes
           <caret line="91" column="29" lean-forward="false" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requisitos.html">
+    <entry file="file://$PROJECT_DIR$/social.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="1445">
           <caret line="85" column="72" lean-forward="false" selection-start-line="85" selection-start-column="72" selection-end-line="85" selection-end-column="72" />
+=======
+        <state relative-caret-position="1800">
+          <caret line="100" column="29" lean-forward="false" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/social.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
@@ -960,28 +1118,70 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/ejemplar/ej2col2.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
+=======
+    <entry file="file://$PROJECT_DIR$/tienda.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="111" column="29" lean-forward="false" selection-start-line="111" selection-start-column="29" selection-end-line="111" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="109" column="29" lean-forward="false" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1328">
+          <caret line="316" column="22" lean-forward="true" selection-start-line="316" selection-start-column="22" selection-end-line="316" selection-end-column="22" />
+          <folding>
+            <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#1;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/educacion/CURSOCOMPLETO.jpg">
+>>>>>>> Stashed changes
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+<<<<<<< Updated upstream
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="111" column="24" lean-forward="false" selection-start-line="111" selection-start-column="24" selection-end-line="113" selection-end-column="29" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/app/css/landing-page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="1080" column="38" lean-forward="false" selection-start-line="1080" selection-start-column="18" selection-end-line="1080" selection-end-column="38" />
+>>>>>>> Stashed changes
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tienda.html">
+    <entry file="file://$PROJECT_DIR$/requisitos.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="467">
           <caret line="985" column="34" lean-forward="true" selection-start-line="985" selection-start-column="34" selection-end-line="985" selection-end-column="34" />
+=======
+        <state relative-caret-position="510">
+          <caret line="318" column="7" lean-forward="true" selection-start-line="318" selection-start-column="7" selection-end-line="318" selection-end-column="7" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#meta#4;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#1516#1595#0" expanded="false" />
             <element signature="n#script#1;n#head#0;n#html#0;n#!!top" expanded="false" />
+<<<<<<< Updated upstream
             <element signature="e#2103#2676#0" expanded="false" />
             <element signature="e#2147#2190#0" expanded="false" />
             <element signature="e#2305#2352#0" expanded="false" />
@@ -1208,6 +1408,21 @@
             <element signature="n#div#4;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#5;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#12;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+=======
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#4;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#4;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#0;n#div#1;n#div#4;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#1;n#div#4;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>

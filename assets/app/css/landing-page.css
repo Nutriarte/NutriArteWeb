@@ -1023,6 +1023,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   padding: 50px 5px 0;
 }
 
+.landing-page .section-presentation-device .description{
+  padding: 50px 5px 0;
+}
+
 .landing-page .parallax .description h2{
   text-shadow: 0 1px 5px rgba(0,0,0,0.2);
   font-weight: 200;
@@ -1649,7 +1653,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
   .landing-page .parallax .description{
     margin-top: 65px;  }
   .landing-page .parallax .buttons{
-    margin: 20px 0;
+    margin: 0px 0;
   }
   .landing-page .logos li{
     display: block;
@@ -1662,6 +1666,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8e0009', e
     margin: 0;
   }
   .landing-page .section-presentation{
+    height: auto;
+  }
+  .landing-page .section-presentation-device{
+    margin: 0;
+  }
+  .landing-page .section-presentation-device{
     height: auto;
   }
   .landing-page .carousel-indicators{
