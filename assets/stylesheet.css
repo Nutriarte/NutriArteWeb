@@ -29,23 +29,23 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font: 700 5em Roboto, Arial, Helvetica;
+    font: 700 5em Amatic SC, Roboto, Arial, Helvetica;
     margin: 0.25em 0;
     text-transform: uppercase;
 }
 
 h2 {
-    font: 300 2.5em Roboto, Arial, Helvetica;
+    font: 300 2.5em Amatic SC, Roboto, Arial, Helvetica;
     margin-bottom: 1.5em;
 }
 
 h3 {
-    font: 300 2em Roboto, Arial, Helvetica;
+    font: 300 2em Amatic SC, Roboto, Arial, Helvetica;
     margin: 2em 0 1em 0;
 }
 
 h4 {
-    font: 300 1.5em Roboto, Arial, Helvetica;
+    font: 300 1.5em Amatic SC, Roboto, Arial, Helvetica;
     margin-bottom: 1em;
 }
 
@@ -112,6 +112,7 @@ p {
 .navbar-nav > li > a {
     font-size: 1em;
     line-height: 3.6em;
+    cursor: pointer;
 }
 
 .navbar-fixed-top {
@@ -349,7 +350,7 @@ p {
     }
 
     .navbar-brand {
-        padding-top: 11px;
+        padding-top: -11px;
     }
 
     .process ul li {
@@ -373,6 +374,13 @@ p {
 
     .partners img {
         margin: 0 25px 25px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .navbar-brand {
+        padding-top: 20px;
     }
 }
 
@@ -430,7 +438,7 @@ p {
     }
 
     .navbar-brand {
-        padding: 7px;
+        padding: 10px;
     }
 
     .navbar-brand img {
@@ -931,4 +939,8 @@ p {
 .background-resto {
     background-color: black;
     background-image: url('../images/empresas/food.png');
+}
+
+.margin-header {
+    margin-right: 10px;
 }

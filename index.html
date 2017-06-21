@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -17,6 +19,8 @@
 
     <!-- font awesome -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--font amatic-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Amatic+SC"/>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
@@ -86,8 +90,12 @@
     <div class="container">
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
-            <div class="container">
+            <div class="margin-header">
                 <div class="navbar-header">
+
+                    <!-- Logo Starts -->
+                    <a class="navbar-brand hidden-sm" href="index.html#home"><img src="images/logo.png" alt="NutriArte"></a>
+                    <!-- #Logo Ends -->
 
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                             data-target=".navbar-collapse">
@@ -101,7 +109,7 @@
 
                 <!-- Nav Starts -->
                 <div class="navbar-collapse  collapse">
-                    <ul class="nav navbar-nav scroll">
+                    <ul class="nav navbar-nav navbar-right scroll">
                         <li class="active"><a href="#home">Principal</a></li>
                         <li><a href="#about">¿Que hacemos?</a></li>
                         <li><a href="#works">Recetas</a></li>
@@ -109,14 +117,27 @@
                         <li class="cursor"><a class="cmn-t-pulse"
                                               onclick="window.location.href='tienda.html'">Tienda</a></li>
                         <li class="cursor"><a onclick="window.location.href='requisitos.html'">Curso</a></li>
-                        <li class="cursor"><a
-                                onclick="window.location.href='https://www.eventbrite.com.ar/e/charla-de-educacion-alimentaria-by-nutriarte-tickets-34701413863?aff=es2'">Charlas</a>
-                        </li>
-                        <li class="cursor"><a onclick="window.location.href='company/company.html'">Carta Nutriarte</a>
-                        </li>
-                        <li class="cursor"><a onclick="window.location.href='company/viands.html'">Vendé tus viandas</a>
-                        </li>
-                        <li class="cursor"><a onclick="window.location.href='social.html'">Blog</a></li>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">Empresas <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="cursor"><a onclick="window.location.href='company/company.html'">Carta
+                                        Nutriarte</a>
+                                    </li>
+                                    <li class="cursor" class="cursor"><a
+                                            onclick="window.location.href='company/viands.html'">Vendé tus
+                                        viandas</a>
+                                    </li>
+                                    <li class="cursor"><a
+                                            onclick="window.location.href='images/empresas/MN_JUNIO_2017.pdf'"
+                                            target="_blank">Publicidad empresas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+                        <li class="cursor"><a onclick="window.location.href='social.html'">Social</a></li>
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
                 </div>
@@ -148,25 +169,25 @@
             <!--Slide 1 -->
             <div class="item active">
                 <img data-src="holder.js/900x500/auto/#777:#777" alt="900x500"
-                     src="images/slider/slide_1.jpg"
+                     src="images/slider/slide1.jpg"
                      data-holder-rendered="true">
             </div>
             <!--Slide 2 -->
             <div class="item">
                 <img data-src="holder.js/900x500/auto/#555:#555" alt="900x500"
-                     src="images/slider/slide_2.jpg"
+                     src="images/slider/slide2.jpg"
                      data-holder-rendered="true">
             </div>
             <!--Slide 3 -->
             <div class="item">
                 <img data-src="holder.js/900x500/auto/#555:#555" alt="900x500"
-                     src="images/slider/slide_3.jpg"
+                     src="images/slider/slide3.jpg"
                      data-holder-rendered="true">
             </div>
             <!--Slide 4 -->
             <div class="item">
                 <img data-src="holder.js/900x500/auto/#555:#555" alt="900x500"
-                     src="images/slider/slide_5.jpg"
+                     src="images/slider/slide5.jpg"
                      data-holder-rendered="true">
             </div>
         </div>
@@ -182,7 +203,7 @@
 </div>
 <!--#Slider Ends-->
 
-<!-- Cirlce Starts -->
+<!-- About Starts -->
 <div id="about" class="container spacer about">
     <h2 class="text-center wowload fadeInUp cmn-t-underline">¿QUE HACEMOS?</h2>
 
@@ -236,14 +257,14 @@
         </div>
     </div>
 </div>
-<!-- #Cirlce Ends -->
+<!-- #About Ends -->
 
-<!-- works -->
+<!-- Recipes Starts -->
 <div id="works" class="container">
     <h2 class="text-center wowload fadeInUp cmn-t-underline">RECETAS</h2>
 </div>
+
 <div class="grid clearfix">
-    <!--TODO Viejas-->
     <figure class="effect-oscar bottom-product  wowload fadeIn">
         <img src="images/recetas/recipe_1.jpg" alt="Budincitos chocolatosos"/>
         <figcaption>
@@ -299,21 +320,21 @@
         </figcaption>
     </figure>
 </div>
-<!-- works -->
+<!-- Recipes Ends -->
 
-<!-- About Starts -->
+<!-- Statistics Starts -->
 <div class="highlight-info">
     <div class="overlay spacer">
         <div class="container">
             <div class="row text-center  wowload fadeInDownBig">
                 <div class="col-sm-3 col-xs-6">
-                    <i class="fa fa-thumbs-o-up  fa-5x"></i><h4>+200.000 Fans</h4>
+                    <i class="fa fa-thumbs-o-up  fa-5x"></i><h4>+220.000 Fans</h4>
                 </div>
                 <div class="col-sm-3 col-xs-6">
                     <i class="fa fa-cutlery  fa-5x"></i><h4>+500 Recetas adaptadas</h4>
                 </div>
                 <div class="col-sm-3 col-xs-6">
-                    <i class="fa fa-book  fa-5x"></i><h4>Ejemplares :)</h4>
+                    <i class="fa fa-book  fa-5x"></i><h4>16 Ejemplares :)</h4>
                 </div>
                 <div class="col-sm-3 col-xs-6">
                     <i class="fa fa-smile-o  fa-5x"></i><h4>Usuarios felices</h4>
@@ -322,9 +343,9 @@
         </div>
     </div>
 </div>
-<!-- About Ends -->
+<!-- Statistics Ends -->
 
-<!--Team-->
+<!--Team and partners Starts-->
 <div id="team" class="container spacer text-center ">
     <h2 class="text-center wowload fadeInUp cmn-t-underline">EL EQUIPO :)</h2>
     <hr/>
@@ -338,13 +359,11 @@
             <img src="images/partners/dulkre.png" alt="partners">
             <img src="images/partners/lheritier.png" alt="partners">
             <img src="images/partners/bessone.png" alt="partners">
-            <img src="images/partners/logoTrini.png" alt="partners">
+            <img src="images/partners/logoTregar.png" alt="partners">
         </div>
 
     </div>
     <hr/>
-
-    <!-- team -->
     <div>
         <h3 class="text-center  wowload fadeInUp">Ingeniería y nutrición de la mano</h3>
 
@@ -353,8 +372,8 @@
         <div class="row grid team  wowload fadeInUpBig">
 
             <div class=" col-sm-offset-3 col-sm-3 col-xs-6">
-                <figure class="effect-chico">
-                    <img src="images/team/Vanina.jpg" alt="Vanina Minniti"/>
+                <figure class="effect-sarah">
+                    <img src="images/team/vani.jpg" alt="Vanina Minniti"/>
                     <figcaption>
                         <p><b>Vanina Minniti</b><br>Lic. en nutrición<br><br><a
                                 href="https://www.facebook.com/vanina.minniti" target="_blank"><i
@@ -364,8 +383,8 @@
             </div>
 
             <div class=" col-sm-3 col-xs-6">
-                <figure class="effect-chico">
-                    <img src="images/team/Damian.jpg" alt="Damián Minniti"/>
+                <figure class="effect-sarah">
+                    <img src="images/team/dami.jpg" alt="Damián Minniti"/>
                     <figcaption>
                         <p><b>Damián Minniti</b><br>Ingeniero informático<br><br> <a
                                 href="https://www.facebook.com/chamian10" target="_blank"><i class="fa fa-facebook"></i></a>
@@ -376,7 +395,7 @@
             </div>
         </div>
     </div>
-    <!-- team -->
+    <!-- Team and partners Ends -->
 
 </div>
 <!--Team-->
@@ -443,58 +462,58 @@
 <!-- # Footer Ends -->
 
 <!--Modal Ofertas/Lanzamientos -->
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title text-center text-info">🚀 LANZAMIENTO 🚀
-                    <br>🍩 "ESPECIAL DULCES" 🍩
-                </h4>
-            </div>
+<!--<div id="myModal" class="modal fade" role="dialog">-->
+<!--<div class="modal-dialog">-->
+<!--&lt;!&ndash; Modal content&ndash;&gt;-->
+<!--<div class="modal-content">-->
+<!--<div class="modal-header">-->
+<!--<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+<!--<h4 class="modal-title text-center text-info">🚀 LANZAMIENTO 🚀-->
+<!--<br>🍩 "ESPECIAL DULCES" 🍩-->
+<!--</h4>-->
+<!--</div>-->
 
-            <div class="modal-body">
-                <div class="row">
+<!--<div class="modal-body">-->
+<!--<div class="row">-->
 
-                    <div class="col-md-12 col-sm-12">
-                        <img src="images/promo/launchM.png" class="img img-responsive img-center"
-                             alt="PROMO">
-                    </div>
-                </div>
-            </div>
+<!--<div class="col-md-12 col-sm-12">-->
+<!--<img src="images/promo/launchM.png" class="img img-responsive img-center"-->
+<!--alt="PROMO">-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-            <div class="modal-footer">
-                <div onclick="clicked();" class="center-buttons">
-                    <!--WITH PROMO - BEGIN-->
-                    <a mp-mode="dftl"
-                       href="https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-f4789f11-7431-42eb-92be-d2112f420121"
-                       name="MP-payButton" class='btn btn-primary background-btn-pink'>Comprar</a>
-                    <script type="text/javascript">
-                        (function () {
-                            function $MPC_load() {
-                                window.$MPC_loaded !== true && (function () {
-                                    var s = document.createElement("script");
-                                    s.type = "text/javascript";
-                                    s.async = true;
-                                    s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
-                                    var x = document.getElementsByTagName('script')[0];
-                                    x.parentNode.insertBefore(s, x);
-                                    window.$MPC_loaded = true;
-                                })();
-                            }
+<!--<div class="modal-footer">-->
+<!--<div onclick="clicked();" class="center-buttons">-->
+<!--&lt;!&ndash;WITH PROMO - BEGIN&ndash;&gt;-->
+<!--<a mp-mode="dftl"-->
+<!--href="https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-f4789f11-7431-42eb-92be-d2112f420121"-->
+<!--name="MP-payButton" class='btn btn-primary background-btn-pink'>Comprar</a>-->
+<!--<script type="text/javascript">-->
+<!--(function () {-->
+<!--function $MPC_load() {-->
+<!--window.$MPC_loaded !== true && (function () {-->
+<!--var s = document.createElement("script");-->
+<!--s.type = "text/javascript";-->
+<!--s.async = true;-->
+<!--s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";-->
+<!--var x = document.getElementsByTagName('script')[0];-->
+<!--x.parentNode.insertBefore(s, x);-->
+<!--window.$MPC_loaded = true;-->
+<!--})();-->
+<!--}-->
 
-                            window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
-                        })();
-                    </script>
-                    <!--WITH PROMO - END-->
-                    <a href="services_details.html#magazineSweet" class='btn btn-primary btn-info'>VER
-                        MÁS</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<!--window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;-->
+<!--})();-->
+<!--</script>-->
+<!--&lt;!&ndash;WITH PROMO - END&ndash;&gt;-->
+<!--<a href="services_details.html#magazineSweet" class='btn btn-primary btn-info'>VER-->
+<!--MÁS</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <!--End Modal Ofertas/Lanzamientos ->
 
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
@@ -515,12 +534,12 @@
 <!-- wow script -->
 <script src="assets/wow/wow.min.js"></script>
 
-
 <!-- boostrap -->
 <script src="assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
 
 <!-- jquery mobile -->
 <script src="assets/mobile/touchSwipe.min.js"></script>
+
 <script src="assets/respond/respond.js"></script>
 
 <!-- gallery -->
@@ -546,4 +565,5 @@
 </script>
 
 </body>
+
 </html>
