@@ -6,10 +6,6 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta property="og:image" content="http://nutriarte.com.ar/images/share/share.jpg"/>
-    <meta property="og:image"
-          content="http://nutriarte.com.ar/images/share/faceProfile.jpg"/>
-
     <title>NutriArte</title>
 
     <!-- Google fonts -->
@@ -68,8 +64,7 @@
                 <div class="navbar-header">
 
                     <!-- Logo Starts -->
-                    <a class="navbar-brand hidden-sm cursor" onclick="window.location.href='index.html#home'"><img
-                            src="images/logo.png" alt="NutriArte"></a>
+                    <a class="navbar-brand hidden-sm" href="index.html#home"><img src="images/logo.png" alt="NutriArte"></a>
                     <!-- #Logo Ends -->
 
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -89,7 +84,8 @@
                         <li><a onclick="window.location.href='index.html#about'">¿Que hacemos?</a></li>
                         <li><a onclick="window.location.href='index.html#works'">Recetas</a></li>
                         <li><a onclick="window.location.href='index.html#team'">El equipo</a></li>
-                        <li><a onclick="window.location.href='tienda.html'">Tienda</a></li>
+                        <li><a class="cmn-t-pulse"
+                               onclick="window.location.href='tienda.html'">Tienda</a></li>
                         <li><a onclick="window.location.href='requisitos.html'">Curso</a></li>
 
                         <!--Dropdown-->
@@ -109,7 +105,7 @@
                         </ul>
                         <!--Dropdown-->
 
-                        <li><a onclick="window.location.href='events.html'">Eventos</a></li>
+                        <li class="active"><a onclick="window.location.href='events.html'">Eventos</a></li>
                         <li><a onclick="window.location.href='index.html#contact'">Contacto</a></li>
                     </ul>
                 </div>
@@ -122,19 +118,54 @@
 </div>
 <!-- #Header Starts -->
 
-<!--#Slider Starts-->
-<div id="home">
-    <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img data-src="holder.js/900x500/auto/#777:#777" alt="900x500"
-                     src="images/slider/pagoExitoso.jpg"
-                     data-holder-rendered="true">
+<!-- Cirlce Starts -->
+<br/>
+
+<div id="about" class="container spacer about">
+    <div class="page-header text-center wowload fadeInUp">
+        <h2 style="margin: 2em 0 1em 0">
+            <small class="label label-success">EVENTOS - VENTA DE ENTRADAS</small>
+        </h2>
+        <h4><i class="fa fa-calendar"></i>Próxima charla - "Consumidores inteligentes"</h4>
+    </div>
+
+    <!--WIDGET TICKETS-->
+    <div class="row text-center">
+        <div class="col-sm-4 wowload fadeInLeft">
+            <h4><i class="fa fa-clock-o"></i>¿CÚANDO?</h4>
+            <h4><i class="fa fa-hand-o-right"></i>22 de julio</h4>
+        </div>
+        <div class="col-sm-4 wowload fadeInLeft">
+            <h4><i class="fa fa-map-marker"></i>¿DÓNDE?</h4>
+            <h4><i class="fa fa-hand-o-right"></i>Lavalle 648 (Microcentro)</h4>
+        </div>
+        <div class="col-sm-4 wowload fadeInLeft">
+            <h4><i class="fa fa-credit-card"></i>¿VALOR?</h4>
+            <h4><i class="fa fa-hand-o-right"></i>$350</h4>
+        </div>
+    </div>
+    <!--WIDGET TICKETS-->
+
+
+    <!--WIDGET TICKETS-->
+    <div class="row">
+        <div class="col-sm-12 wowload fadeInLeft">
+            <a href="https://www.eventbrite.com.ar/e/consumidores-inteligentes-by-nutriarte-tickets-35767721217"
+               class="btn btn-primary background-btn-pink">Más información</a>
+            <div style="width:100%; text-align:left;">
+                <iframe src="//eventbrite.com.ar/tickets-external?eid=35767721217&ref=etckt" frameborder="0"
+                        height="308" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5"
+                        scrolling="auto" allowtransparency="true"></iframe>
+                <div style="font-family:Helvetica, Arial; font-size:12px; padding:10px 0 5px; margin:2px; width:100%; text-align:left;">
+                    <a class="powered-by-eb" style="color: #ADB0B6; text-decoration: none;" target="_blank"
+                       href="http://www.eventbrite.com.ar/">Facilitado por Eventbrite</a></div>
             </div>
         </div>
     </div>
+    <!--WIDGET TICKETS-->
+
 </div>
-<!--#Slider Ends-->
+<!-- #Cirlce Ends -->
 
 <!-- Footer Starts -->
 <div class="footer text-center spacer">
@@ -146,8 +177,6 @@
     Copyright 2017 NutriArte. Todos los derechos reservados.
 </div>
 <!-- # Footer Ends -->
-
-<a href="index.html#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
 
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
@@ -179,7 +208,15 @@
 <script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
 
 <!-- custom script -->
-<script src="assets/script.js"></script>
+<!--<script src="assets/script.js"></script>-->
+
+<script>
+
+    $('.carousel').carousel({
+        interval: 4000
+    })
+</script>
+
 
 </body>
 </html>
