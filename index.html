@@ -43,8 +43,8 @@
       (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-          }, i[r].l = 1 * new Date();
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
         a = s.createElement(o),
           m = s.getElementsByTagName(o)[0];
         a.async = 1;
@@ -481,14 +481,16 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title text-center text-info">🎁 RECETARIO DE REGALO 🎁 </h4>
+                <h4 class="modal-title text-center text-info">Curso de educación alimentaria a distancia + seguimiento
+                    personalizado</h4>
+                <h4 class="modal-title text-center text-info">🎉 MEGA PROMO: $700 🎊</h4>
             </div>
 
             <div class="modal-body">
                 <div class="row">
 
                     <div class="col-md-12 col-sm-12">
-                        <img src="images/promo/WEB.jpg" class="img img-responsive img-center"
+                        <img src="images/promo/LAUNCHAPP_FACE_COVER.jpg" class="img img-responsive img-center"
                              alt="PROMO">
                     </div>
                 </div>
@@ -497,7 +499,10 @@
             <div class="modal-footer">
                 <div onclick="clicked();" class="center-buttons">
                     <!--WITH PROMO - BEGIN-->
-                    <a href="https://goo.gl/forms/JvnwekeW1iJofhgF2" class='btn btn-primary background-btn-pink'>DESCARGAR</a>
+                    <a href="http://mpago.la/UeON" target="_blank"
+                       class='btn btn-primary background-btn-pink'>COMPRAR</a>
+                    <br>
+                    <a href="requisitos.html" target="_blank" class='btn btn-primary'>VER MÁS</a>
                     <!--WITH PROMO - END-->
                 </div>
             </div>
@@ -549,6 +554,7 @@
   $(window).load(function () {
     $('#myModal').modal('show');
   });
+
   function clicked() {
     $('#myModal').modal('hide');
   }
