@@ -105,7 +105,7 @@ p {
 }
 
 .topbar {
-    background: url(../images/lines.png);
+    background: url(img/lines.png);
     height: 5px;
     position: fixed;
     top: 0;
@@ -279,7 +279,7 @@ p {
 }
 
 .highlight-info {
-    /*background: url(../images/lab.jpg) center fixed;*/
+    /*background: url(../img/lab.jpg) center fixed;*/
     background-size: cover;
     color: #fff;
 }
@@ -665,7 +665,7 @@ p {
     position: relative;
 }
 
-.ribbon-wrapper-green {
+.ribbon-wrapper-red {
     width: 85px;
     height: 88px;
     overflow: hidden;
@@ -674,7 +674,7 @@ p {
     right: -3px;
 }
 
-.ribbon-green {
+.ribbon-red {
     font: bold 15px Sans-Serif;
     color: white;
     text-align: center;
@@ -700,7 +700,7 @@ p {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
 }
 
-.ribbon-green:before, .ribbon-green:after {
+.ribbon-red:before, .ribbon-red:after {
     content: "";
     border-top: 3px solid #bf0d11;
     border-left: 3px solid transparent;
@@ -709,11 +709,11 @@ p {
     bottom: -3px;
 }
 
-.ribbon-green:before {
+.ribbon-red:before {
     left: 0;
 }
 
-.ribbon-green:after {
+.ribbon-red:after {
     right: 0;
 }
 
@@ -960,7 +960,7 @@ p {
 
 .background-resto {
     background-color: black;
-    background-image: url('../images/empresas/food.png');
+    background-image: url('img/enterprise/food.png');
 }
 
 .margin-header {

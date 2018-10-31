@@ -148,7 +148,7 @@ if (typeof Utils !== 'object')
 Utils.Message = {};
 
 /**
- * Displays embedded images, which have cid on the list.
+ * Displays embedded img, which have cid on the list.
  *
  * @param {object} $html JQuery element containing message body html
  * @param {array} aAttachments Array of objects having fields
@@ -228,7 +228,7 @@ Utils.Message.showInlinePictures = function ($html, aAttachments, aFoundCids, sA
 };
 
 /**
- * Displays external images.
+ * Displays external img.
  *
  * @param {object} $html JQuery element containing message body html
  */

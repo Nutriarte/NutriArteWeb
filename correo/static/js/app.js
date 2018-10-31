@@ -2358,7 +2358,7 @@ Utils.thumbQueue = (function () {
 	{
 		if(sImageSrc && fImageSrcObserver)
 		{
-			if(!(sSessionUid in oImagesIncrements) || oImagesIncrements[sSessionUid] > 0) //load first images
+			if(!(sSessionUid in oImagesIncrements) || oImagesIncrements[sSessionUid] > 0) //load first img
 			{
 				if(!(sSessionUid in oImagesIncrements)) //on first image
 				{
@@ -2378,7 +2378,7 @@ Utils.thumbQueue = (function () {
 				});
 			}
 		}
-		else //load images from queue (fires load event)
+		else //load img from queue (fires load event)
 		{
 			if(oImages[sSessionUid] && oImages[sSessionUid].length)
 			{
@@ -2832,7 +2832,7 @@ if (typeof Utils !== 'object')
 Utils.Message = {};
 
 /**
- * Displays embedded images, which have cid on the list.
+ * Displays embedded img, which have cid on the list.
  *
  * @param {object} $html JQuery element containing message body html
  * @param {array} aAttachments Array of objects having fields
@@ -2912,7 +2912,7 @@ Utils.Message.showInlinePictures = function ($html, aAttachments, aFoundCids, sA
 };
 
 /**
- * Displays external images.
+ * Displays external img.
  *
  * @param {object} $html JQuery element containing message body html
  */
@@ -13732,7 +13732,7 @@ CalendarEventPopup.prototype.createDatePickerObject = function (oElement, fSelec
 		firstDay: AppData.User.CalendarWeekStartsOn,
 		showOn: 'both',
 		buttonText: '',
-		buttonImage: 'skins/Default/images/calendar-icon.png',
+		buttonImage: 'skins/Default/img/calendar-icon.png',
 		buttonImageOnly: true,
 		dateFormat: this.dateFormatDatePicker,
 		onSelect: fSelect
@@ -20408,7 +20408,7 @@ CMessageModel.prototype.parseAddressArray = function (aData)
 };
 
 /**
- * Displays embedded images, which have cid on the list.
+ * Displays embedded img, which have cid on the list.
  * 
  * @param {string} sAppPath
  */
@@ -20426,7 +20426,7 @@ CMessageModel.prototype.showInlinePictures = function (sAppPath)
 };
 
 /**
- * Displays external images.
+ * Displays external img.
  */
 CMessageModel.prototype.showExternalPictures = function ()
 {
@@ -20436,7 +20436,7 @@ CMessageModel.prototype.showExternalPictures = function ()
 };
 
 /**
- * Sets a flag that external images are always displayed.
+ * Sets a flag that external img are always displayed.
  */
 CMessageModel.prototype.alwaysShowExternalPicturesForSender = function ()
 {
@@ -24909,7 +24909,7 @@ CHtmlEditorViewModel.prototype.onEditorDrop = function (sUid, oData) {
 				}
 
 				sId = oFile.name + '_' + hash;
-				this.oCrea.insertHtml('<img id="' + sId + '" src="skins/Default/images/wait.gif" />', true);
+				this.oCrea.insertHtml('<img id="' + sId + '" src="skins/Default/img/wait.gif" />', true);
 				if (!bCreaFocused)
 				{
 					this.oCrea.fixFirefoxCursorBug();

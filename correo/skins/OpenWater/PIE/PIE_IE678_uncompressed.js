@@ -3089,7 +3089,7 @@ PIE.BackgroundRenderer = PIE.RendererBase.newRenderer( {
                     'position', ( pxX / elW ) + ',' + ( pxY / elH ),
 
                     // Set the size of the image. We only set it if the image is scaled via background-size or by
-                    // the user changing the browser zoom level, to avoid fuzzy images at normal size. For some reason
+                    // the user changing the browser zoom level, to avoid fuzzy img at normal size. For some reason
                     // using px units doesn't work in VML markup so we must convert to pt.
                     'size', ( adjustedImgSize.w !== imgSize.w || adjustedImgSize.h !== imgSize.h ||
                         bounds.logicalZoomRatio !== 1 || screen['logicalXDPI'] / screen['deviceXDPI'] !== 1 ) ?

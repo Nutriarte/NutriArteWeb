@@ -4618,7 +4618,7 @@ Utils.thumbQueue = (function () {
 	{
 		if(sImageSrc && fImageSrcObserver)
 		{
-			if(!(sSessionUid in oImagesIncrements) || oImagesIncrements[sSessionUid] > 0) //load first images
+			if(!(sSessionUid in oImagesIncrements) || oImagesIncrements[sSessionUid] > 0) //load first img
 			{
 				if(!(sSessionUid in oImagesIncrements)) //on first image
 				{
@@ -4638,7 +4638,7 @@ Utils.thumbQueue = (function () {
 				});
 			}
 		}
-		else //load images from queue (fires load event)
+		else //load img from queue (fires load event)
 		{
 			if(oImages[sSessionUid] && oImages[sSessionUid].length)
 			{

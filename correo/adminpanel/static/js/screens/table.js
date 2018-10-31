@@ -277,8 +277,8 @@ CPageSwitcher.prototype = {
 			}
 			if (firstPage != lastPage) {
 				if (firstPage > 1) {
-					strPages += '<a href="javascript:void(0);" onclick="' + beginOnclick + '1' + endOnclick + ' return false;"><img title="' + Lang.FirstPageText + '" style="width: 8px; height: 9px;" src="static/images/page_switchers/inbox_first_page.gif" /></a>';
-					strPages += '<a href="javascript:void(0);" onclick="' + beginOnclick + firstPage + endOnclick + ' return false;"><img title="' + Lang.PreviousPageText + '" style="width: 5px; height: 9px;" src="static/images/page_switchers/inbox_prev_page.gif" /></a>';
+					strPages += '<a href="javascript:void(0);" onclick="' + beginOnclick + '1' + endOnclick + ' return false;"><img title="' + Lang.FirstPageText + '" style="width: 8px; height: 9px;" src="static/img/page_switchers/inbox_first_page.gif" /></a>';
+					strPages += '<a href="javascript:void(0);" onclick="' + beginOnclick + firstPage + endOnclick + ' return false;"><img title="' + Lang.PreviousPageText + '" style="width: 5px; height: 9px;" src="static/img/page_switchers/inbox_prev_page.gif" /></a>';
 				}
 				for (var i = firstPage; i <= lastPage; i++) {
 					if (page == i) {
@@ -288,8 +288,8 @@ CPageSwitcher.prototype = {
 					}
 				}
 				if (pagesCount > lastPage) {
-					strPages += '<a href="javascript:void(0);" onclick="' + beginOnclick + lastPage + endOnclick + ' return false;"><img title="' + Lang.NextPageText + '" style="width: 5px; height: 9px;" src="static/images/page_switchers/inbox_next_page.gif" /></a>';
-					strPages += '<a href="javascript:void(0);" onclick="' + beginOnclick + pagesCount + endOnclick + ' return false;"><img title="' + Lang.LastPageText + '" style="width: 8px; height: 9px;" src="static/images/page_switchers/inbox_last_page.gif" /></a>';
+					strPages += '<a href="javascript:void(0);" onclick="' + beginOnclick + lastPage + endOnclick + ' return false;"><img title="' + Lang.NextPageText + '" style="width: 5px; height: 9px;" src="static/img/page_switchers/inbox_next_page.gif" /></a>';
+					strPages += '<a href="javascript:void(0);" onclick="' + beginOnclick + pagesCount + endOnclick + ' return false;"><img title="' + Lang.LastPageText + '" style="width: 8px; height: 9px;" src="static/img/page_switchers/inbox_last_page.gif" /></a>';
 				}
 				this._mainCont.className = 'wm_inbox_page_switcher';
 				this._pagesCont.innerHTML = strPages;

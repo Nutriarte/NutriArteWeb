@@ -7,28 +7,28 @@ function BMICalculate()
 
     /* Error Handling  for invalid data entered*/
     if (weight == "") {
-        swal({title: "", text: "Por favor ingresa tu peso :).", imageUrl: "images/calcoLogo.png"});
+        swal({title: "", text: "Por favor ingresa tu peso :).", imageUrl: "img/calcoLogo.png"});
         return;
     }
     if (heightft == "") {
-        swal({title: "", text: "Por favor ingresa tu altura :).", imageUrl: "images/calcoLogo.png"});
+        swal({title: "", text: "Por favor ingresa tu altura :).", imageUrl: "img/calcoLogo.png"});
         return;
     }
     if (weight < 0) {
-        swal({title: "", text: "mmm... imposible.... no hay peso negativo :P", imageUrl: "images/calcoLogo.png"});
+        swal({title: "", text: "mmm... imposible.... no hay peso negativo :P", imageUrl: "img/calcoLogo.png"});
         return;
     }
     if (heightft < 0) {
         swal({
             title: "",
             text: "Te mediste adentro de un pozo? :P, pone la altura positiva :).",
-            imageUrl: "images/calcoLogo.png"
+            imageUrl: "img/calcoLogo.png"
         });
         return;
     }
 
     var bmi = Math.round((weight / (heightft * heightft )));
-    swal({title: "Tu IMC es...", text: getDescription(bmi), imageUrl: "images/logo.png"});
+    swal({title: "Tu IMC es...", text: getDescription(bmi), imageUrl: "img/logo.png"});
 }
 
 /* Interpretation of BMI value */
