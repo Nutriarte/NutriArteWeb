@@ -1,37 +1,27 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:image" content="http://nutriarte.com.ar/images/share/share.jpg"/>
+    <meta property="og:image"
+          content="http://nutriarte.com.ar/images/share/faceProfile.jpg"/>
+
     <title>@nutriarte.argentina</title>
 
-    <!-- Google fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="assets/app/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/app/css/landing-page.css" rel="stylesheet"/>
 
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
-
-    <!-- animate.css -->
-    <link rel="stylesheet" href="assets/animate/animate.css"/>
-    <link rel="stylesheet" href="assets/animate/set.css"/>
-
-    <!-- gallery -->
-    <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300' rel='stylesheet' type='text/css'>
+    <link href="assets/app/css/pe-icon-7-stroke.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="assets/stylesheet.css">
-
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
-          integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -75,234 +65,343 @@
 
 </head>
 
-<body>
+<body class="landing-page landing-page1">
 
-<div class="topbar animated fadeInLeftBig"></div>
+<nav class="navbar navbar-transparent navbar-top" role="navigation">
+    <a type="button" class="btn btn-neutral" href="nutritionalConsultations.html"
+       style="color: white; margin-left: 0.5em">
+        <i class="fa fa-arrow-left"></i>
+        Volver
+    </a>
+</nav>
 
-<!-- Header Starts -->
-<div class="navbar-wrapper">
-    <div class="container">
+<div class="wrapper">
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="top-nav">
-            <div class="margin-header">
-                <div class="navbar-header">
 
-                    <!-- Logo Starts -->
-                    <a class="navbar-brand hidden-sm" href="index.html#home"><img src="assets/img/logo.png"
-                                                                                  alt="NutriArte"></a>
-                    <!-- #Logo Ends -->
-
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
+    <!--Header-->
+    <div class="parallax" data-color="blue">
+        <div class="parallax-background">
+            <img class="parallax-background-image" src="assets/app/img/template/bg_online_2.jpg">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 hidden-sm hidden-xs">
+                    <div class="parallax-image">
+                        <img class="phone" src="assets/app/img/template/iphone_app_online.png" style="margin-top: 20px">
+                    </div>
                 </div>
+                <div class="col-md-6 col-md-offset-1">
+                    <div class="description text-center">
+                        <h1 style="font: 700 5em Amatic SC, Roboto, Arial, Helvetica;">CONSULTAS ONLINE</h1>
 
-                <!-- Nav Starts -->
-                <div class="navbar-collapse  collapse">
-                    <ul class="nav navbar-nav navbar-right scroll">
-                        <li><a onclick="window.location.href='index.html#home'">Principal</a></li>
-                        <li><a onclick="window.location.href='index.html#about'">¿Que hacemos?</a></li>
-                        <li><a onclick="window.location.href='index.html#works'">Recetas</a></li>
-                        <li><a onclick="window.location.href='index.html#team'">El equipo</a></li>
-                        <li><a onclick="window.location.href='shop.html'">Tienda</a></li>
-                        <li><a onclick="window.location.href='courseDetails.html'">Curso</a></li>
-                        <li class="active"><a onclick="window.location.href='nutritionalConsultations.html'">Turnos</a>
-                        </li>
-                        <li><a onclick="window.location.href='events.html'">Eventos</a></li>
-                        <li><a onclick="window.location.href='index.html#contact'">Contacto</a></li>
-                    </ul>
+                        <!--PROMO PRICE-->
+                        <!--<h1>A tan solo <strong>$500</strong></h1>-->
+
+                        <!--REGULAR PRICE-->
+                        <h3>A tan solo <strong>$1.800</strong></h3>
+                        <h5>(Incluye 2 consultas mensuales)</h5>
+
+                    </div>
+                    <div class="buttons text-center">
+
+                        <!--PROMO PRICE-->
+                        <!--<a type="button" class="btn btn-fill btn-neutral"-->
+                        <!--href="https://www.mercadopago.com/mla/checkout/start?pref_id=239499703-06926a10-4885-430c-9aaa-9f9a27e78a7b"-->
+                        <!--target="_blank">-->
+
+                        <!--REGULAR PRICE-->
+
+                        <a type="button" class="btn btn-fill btn-neutral"
+                           href="https://www.mercadopago.com/mla/checkout/start?pref_id=161246917-74181ba5-e1b0-4293-bfde-0601ddf427a1"
+                           target="_blank">
+
+                            <i class="fa fa-shopping-cart"></i> Reserva tu turno
+                        </a>
+
+                        <br><br>
+
+                        <h5 class="text-center" style="color:red;">⚠ Recordá antes de pagar solicitar turno vía
+                            whatsapp!</h5>
+
+                        <!--BTN DETALLE-->
+                        <!--<a type="button" class="btn btn-fill btn-neutral"-->
+                        <!--href="https://drive.google.com/file/d/1pABOoojq6ZkbM3Nsql4fNXcxxYgG-UfX/view?usp=sharing"-->
+                        <!--target="_blank">-->
+                        <!--<i class="fa fa-info-circle"></i> Descargar detalle-->
+                        <!--</a>-->
+
+                    </div>
                 </div>
-                <!-- #Nav Ends -->
+            </div>
+        </div>
+    </div>
 
+
+    <div class="section section-clients">
+
+        <!--Detalle del servicio web-->
+        <div class="section hidden-xs" style=" margin-top: 3%">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="description">
+                            <h4 class="header-text">DETALLE DEL SERVICIO</h4>
+
+                            <p>🙋 Profesional a cargo y atención: Lic. Vanina Minniti. <br><br>
+                                💳 Valor: $1.800 (Incluye 2 consultas al mes). <br><br>
+                                🗓 Días de atención: Todos los miércoles. <br><br>
+                                ⏰ Horario: 10:00 a 16:00 hs. <br><br>
+                                🇦🇷 Online - Para todo el territorio Argentino. <br><br>
+                                ☎ Turnos: 11-5748-3535 (Únicamente vía Whatsapp). <br><br>
+                                📕 Envio de material y ejemplares digitales. <br><br>
+                                🔸 Frecuencia de la consulta: cada 15 días.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 hidden-xs">
+                        <img src="assets/app/img/template/MacBook_online.png"/>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
-</div>
-<!-- #Header Starts -->
-
-<!-- Cirlce Starts -->
-<br/>
-
-<div id="about" class="container spacer about">
-
-    <div id="service">
-
-        <div class="page-header wowload fadeInUp">
-            <h2 class="text-center" style="margin: 2em 0 1em 0 !important;">
-                <small class="label label-success" style="font-size: 28px">📱 CONSULTAS ONLINE 💻</small>
-            </h2>
-        </div>
-
-        <div>
-            <p>
-                En <strong>NUTRIARTE</strong> trabajamos con un enfoque actualizado e integral. Las dietas restrictivas
-                <strong>NO</strong> son útiles por
-                eso te
-                enseñamos a modificar tus hábitos alimentarios para lograr tus objetivos comiendo rico, práctico y
-                sano.</p>
-
-            <p>Las consultas incluyen <strong>ejemplares digitales</strong> de regalo con material teórico
-                complementario, recetas dulces y saladas saludables, <strong>productos</strong>, <strong>plan
-                    alimentario
-                    personalizado</strong>, <strong>plan de
-                    entrenamiento</strong> para realizar en casa/plaza/al aire libre nivel inicial e intermedio +
-                <strong><a
-                        target="_blank"
-                        href="https://www.instagram.com/p/BcsC4EUHCjf/?taken-by=nutriarte.argentina">bio-impedancia</a></strong>
-                (estudio de tejido graso y muscular).
-            </p>
+        <!--Detalle del servicio phone-->
+        <div class="section section-presentation-device hidden-lg hidden-md">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="description">
+                            <h4 class="header-text">Detalle del servicio</h4>
+                            <p>🙋 Profesional a cargo y atención: Lic. Vanina Minniti. <br><br>
+                                💳 Valor: $1.800 (Incluye 2 consultas al mes). <br><br>
+                                🗓 Días de atención: Todos los miércoles. <br><br>
+                                ⏰ Horario: 10:00 a 16:00 hs. <br><br>
+                                🇦🇷 Online - Para todo el territorio Argentino. <br><br>
+                                ☎ Turnos: 11-5748-3535 (Únicamente vía Whatsapp). <br><br>
+                                📕 Envio de material y ejemplares digitales. <br><br>
+                                🔸 Frecuencia de la consulta: cada 15 días.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1 hidden-xs">
+                        <img src="assets/app/img/template/MacBook_online.png"/>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <hr>
 
-        <div class="row">
+        <!--Requisitos-->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="description">
+                            <h4 class="header-text">REQUISITOS </h4>
 
-            <div class="col-sm-offset-1 col-lg-5 col-md-5 col-sm-12 wowload fadeInLeft">
+                            <p>
+                                🔸 Contar con una pc o notebook con micrófono y cámara. <br><br>
 
-                <h4 class="text-center" style="margin: 2em 0 1em 0 !important;">
-                    <small class="label label-default" style="font-size: 1em">Detalle del servicio</small>
-                </h4>
+                                🔸 Contar con una conexión estable. <br><br>
 
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        🙋 Profesional a cargo y atención: Lic. Vanina Minniti.
-                    </li>
-                    <li class="list-group-item">
-                        💳 Valor: $2000 (Incluye 2 consultas al mes - Pago mensual obligatorio).
-                    </li>
-                    <li class="list-group-item">
-                        🗓 Días de atención: Todos los miércoles.
-                    </li>
-                    <li class="list-group-item">
-                        ⏰ Horario: 10:00 a 16:00 hs.
-                    </li>
-                    <li class="list-group-item">
-                        🇦🇷 Online - Para todo el territorio Argentino.
-                    </li>
-                    <li class="list-group-item">
-                        ☎ Turnos: 11-5748-3535 (Únicamente vía Whatsapp).
-                    </li>
+                                🔸 Estar en un lugar donde puedas conversar tranquilamente. <br><br>
 
-                    <li class="list-group-item">
-                        📕 Envio de material y ejemplares digitales.
-                    </li>
+                                🔸 Contar con una cuenta de email.
 
-                    <li class="list-group-item">
-                        🔸 Frecuencia de la consulta: cada 15 días.
-                    </li>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="description">
+                            <h4 class="header-text">OPCIÓN ALTERNATIVA</h4>
 
-                    <li class="list-group-item">
-                        📧 Email: info@nutriarte.com.ar
-                    </li>
-                </ul>
+                            <p>
+                                🔹 Contar con un celular con whatsapp. <br><br>
+
+                                🔹 Contar con una conexión estable y buena carga de batería. <br><br>
+
+                                🔹 Estar en un lugar donde puedas conversar tranquilamente. <br><br>
+
+                                🔹 Contar con una cuenta de email.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-lg-5 col-md-5 col-sm-12 wowload fadeInLeft">
-
-                <h4 class="text-center" style="margin: 2em 0 1em 0 !important;">
-                    <small class="label label- label-info" style="font-size: 1em">Requisitos</small>
-                </h4>
-
-                <ul class="list-group">
-                    <li class="list-group-item active">
-                        OPCIÓN GENERAL
-                    </li>
-                    <li class="list-group-item">
-                        🔸 Contar con una pc o notebook con micrófono y cámara.
-                    </li>
-                    <li class="list-group-item">
-                        🔸Contar con una conexión estable.
-                    </li>
-                    <li class="list-group-item">
-                        🔸Contar con una cuenta de email.
-                    </li>
-                    <li class="list-group-item active">
-                        OPCIÓN ALTERNATIVA
-                    </li>
-                    <li class="list-group-item">
-                        🔸Contar con un celular con whatsapp.
-                    </li>
-
-                    <li class="list-group-item">
-                        🔸Contar con una conexión estable y buena carga de batería.
-                    </li>
-
-                    <li class="list-group-item">
-                        🔸Estar en un lugar donde puedas conversar tranquilamente.
-                    </li>
-
-                    <li class="list-group-item">
-                        🔸Contar con una cuenta de email.
-                    </li>
-                </ul>
-            </div>
-
         </div>
+
+        <hr>
+
+        <!--¿Como obtengo mi turno?-->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/app/img/template/wapp.png"/>
+                    </div>
+                    <div class="col-md-offset-1 col-md-7">
+                        <div class="description">
+                            <h4 class="header-text">🤔 ¿CÓMO OBTENGO MI TURNO?</h4>
+
+                            <p>
+                                1⃣ Envianos un mensaje vía whatsapp solicitando tu turno. <br><br>
+
+                                2⃣ Elegí el día y horario disponible. <br><br>
+
+                                3⃣ Te enviaremos un link para realizar el pago <a
+                                    href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264"
+                                    target="_blank">
+                                (Ver
+                                formas de pago*)</a>. <br><br>
+
+                                4⃣ Te llamamos en el día y horario acordado. <br><br>
+
+                                5⃣ Disfruta la mejor atención y material online.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Requisitos-->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="description">
+                            <h4 class="header-text">💻 ¿CÓMO SE COMUNICAN CONMIGO? 📱</h4>
+
+                            <p>
+                                👉 En caso que cuentes con notebook o pc con camara: El día de tu consulta recibirás un
+                                email con el recordatorio y un link al cual debes acceder en el horario acordado
+                                (siempre empezamos puntuales la consulta 😉).
+                            </p>
+
+                            <p> 👉 En caso que no cuentes con una notebook o PC, te enviaremos el recordatorio y el link
+                                (al cual debes ingresar en el día y horario acordado) vía whatsapp (apoyá tu celu para
+                                no tenerlo toda la consulta en la mano 🤳).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="description text-center">
+                            <h4 class="header-text">💳 MEDIOS DE PAGO</h4>
+
+                            <p>
+                                Todos los permitodos por <a
+                                    href="https://www.mercadopago.com.ar/ayuda/medios-de-pago-cuotas-promociones_264">
+                                MERCADO PAGO</a>
+
+                                <br><br>
+
+                                <!--<img src="./assets/app/img/template/mp.png" alt="Mercado Pago">-->
+
+                                <a class="btn btn-primary"
+                                        href="https://www.mercadopago.com/mla/checkout/start?pref_id=161246917-74181ba5-e1b0-4293-bfde-0601ddf427a1" target="_blank">
+                                    PAGAR MES
+                                </a>
+                            <h5 class="text-center" style="color:red;">⚠ Recordá antes de pagar solicitar turno vía
+                                whatsapp!</h5>
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Politicas-->
+        <div class="section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="description">
+                            <h4 class="header-text">POLITICAS DE REEMBOLSO ❗</h4>
+
+                            <p>
+                                ⚠ Se realizarán reembolsos SOLO en los siguientes casos: <br><br>
+
+                                👉 Problemas de conexión del equipo Nutriarte (reembolso o reprogramación del turno).
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Descargar detalle-->
+        <!--<div class="container text-center">-->
+        <!--<h2>DESCARGA EL DETALLE DEL CURSO</h2>-->
+        <!--<div class="buttons text-center">-->
+        <!--<a type="button" class="btn btn-lg btn-fill btn-info"-->
+        <!--href="https://drive.google.com/file/d/1Uefu8LX7CJvFoGn_4Bku8jy9fRkga3Tl/view?usp=sharing"-->
+        <!--target="_blank">-->
+        <!--<i class="fa fa-info-circle"></i> Descargar detalle-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--<hr>-->
+        <!--<div id="myCarousel" class="carousel slide" data-ride="carousel">-->
+        <!--&lt;!&ndash; Indicators &ndash;&gt;-->
+        <!--<ol class="carousel-indicators">-->
+        <!--<li data-target="#myCarousel" data-slide-to="0" class="active"></li>-->
+        <!--<li data-target="#myCarousel" data-slide-to="1"></li>-->
+        <!--<li data-target="#myCarousel" data-slide-to="2"></li>-->
+        <!--<li data-target="#myCarousel" data-slide-to="3"></li>-->
+        <!--</ol>-->
+
+        <!--&lt;!&ndash; Wrapper for slides &ndash;&gt;-->
+        <!--<div class="carousel-inner">-->
+        <!--<div class="item active">-->
+        <!--<img src="assets/img/ean/1_detail.png" alt="1" style="width:100%;">-->
+        <!--</div>-->
+
+        <!--<div class="item">-->
+        <!--<img src="assets/img/ean/2_detail.png" alt="2" style="width:100%;">-->
+        <!--</div>-->
+
+        <!--<div class="item">-->
+        <!--<img src="assets/img/ean/3_detail.png" alt="3" style="width:100%;">-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash; Left and right controls &ndash;&gt;-->
+        <!--<a class="left carousel-control" href="#myCarousel" data-slide="prev">-->
+        <!--<span class="glyphicon glyphicon-chevron-left"></span>-->
+        <!--<span class="sr-only">Previous</span>-->
+        <!--</a>-->
+        <!--<a class="right carousel-control" href="#myCarousel" data-slide="next">-->
+        <!--<span class="glyphicon glyphicon-chevron-right"></span>-->
+        <!--<span class="sr-only">Next</span>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
 
     </div>
 
-    <hr>
-
 </div>
-<!-- #Cirlce Ends -->
 
 <!-- Footer Starts -->
 <div class="footer text-center spacer">
-    <p class="wowload flipInX">
-        <a href="https://www.facebook.com/nutriarte.argentina/" target="_blank"><i
-                class="fa fa-facebook fa-2x"></i></a>
-        <a href="https://www.instagram.com/nutriarte.argentina/" target="_blank"><i
-                class="fa fa-instagram fa-2x"></i></a>
-    </p>
     Copyright 2019 NutriArte. Todos los derechos reservados.
 </div>
 <!-- # Footer Ends -->
 
-<!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
-<div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
-    <!-- The container for the modal slides -->
-    <div class="slides"></div>
-    <!-- Controls for the borderless lightbox -->
-    <h3 class="title">Title</h3>
-    <a class="prev">‹</a>
-    <a class="next">›</a>
-    <a class="close">×</a>
-    <!-- The modal dialog, which will be used to wrap the lightbox content -->
-</div>
-
-<!-- jquery -->
-<script src="assets/jquery.js"></script>
-
-<!-- wow script -->
-<script src="assets/wow/wow.min.js"></script>
-
-<!-- boostrap -->
-<script src="assets/bootstrap/js/bootstrap.js" type="text/javascript"></script>
-
-<!-- jquery mobile -->
-<script src="assets/mobile/touchSwipe.min.js"></script>
-
-<script src="assets/respond/respond.js"></script>
-
-<!-- gallery -->
-<script src="assets/gallery/jquery.blueimp-gallery.min.js"></script>
-
-<!-- custom script -->
-<!--<script src="assets/script.js"></script>-->
-
-<script>
-
-    $('.carousel').carousel({
-        interval: 4000
-    })
-</script>
-
-
 </body>
+
+<script src="assets/app/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="assets/app/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
+<script src="assets/app/js/bootstrap.js" type="text/javascript"></script>
+<script src="assets/app/js/awesome-landing-page.js" type="text/javascript"></script>
+
 </html>
