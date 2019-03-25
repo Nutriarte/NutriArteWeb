@@ -8,7 +8,7 @@
       "regular_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-549bde98-c579-4d49-9f59-279cae309642",
       "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-fe590c6b-0913-4600-ad9d-2bc60a535b48",
       "collection": "one",
-// TODO REFACTOR
+      // TODO REFACTOR
       "discount": 0.5
     },
     {
@@ -17,7 +17,7 @@
       "promo_price": 75,
       "regular_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-d9450ce0-ae71-4309-bc37-0e581b86c660",
       "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=239499703-9383ec60-1e18-4430-9a14-74756958bf66",
-    "collection": "one"
+      "collection": "one"
     },
     {
       "title": "Ejemplar 3",
@@ -142,11 +142,19 @@
       "collection": "special"
     },
     {
-      "title": "Especial dulces ",
+      "title": "Especial dulces",
       "regular_price": 200,
       "promo_price": 100,
       "regular_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-f4789f11-7431-42eb-92be-d2112f420121",
       "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-b3c4403f-7a47-486b-88e7-fc04942a1621",
+      "collection": "special"
+    },
+    {
+      "title": "Recetas populares",
+      "regular_price": 250,
+      "promo_price": 125,
+      "regular_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=239499703-1c45ef4b-99b2-4c8d-9320-719043f0958a",
+      "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=239499703-43b7f6a1-30d0-4409-90ed-985a2cbefee0",
       "collection": "special"
     },
     //Colección 1 completa,

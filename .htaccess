@@ -1,0 +1,82 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^tienda$ "http\:\/\/nutriarte\.com\.ar\/shop\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^curso$ "http\:\/\/nutriarte\.com\.ar\/courseDetails\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^nodieta$ "https\:\/\/www\.eventbrite\.com\.ar\/e\/metodo\-no\-dieta\-2018\-by\-nutriarte\-tickets\-50805071336" [R=301,L]
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^turnos$ "http\:\/\/nutriarte\.com\.ar\/nutritionalConsultations\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^eventos$ "http\:\/\/nutriarte\.com\.ar\/events\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^promofiestas$ "http\:\/\/nutriarte\.com\.ar\/shop\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^promoverano$ "https\:\/\/www\.mercadopago\.com\/mla\/checkout\/start\?pref_id\=239499703\-3faf0a36\-68ef\-4402\-b96b\-ba2de6c0cd69" [R=301,L]
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^online$ "http\:\/\/nutriarte\.com\.ar\/online\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^pagomensual$ "https\:\/\/www\.mercadopago\.com\/mla\/checkout\/start\?pref_id\=161246917\-74181ba5\-e1b0\-4293\-bfde\-0601ddf427a1" [R=301,L]
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^detalle$ "http\:\/\/nutriarte\.com\.ar\/servicesDetails\.html" [R=301,L]
+RewriteCond %{HTTP_HOST} ^nutriarte\.com\.ar$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.nutriarte\.com\.ar$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/.+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/cpanel-dcv/[0-9a-zA-Z_-]+$
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/(?:\ Ballot169)?
+RewriteCond %{REQUEST_URI} !^/\.well-known/pki-validation/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteRule ^popular$ "http\:\/\/nutriarte\.com\.ar\/servicesDetails\.html\#magazinePopus" [R=301,L]
+
