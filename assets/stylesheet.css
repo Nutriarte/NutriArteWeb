@@ -592,14 +592,14 @@ p {
 
 .cmn-t-pulse {
     color: #fff !important;
-    background-color: #ff1333;
+    background-color: #ff514d;
     font-weight: bolder;
     animation: pulse 1s ease infinite;
     transition: transform 0.2s;
 }
 
 .cmn-t-pulse:hover {
-    background-color: #4dff67 !important;
+    background-color: #82ff90 !important;
     color: #000000 !important;
 }
 

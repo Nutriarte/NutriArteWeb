@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="es">
@@ -36,12 +35,14 @@
 
     <link rel="stylesheet" href="assets/stylesheet.css">
 
+    <link rel="stylesheet" href="assets/csshake.min.css"/>
+
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
             i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
             a = s.createElement(o),
                 m = s.getElementsByTagName(o)[0];
             a.async = 1;
@@ -56,23 +57,23 @@
 
     <!--Start of Zendesk Chat Script-->
     <script type="text/javascript">
-      window.$zopim || (function (d, s) {
-        var z = $zopim = function (c) {
-          z._.push(c)
-        }, $ = z.s =
-          d.createElement(s), e = d.getElementsByTagName(s)[0];
-        z.set = function (o) {
-          z.set._.push(o)
-        };
-        z._ = [];
-        z.set._ = [];
-        $.async = !0;
-        $.setAttribute("charset", "utf-8");
-        $.src = "https://v2.zopim.com/?4O59XhgcFlzwcdsk0iDgVqle6gHIZPXp";
-        z.t = +new Date;
-        $.type = "text/javascript";
-        e.parentNode.insertBefore($, e)
-      })(document, "script");
+        window.$zopim || (function (d, s) {
+            var z = $zopim = function (c) {
+                z._.push(c)
+            }, $ = z.s =
+                d.createElement(s), e = d.getElementsByTagName(s)[0];
+            z.set = function (o) {
+                z.set._.push(o)
+            };
+            z._ = [];
+            z.set._ = [];
+            $.async = !0;
+            $.setAttribute("charset", "utf-8");
+            $.src = "https://v2.zopim.com/?4O59XhgcFlzwcdsk0iDgVqle6gHIZPXp";
+            z.t = +new Date;
+            $.type = "text/javascript";
+            e.parentNode.insertBefore($, e)
+        })(document, "script");
     </script>
     <!--End of Zendesk Chat Script-->
 
@@ -112,7 +113,7 @@
                         <li><a onclick="window.location.href='index.html#about'">¿Que hacemos?</a></li>
                         <li><a onclick="window.location.href='index.html#works'">Recetas</a></li>
                         <li><a onclick="window.location.href='index.html#team'">El equipo</a></li>
-                        <li><a onclick="window.location.href='shop.html'">Tienda</a></li>
+                        <li class="active"><a onclick="window.location.href='shop.html'">Tienda</a></li>
                         <li><a onclick="window.location.href='courseDetails.html'">Curso</a></li>
                         <li><a onclick="window.location.href='nutritionalConsultations.html'">Turnos</a></li>
 
@@ -128,32 +129,54 @@
 </div>
 <!-- #Header Starts -->
 
-<!--#Slider Starts-->
-<div id="home">
-    <div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img data-src="holder.js/900x500/auto/#777:#777" alt="900x500"
-                     src="assets/img/slider/pagoExitoso.jpg"
-                     data-holder-rendered="true">
+<!-- products -->
+<div id="products" class="spacer-ipad">
+
+    <div>
+
+        <p class="text-center  wowload fadeInLeft"></p>
+
+        <div class="row grid team  wowload fadeInUpBig">
+
+
+            <div class="col-lg-offset-4 col-lg-4 col-md-6 col-sm-6 col-xs-6">
+
+                <h2 class="text-center wowload fadeInUp cmn-t-underline" style="margin-bottom: 0px;">❤ GRACIAS POR TU COMPRA ❤</h2>
+                <h3 class="text-center wowload fadeInUp">Descarga tu ejemplar haciendo click en el botón "DESCARGAR"</h3>
+
+                <div>
+                    <!--PROMO IMG-->
+
+                    <!--REGULAR IMG-->
+                    <img src="assets/img/done.jpg" alt="done"/>
+
+                    <hr>
+
+                    <a class='btn btn-primary cmn-t-pulse' href="assets/magazines/EjemplarI.pdf" target="_blank">📕 DESCARGAR 📕</a>
+
+                </div>
+                ​
             </div>
+
+
         </div>
+
     </div>
+
 </div>
-<!--#Slider Ends-->
+<!-- products -->
 
 <!-- Footer Starts -->
 <div class="footer text-center spacer">
     <p class="wowload flipInX">
         <a href="https://www.facebook.com/nutriarte.argentina/" target="_blank"><i
                 class="fa fa-facebook fa-2x"></i></a>
-        <a href="https://www.instagram.com/nutriarte.argentina/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+        <a href="https://www.instagram.com/nutriarte.argentina/" target="_blank"><i
+                class="fa fa-instagram fa-2x"></i></a>
     </p>
     Copyright 2019 NutriArte. Todos los derechos reservados.
 </div>
 <!-- # Footer Ends -->
-
-<a href="index.html#home" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
 
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
@@ -178,7 +201,6 @@
 
 <!-- jquery mobile -->
 <script src="assets/mobile/touchSwipe.min.js"></script>
-
 <script src="assets/respond/respond.js"></script>
 
 <!-- gallery -->
@@ -187,5 +209,9 @@
 <!-- custom script -->
 <script src="assets/script.js"></script>
 
+<script src="./data.js"></script>
+
 </body>
+
 </html>
+
