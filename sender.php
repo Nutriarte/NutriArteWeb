@@ -21,7 +21,6 @@ if ($_POST['email'] != "") {
     $mensaje .= "---------------------------------- \n\n";
     $mensaje .= $_POST['comment'] . "\n\n";
     $mensaje .= "---------------------------------- \n";
-//    $mensaje .= "Enviado desde http://blog.unijimpe.net \n";
 
     // headers del email
     $headers = "From: " . $_POST['email'] . "\r\n";
