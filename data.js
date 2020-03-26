@@ -97,7 +97,7 @@ var data = {
             "regular_price": 150,
             "promo_price": 75,
             "regular_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=239499703-9d222aa5-a314-446d-a3ec-8d4dd8b7c67a",
-            "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=239499703-e5749000-4c72-44a5-8b4f-3e0454a8e281",
+            "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-5a018731-b343-4932-9688-e61fa0f1491f",
             "collection": "two"
         },
         {
