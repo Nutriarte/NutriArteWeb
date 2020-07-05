@@ -127,9 +127,9 @@ var data = {
         //SPECIALS
         {
             "title": "Especial fiestas saludables",
-            "regular_price": 200,
-            "promo_price": 100,
-            "regular_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-2a35ff45-1090-40ec-ac57-35a21887de9c",
+            "regular_price": 250,
+            "promo_price": 125,
+            "regular_url": "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=239499703-5da0bd90-5f51-4f66-9570-be3996f089d0",
             "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-7fc592c0-58d6-48c8-a34c-b66eb4b38e59",
             "collection": "special"
         },
@@ -137,7 +137,7 @@ var data = {
             "title": "Especial verano saludable",
             "regular_price": 200,
             "promo_price": 100,
-            "regular_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-49350fbd-00e7-4318-a87a-dbf396d505d9",
+            "regular_url": "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=239499703-b5af4328-310e-4f38-a8dd-3265503a2a37",
             "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-33f5271b-ac92-4b5a-a371-4edd3366df02",
             "collection": "special"
         },
@@ -145,8 +145,8 @@ var data = {
             "title": "Especial dulces",
             "regular_price": 200,
             "promo_price": 100,
-            "regular_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-f4789f11-7431-42eb-92be-d2112f420121",
-            "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-b3c4403f-7a47-486b-88e7-fc04942a1621",
+            "regular_url": "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=239499703-593cc424-771d-4449-84c5-37afd056282b",
+            "promo_url": "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=239499703-b014f10e-4cf7-44a6-82b0-b21c664af51e",
             "collection": "special"
         },
         {
@@ -163,7 +163,7 @@ var data = {
             "regular_price": 1200,
             "promo_price": 600,
             "regular_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=239499703-967be4b8-d503-4054-853c-e4f336a1cdf0",
-            "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-36d58eba-f197-4ddc-ad9f-e1236d4fa0c1",
+            "promo_url": "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=239499703-9fe9c010-7812-4ab5-9803-07b51bd0282f",
             "collection": "special"
         },
         //Colección 2 completa,
@@ -171,7 +171,7 @@ var data = {
             "title": "Colección 2 completa",
             "regular_price": 600,
             "promo_price": 300,
-            "regular_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=239499703-24bd6e89-b047-4161-ad76-b6b5804ab2cb",
+            "regular_url": "https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id=239499703-8ab56e47-3d79-47ea-aea7-28c7a6acd9f9",
             "promo_url": "https://www.mercadopago.com/mla/checkout/start?pref_id=192851636-b26939fd-f1bf-4413-a872-21eeba8ada51",
             "collection": "special"
         },
