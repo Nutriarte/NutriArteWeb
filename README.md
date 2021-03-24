@@ -1,3 +1,3 @@
 Nutriarte web
 
-Todos los derechos reservados - 2020
+Todos los derechos reservados - 2021
