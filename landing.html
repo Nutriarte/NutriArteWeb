@@ -1,4 +1,4 @@
-<!-- Version: 0.0.14 - Cambio de fuente a 'Patrick Hand' en la presentación -->
+<!-- Version: 0.0.19 - Botón Flotante en Coral (Mejor Contraste y Estética) -->
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -24,6 +24,7 @@
                         'brand-green': '#cdefb5',
                         'brand-cream': '#f3ece4',
                         'brand-text': '#4a4a4a',
+                        'brand-coral': '#FF85A1', /* Nuevo color para el botón */
                     },
                     fontFamily: {
                         sans: ['Nunito', 'sans-serif'],
@@ -209,6 +210,31 @@
             background-color: rgba(255, 255, 255, 0.8);
             border-style: solid;
         }
+
+        /* Animación Pulse Minimalista para el Botón Flotante (CORAL) */
+        @keyframes subtle-pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(255, 133, 161, 0.7); /* Coral RGB */
+                transform: scale(1);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(255, 133, 161, 0);
+                transform: scale(1.05);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(255, 133, 161, 0);
+                transform: scale(1);
+            }
+        }
+
+        .animate-custom-pulse {
+            animation: subtle-pulse 2s infinite;
+        }
+
+        /* Detener animación al interactuar para que no moleste */
+        .animate-custom-pulse:hover {
+            animation: none;
+        }
     </style>
 </head>
 
@@ -318,10 +344,10 @@
                                         controls
                                         controlsList="nofullscreen nodownload"
                                         disablePictureInPicture
-                                        poster="https://placehold.co/1080x1920/e1b8ee/ffffff?text=Cargando+Video..."
+                                        poster="./assets/landing/videos/portada/1-po.jpg"
                                 >
                                     <!-- REEMPLAZAR ESTA RUTA POR TU VIDEO: ./assets/videos/pack-organizacion.mp4 -->
-                                    <source src="./assets/landing/videos/1-po.mp4" type="video/mp4">
+                                    <source src="./assets/landing/videos/1po.mp4" type="video/mp4">
                                     Tu navegador no soporta videos HTML5.
                                 </video>
                             </div>
@@ -385,10 +411,10 @@
                                         controls
                                         controlsList="nofullscreen nodownload"
                                         disablePictureInPicture
-                                        poster="https://placehold.co/1080x1920/cdefb5/ffffff?text=Cargando+Video..."
+                                        poster="./assets/landing/videos/portada/2-pa.jpg"
                                 >
                                     <!-- REEMPLAZAR ESTA RUTA POR TU VIDEO: ./assets/videos/pack-antiinflamatorio.mp4 -->
-                                    <source src="./assets/landing/videos/2-pa.mp4" type="video/mp4">
+                                    <source src="assets/landing/videos/2pa.mp4" type="video/mp4">
                                     Tu navegador no soporta videos HTML5.
                                 </video>
                             </div>
@@ -450,10 +476,10 @@
                                         controls
                                         controlsList="nofullscreen nodownload"
                                         disablePictureInPicture
-                                        poster="https://placehold.co/1080x1920/feb202/ffffff?text=Cargando+Video..."
+                                        poster="./assets/landing/videos/portada/3-pc.jpg"
                                 >
                                     <!-- REEMPLAZAR ESTA RUTA POR TU VIDEO: ./assets/videos/pack-celebracion.mp4 -->
-                                    <source src="./assets/landing/videos/3-pc.mp4" type="video/mp4">
+                                    <source src="assets/landing/videos/3pc.mp4" type="video/mp4">
                                     Tu navegador no soporta videos HTML5.
                                 </video>
                             </div>
@@ -517,10 +543,10 @@
                                                 controls
                                                 controlsList="nofullscreen nodownload"
                                                 disablePictureInPicture
-                                                poster="https://placehold.co/1080x1920/e1b8ee/ffffff?text=Cargando+Video..."
+                                                poster="./assets/landing/videos/portada/4-ma.jpg"
                                         >
                                             <!-- REEMPLAZAR ESTA RUTA POR TU VIDEO: ./assets/videos/membresia.mp4 -->
-                                            <source src="./assets/landing/videos/4-ma.mp4" type="video/mp4">
+                                            <source src="assets/landing/videos/4ma.mp4" type="video/mp4">
                                             Tu navegador no soporta videos HTML5.
                                         </video>
                                     </div>
@@ -578,18 +604,46 @@
             <p class="text-gray-600 mb-4 font-bold font-hand text-xl">Lic. Vanina Minniti | Nutriarte</p>
             <p class="text-sm text-gray-400 mb-8">&copy; 2026 Todos los derechos reservados.</p>
 
-<!--            <div class="flex justify-center gap-6 opacity-60">
-                <div class="w-8 h-8 rounded-full bg-brand-lilac flex items-center justify-center text-white font-bold text-xs">
-                    IG
-                </div>
-                <div class="w-8 h-8 rounded-full bg-brand-green flex items-center justify-center text-white font-bold text-xs">
-                    FB
-                </div>
-                <div class="w-8 h-8 rounded-full bg-brand-yellow flex items-center justify-center text-white font-bold text-xs">
-                    WA
-                </div>
-            </div>-->
+            <!--            <div class="flex justify-center gap-6 opacity-60">
+                            <div class="w-8 h-8 rounded-full bg-brand-lilac flex items-center justify-center text-white font-bold text-xs">
+                                IG
+                            </div>
+                            <div class="w-8 h-8 rounded-full bg-brand-green flex items-center justify-center text-white font-bold text-xs">
+                                FB
+                            </div>
+                            <div class="w-8 h-8 rounded-full bg-brand-yellow flex items-center justify-center text-white font-bold text-xs">
+                                WA
+                            </div>
+                        </div>-->
         </footer>
+
+    </div>
+
+    <!-- BOTÓN FLOTANTE: Ir a la Tienda -->
+    <!-- Modificado: Centrado en mobile, derecha en desktop -->
+    <div class="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center sm:bottom-8 sm:left-auto sm:right-8 sm:translate-x-0 sm:items-end">
+
+        <!-- Opciones del Menú (Ocultas por defecto) -->
+        <div id="floating-menu" class="flex flex-col gap-3 mb-4 transition-all duration-300 transform scale-0 opacity-0 origin-bottom sm:origin-bottom-right">
+
+            <a href="https://tiendanutriarte.myshopify.com/" target="_blank"
+               class="flex items-center gap-3 bg-white text-gray-700 px-5 py-3 rounded-full shadow-md border-2 border-brand-green hover:bg-brand-green hover:text-brand-text transition-colors font-patrick text-lg">
+                <span>Resto del Mundo</span> <span class="text-2xl">🌍</span>
+            </a>
+
+            <a href="https://nutriarte.empretienda.com.ar/" target="_blank"
+               class="flex items-center gap-3 bg-white text-gray-700 px-5 py-3 rounded-full shadow-md border-2 border-brand-yellow hover:bg-brand-yellow hover:text-white transition-colors font-patrick text-lg">
+                <span>Argentina</span> <span class="text-2xl">🇦🇷</span>
+            </a>
+
+        </div>
+
+        <!-- Botón Principal (CORAL) - Texto Actualizado -->
+        <button id="floating-btn"
+                class="group bg-brand-coral text-white font-patrick text-xl px-6 py-3 rounded-full shadow-lg border-4 border-white hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2 animate-custom-pulse">
+            <span class="text-2xl group-hover:rotate-12 transition-transform">✨</span>
+            <span>Ir a la Tienda</span>
+        </button>
 
     </div>
 
@@ -627,6 +681,32 @@
 
         videos.forEach(video => {
             observer.observe(video);
+        });
+
+        // SCRIPT PARA EL BOTÓN FLOTANTE
+        const floatBtn = document.getElementById('floating-btn');
+        const floatMenu = document.getElementById('floating-menu');
+        let isMenuOpen = false;
+
+        floatBtn.addEventListener('click', (e) => {
+            e.stopPropagation(); // Evitar que el click se propague al document
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                floatMenu.classList.remove('scale-0', 'opacity-0');
+                floatMenu.classList.add('scale-100', 'opacity-100');
+            } else {
+                floatMenu.classList.add('scale-0', 'opacity-0');
+                floatMenu.classList.remove('scale-100', 'opacity-100');
+            }
+        });
+
+        // Cerrar al hacer click fuera
+        document.addEventListener('click', (e) => {
+            if (isMenuOpen && !floatMenu.contains(e.target) && e.target !== floatBtn) {
+                isMenuOpen = false;
+                floatMenu.classList.add('scale-0', 'opacity-0');
+                floatMenu.classList.remove('scale-100', 'opacity-100');
+            }
         });
     });
 </script>
