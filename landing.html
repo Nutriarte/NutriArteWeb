@@ -1,4 +1,4 @@
-<!-- Version: 0.0.19 - Botón Flotante en Coral (Mejor Contraste y Estética) -->
+<!-- Version: 0.0.22 - Botón Play Personalizado Centrado -->
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -24,12 +24,12 @@
                         'brand-green': '#cdefb5',
                         'brand-cream': '#f3ece4',
                         'brand-text': '#4a4a4a',
-                        'brand-coral': '#FF85A1', /* Nuevo color para el botón */
+                        'brand-coral': '#FF85A1',
                     },
                     fontFamily: {
                         sans: ['Nunito', 'sans-serif'],
                         hand: ['Pacifico', 'cursive'],
-                        patrick: ['Patrick Hand', 'cursive'], /* Nueva fuente para la presentación */
+                        patrick: ['Patrick Hand', 'cursive'],
                     }
                 }
             }
@@ -63,178 +63,45 @@
 
         /* Animación suave */
         @keyframes floatBlob {
-            0% {
-                transform: translate(0, 0) rotate(0deg);
-            }
-            50% {
-                transform: translate(20px, 30px) rotate(5deg);
-            }
-            100% {
-                transform: translate(0, 0) rotate(0deg);
-            }
+            0% { transform: translate(0, 0) rotate(0deg); }
+            50% { transform: translate(20px, 30px) rotate(5deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
         }
 
-        /* --- BLOBS ORIGINALES --- */
-        .blob-1 {
-            width: 800px;
-            height: 700px;
-            top: -150px;
-            left: -150px;
-            background-color: #e1b8ee; /* Lila */
-            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-            animation: floatBlob 15s infinite ease-in-out;
-        }
-
-        .blob-2 {
-            width: 700px;
-            height: 650px;
-            top: 45%;
-            right: -250px;
-            background-color: #cdefb5; /* Verde */
-            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-            animation: floatBlob 18s infinite ease-in-out reverse;
-        }
-
-        .blob-3 {
-            width: 600px;
-            height: 600px;
-            bottom: 5%;
-            left: -150px;
-            background-color: #feb202; /* Amarillo */
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            opacity: 0.3;
-            animation: floatBlob 20s infinite ease-in-out;
-        }
-
-        /* --- NUEVOS BLOBS --- */
-        .blob-4 {
-            width: 500px;
-            height: 500px;
-            top: -100px;
-            right: -100px;
-            background-color: #cdefb5;
-            border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
-            animation: floatBlob 22s infinite ease-in-out reverse;
-            opacity: 0.6;
-        }
-
-        .blob-5 {
-            width: 400px;
-            height: 400px;
-            top: 25%;
-            left: -100px;
-            background-color: #feb202;
-            border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
-            opacity: 0.25;
-            animation: floatBlob 19s infinite ease-in-out;
-        }
-
-        .blob-6 {
-            width: 300px;
-            height: 300px;
-            bottom: 20%;
-            right: 10%;
-            background-color: #e1b8ee;
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            opacity: 0.4;
-            animation: floatBlob 16s infinite ease-in-out reverse;
-        }
+        /* --- BLOBS --- */
+        .blob-1 { width: 800px; height: 700px; top: -150px; left: -150px; background-color: #e1b8ee; border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; animation: floatBlob 15s infinite ease-in-out; }
+        .blob-2 { width: 700px; height: 650px; top: 45%; right: -250px; background-color: #cdefb5; border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; animation: floatBlob 18s infinite ease-in-out reverse; }
+        .blob-3 { width: 600px; height: 600px; bottom: 5%; left: -150px; background-color: #feb202; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; opacity: 0.3; animation: floatBlob 20s infinite ease-in-out; }
+        .blob-4 { width: 500px; height: 500px; top: -100px; right: -100px; background-color: #cdefb5; border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%; animation: floatBlob 22s infinite ease-in-out reverse; opacity: 0.6; }
+        .blob-5 { width: 400px; height: 400px; top: 25%; left: -100px; background-color: #feb202; border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%; opacity: 0.25; animation: floatBlob 19s infinite ease-in-out; }
+        .blob-6 { width: 300px; height: 300px; bottom: 20%; right: 10%; background-color: #e1b8ee; border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; opacity: 0.4; animation: floatBlob 16s infinite ease-in-out reverse; }
 
         /* ELEMENTOS DECORATIVOS (Doodles) */
-        .doodle {
-            position: absolute;
-            z-index: -5;
-            pointer-events: none;
-            opacity: 0.6;
-        }
+        .doodle { position: absolute; z-index: -5; pointer-events: none; opacity: 0.6; }
 
         /* Estilos de Botones */
-        .btn-base {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.75rem 1.5rem;
-            font-size: 1rem;
-            font-weight: 800;
-            border-radius: 9999px;
-            transition: all 0.3s ease;
-            text-align: center;
-            min-width: 200px;
-            letter-spacing: 0.025em;
-        }
-
-        .btn-solid {
-            color: #fff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .btn-solid:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-        }
-
-        .btn-outline {
-            background-color: rgba(255, 255, 255, 0.6);
-            border-width: 2px;
-            backdrop-filter: blur(4px);
-        }
-
-        .btn-outline:hover {
-            transform: translateY(-3px);
-            background-color: #fff;
-        }
+        .btn-base { display: inline-flex; align-items: center; justify-content: center; padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 800; border-radius: 9999px; transition: all 0.3s ease; text-align: center; min-width: 200px; letter-spacing: 0.025em; }
+        .btn-solid { color: #fff; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); }
+        .btn-solid:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); }
+        .btn-outline { background-color: rgba(255, 255, 255, 0.6); border-width: 2px; backdrop-filter: blur(4px); }
+        .btn-outline:hover { transform: translateY(-3px); background-color: #fff; }
 
         /* Tarjetas */
-        .nav-card {
-            background-color: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            border: 2px solid white;
-            border-radius: 1.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .nav-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1);
-        }
+        .nav-card { background-color: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 2px solid white; border-radius: 1.5rem; transition: all 0.3s ease; }
+        .nav-card:hover { transform: scale(1.03); box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1); }
 
         /* Contenedores de Acción */
-        .action-box {
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 2rem;
-            border: 2px dashed rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .action-box:hover {
-            background-color: rgba(255, 255, 255, 0.8);
-            border-style: solid;
-        }
+        .action-box { background-color: rgba(255, 255, 255, 0.5); border-radius: 2rem; border: 2px dashed rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        .action-box:hover { background-color: rgba(255, 255, 255, 0.8); border-style: solid; }
 
         /* Animación Pulse Minimalista para el Botón Flotante (CORAL) */
         @keyframes subtle-pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(255, 133, 161, 0.7); /* Coral RGB */
-                transform: scale(1);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(255, 133, 161, 0);
-                transform: scale(1.05);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(255, 133, 161, 0);
-                transform: scale(1);
-            }
+            0% { box-shadow: 0 0 0 0 rgba(255, 133, 161, 0.7); transform: scale(1); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 133, 161, 0); transform: scale(1.05); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 133, 161, 0); transform: scale(1); }
         }
-
-        .animate-custom-pulse {
-            animation: subtle-pulse 2s infinite;
-        }
-
-        /* Detener animación al interactuar para que no moleste */
-        .animate-custom-pulse:hover {
-            animation: none;
-        }
+        .animate-custom-pulse { animation: subtle-pulse 2s infinite; }
+        .animate-custom-pulse:hover { animation: none; }
     </style>
 </head>
 
@@ -252,22 +119,13 @@
 
     <!-- DOODLES -->
     <div class="doodle top-[400px] left-[-20px] md:left-10 text-brand-green opacity-80 transform -rotate-12">
-        <svg width="100" height="40" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="3"
-             stroke-linecap="round">
-            <path d="M5 20 Q 25 5, 50 20 T 95 20"/>
-        </svg>
+        <svg width="100" height="40" viewBox="0 0 100 40" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M5 20 Q 25 5, 50 20 T 95 20"/></svg>
     </div>
     <div class="doodle top-[800px] right-5 text-brand-yellow opacity-60">
-        <svg width="80" height="80" viewBox="0 0 100 100" fill="currentColor">
-            <circle cx="20" cy="20" r="5"/>
-            <circle cx="50" cy="80" r="8"/>
-            <circle cx="80" cy="30" r="4"/>
-        </svg>
+        <svg width="80" height="80" viewBox="0 0 100 100" fill="currentColor"><circle cx="20" cy="20" r="5"/><circle cx="50" cy="80" r="8"/><circle cx="80" cy="30" r="4"/></svg>
     </div>
     <div class="doodle top-[1100px] left-10 md:left-20 text-brand-text opacity-10 transform rotate-45">
-        <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12.5 2C16.64 2 20 5.36 20 9.5C20 12.37 18.5 14.92 16.23 16.27L14.59 22H10.41L8.77 16.27C6.5 14.92 5 12.37 5 9.5C5 5.36 8.36 2 12.5 2ZM12.5 4C9.46 4 7 6.46 7 9.5C7 11.5 8.08 13.28 9.74 14.3L11.16 19.26C11.23 19.5 11.36 19.72 11.54 19.89C11.72 20.06 11.94 20.17 12.18 20.21C12.42 20.25 12.67 20.22 12.9 20.12C13.13 20.02 13.33 19.86 13.47 19.66L14.74 14.3C16.4 13.28 17.5 11.5 17.5 9.5C17.5 6.46 15.04 4 12 4H12.5Z"></path>
-        </svg>
+        <svg width="64" height="64" viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 2C16.64 2 20 5.36 20 9.5C20 12.37 18.5 14.92 16.23 16.27L14.59 22H10.41L8.77 16.27C6.5 14.92 5 12.37 5 9.5C5 5.36 8.36 2 12.5 2ZM12.5 4C9.46 4 7 6.46 7 9.5C7 11.5 8.08 13.28 9.74 14.3L11.16 19.26C11.23 19.5 11.36 19.72 11.54 19.89C11.72 20.06 11.94 20.17 12.18 20.21C12.42 20.25 12.67 20.22 12.9 20.12C13.13 20.02 13.33 19.86 13.47 19.66L14.74 14.3C16.4 13.28 17.5 11.5 17.5 9.5C17.5 6.46 15.04 4 12 4H12.5Z"></path></svg>
     </div>
 
 
@@ -276,47 +134,38 @@
 
         <!-- Sección Hero -->
         <header class="container mx-auto px-6 pt-12 pb-12 flex flex-col items-center justify-center text-center">
-
             <div class="relative mt-24 mb-12 bg-white/60 backdrop-blur-md p-8 pt-16 rounded-3xl border-2 border-white shadow-xl max-w-3xl mx-auto">
                 <div class="absolute -top-24 left-1/2 transform -translate-x-1/2">
-                    <img src="./assets/landing/Profile.jpg" alt="Foto Vani"
-                         class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover">
+                    <img src="./assets/landing/Profile.jpg" alt="Foto Vani" class="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover">
                 </div>
-                <!-- TEXTO ACTUALIZADO CON FUENTE PATRICK HAND -->
                 <p class="text-2xl md:text-3xl text-gray-700 leading-relaxed font-patrick font-medium tracking-wide">
-                    Hola, bienvenida. Soy Vani, Nutricionista (MN 7597, UBA) especialista en organización alimentaria
-                    antiinflamatoria.
+                    Hola, bienvenida. Soy Vani, Nutricionista (MN 7597, UBA) especialista en organización alimentaria antiinflamatoria.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-6xl mt-4">
                 <a href="#pack-organizacion" class="nav-card p-6 text-center group">
                     <span class="text-4xl block transform group-hover:scale-110 transition-transform">🗓️</span>
-                    <h3 class="text-xl font-extrabold text-[#8e6ca6] mt-3 font-hand tracking-wide">Pack <br>
-                        Organización</h3>
+                    <h3 class="text-xl font-extrabold text-[#8e6ca6] mt-3 font-hand tracking-wide">Pack <br> Organización</h3>
                 </a>
                 <a href="#pack-antiinflamatorio" class="nav-card p-6 text-center group">
                     <span class="text-4xl block transform group-hover:scale-110 transition-transform">🌿</span>
-                    <h3 class="text-xl font-extrabold text-[#7da36d] mt-3 font-hand tracking-wide">Pack <br>Antiinflamatorio
-                    </h3>
+                    <h3 class="text-xl font-extrabold text-[#7da36d] mt-3 font-hand tracking-wide">Pack <br>Antiinflamatorio</h3>
                 </a>
                 <a href="#pack-celebracion" class="nav-card p-6 text-center group">
                     <span class="text-4xl block transform group-hover:scale-110 transition-transform">🎉</span>
-                    <h3 class="text-xl font-extrabold text-[#d99600] mt-3 font-hand tracking-wide">Pack <br>Celebración
-                    </h3>
+                    <h3 class="text-xl font-extrabold text-[#d99600] mt-3 font-hand tracking-wide">Pack <br>Celebración</h3>
                 </a>
                 <a href="#membresia" class="nav-card p-6 text-center group">
                     <span class="text-4xl block transform group-hover:scale-110 transition-transform">🤝</span>
-                    <h3 class="text-xl font-extrabold text-[#8e6ca6] mt-3 font-hand tracking-wide">Membresía <br>Antiinflamatoria
-                    </h3>
+                    <h3 class="text-xl font-extrabold text-[#8e6ca6] mt-3 font-hand tracking-wide">Membresía <br>Antiinflamatoria</h3>
                 </a>
             </div>
         </header>
 
         <!-- SEPARADOR GARABATO -->
         <div class="w-full flex justify-center items-center -mt-4 mb-8 relative z-20 opacity-60">
-            <svg width="200" height="20" viewBox="0 0 200 20" fill="none" stroke="#e1b8ee" stroke-width="4"
-                 stroke-linecap="round" stroke-linejoin="round">
+            <svg width="200" height="20" viewBox="0 0 200 20" fill="none" stroke="#e1b8ee" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M5 10c30-20 60 20 90 0s60 20 90 0"/>
             </svg>
         </div>
@@ -333,52 +182,44 @@
                 <div class="container mx-auto px-6 max-w-5xl">
                     <div class="flex flex-col md:flex-row items-center gap-12">
 
-                        <!-- VIDEO: HTML5 NATIVO -->
+                        <!-- VIDEO: Contenedor Vertical -->
                         <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-lilac/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white">
+                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-lilac/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
                                 <video
-                                        class="w-full h-full object-cover lazy-video"
+                                        class="w-full h-full object-cover video-player"
                                         loop
-                                        muted
                                         playsinline
-                                        controls
                                         controlsList="nofullscreen nodownload"
                                         disablePictureInPicture
                                         poster="./assets/landing/videos/portada/1-po.jpg"
                                 >
-                                    <!-- REEMPLAZAR ESTA RUTA POR TU VIDEO: ./assets/videos/pack-organizacion.mp4 -->
                                     <source src="./assets/landing/videos/1po.mp4" type="video/mp4">
                                     Tu navegador no soporta videos HTML5.
                                 </video>
+                                <!-- Custom Play Overlay -->
+                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
+                                        <svg class="w-8 h-8 text-[#8e6ca6] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Contenido -->
                         <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#8e6ca6] mb-6 font-hand">Pack
-                                Organización</h2>
+                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#8e6ca6] mb-6 font-hand">Pack Organización</h2>
                             <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                                Más de <strong>400 recetas fáciles, económicas e imprimibles</strong> para desayunos,
-                                almuerzos, cenas, viandas, snacks y más, pensadas para organizar tu semana sin estrés.
+                                Más de <strong>400 recetas fáciles, económicas e imprimibles</strong> para desayunos, almuerzos, cenas, viandas, snacks y más, pensadas para organizar tu semana sin estrés.
                             </p>
                             <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                                Incluye <strong>2 cursos</strong>: uno de planificación con mi método <em>"Organiza y
-                                fluye"</em> y otro de nutrición y cambio de hábitos.
+                                Incluye <strong>2 cursos</strong>: uno de planificación con mi método <em>"Organiza y fluye"</em> y otro de nutrición y cambio de hábitos.
                             </p>
 
                             <div class="mt-8 p-8 action-box bg-white/60 border-brand-lilac/30">
                                 <h3 class="text-2xl font-bold text-[#8e6ca6] mb-6">¡Quiero organizarme YA!</h3>
                                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-organizacion-400-recetas-y-2-cursos"
-                                       target="_blank"
-                                       class="btn-base btn-solid bg-[#e1b8ee] text-[#5e3c76] hover:bg-[#d49de6] w-full sm:w-auto">
-                                        Desde Argentina 🇦🇷
-                                    </a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-organizacion-400-recetas-y-2-cursos"
-                                       target="_blank"
-                                       class="btn-base btn-outline border-[#e1b8ee] text-[#8e6ca6] w-full sm:w-auto">
-                                        Resto del Mundo 🌍
-                                    </a>
+                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-organizacion-400-recetas-y-2-cursos" target="_blank" class="btn-base btn-solid bg-[#e1b8ee] text-[#5e3c76] hover:bg-[#d49de6] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
+                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-organizacion-400-recetas-y-2-cursos" target="_blank" class="btn-base btn-outline border-[#e1b8ee] text-[#8e6ca6] w-full sm:w-auto">Resto del Mundo 🌍</a>
                                 </div>
                             </div>
                         </div>
@@ -386,13 +227,9 @@
                 </div>
             </section>
 
-            <!-- Separador de Ingredientes -->
+            <!-- Separador -->
             <div class="flex justify-center items-center gap-8 py-4 opacity-40 overflow-hidden">
-                <span class="text-2xl">🍅</span>
-                <span class="text-2xl">🥦</span>
-                <span class="text-2xl">🥕</span>
-                <span class="text-2xl">🥑</span>
-                <span class="text-2xl">🍋</span>
+                <span class="text-2xl">🍅</span><span class="text-2xl">🥦</span><span class="text-2xl">🥕</span><span class="text-2xl">🥑</span><span class="text-2xl">🍋</span>
             </div>
 
             <!-- 2. Pack Antiinflamatorio -->
@@ -400,52 +237,44 @@
                 <div class="container mx-auto px-6 max-w-5xl">
                     <div class="flex flex-col md:flex-row-reverse items-center gap-12">
 
-                        <!-- VIDEO: HTML5 NATIVO -->
+                        <!-- VIDEO: Contenedor Vertical -->
                         <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-green/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white">
+                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-green/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
                                 <video
-                                        class="w-full h-full object-cover lazy-video"
+                                        class="w-full h-full object-cover video-player"
                                         loop
-                                        muted
                                         playsinline
-                                        controls
                                         controlsList="nofullscreen nodownload"
                                         disablePictureInPicture
                                         poster="./assets/landing/videos/portada/2-pa.jpg"
                                 >
-                                    <!-- REEMPLAZAR ESTA RUTA POR TU VIDEO: ./assets/videos/pack-antiinflamatorio.mp4 -->
-                                    <source src="assets/landing/videos/2pa.mp4" type="video/mp4">
+                                    <source src="./assets/landing/videos/2pa.mp4" type="video/mp4">
                                     Tu navegador no soporta videos HTML5.
                                 </video>
+                                <!-- Custom Play Overlay -->
+                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
+                                        <svg class="w-8 h-8 text-[#7da36d] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Contenido -->
                         <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#7da36d] mb-6 font-hand">Pack
-                                Antiinflamatorio</h2>
+                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#7da36d] mb-6 font-hand">Pack Antiinflamatorio</h2>
                             <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                                Más de <strong>100 recetas</strong> pensadas para nutrir la microbiota, mejorar la
-                                digestión, regular la glucosa y ayudar a reducir la inflamación.
+                                Más de <strong>100 recetas</strong> pensadas para nutrir la microbiota, mejorar la digestión, regular la glucosa y ayudar a reducir la inflamación.
                             </p>
                             <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                                Propuestas para alcanzar las <strong>20–30 plantas semanales</strong>. Una forma
-                                práctica, rica y sin dietas extremas de cuidarte.
+                                Propuestas para alcanzar las <strong>20–30 plantas semanales</strong>. Una forma práctica, rica y sin dietas extremas de cuidarte.
                             </p>
 
                             <div class="mt-8 p-8 action-box bg-white/60 border-brand-green/30">
                                 <h3 class="text-2xl font-bold text-[#7da36d] mb-6">¡Quiero desinflamarme YA!</h3>
                                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-antinflamatorio-semanal"
-                                       target="_blank"
-                                       class="btn-base btn-solid bg-[#cdefb5] text-[#4d6b40] hover:bg-[#bcefa0] w-full sm:w-auto">
-                                        Desde Argentina 🇦🇷
-                                    </a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-antinflamatorio-semanal"
-                                       target="_blank"
-                                       class="btn-base btn-outline border-[#cdefb5] text-[#7da36d] w-full sm:w-auto">
-                                        Resto del Mundo 🌍
-                                    </a>
+                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-antinflamatorio-semanal" target="_blank" class="btn-base btn-solid bg-[#cdefb5] text-[#4d6b40] hover:bg-[#bcefa0] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
+                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-antinflamatorio-semanal" target="_blank" class="btn-base btn-outline border-[#cdefb5] text-[#7da36d] w-full sm:w-auto">Resto del Mundo 🌍</a>
                                 </div>
                             </div>
                         </div>
@@ -453,11 +282,9 @@
                 </div>
             </section>
 
-            <!-- Separador de Puntos -->
+            <!-- Separador -->
             <div class="w-full flex justify-center gap-2 py-4">
-                <div class="w-2 h-2 bg-brand-lilac rounded-full"></div>
-                <div class="w-2 h-2 bg-brand-green rounded-full"></div>
-                <div class="w-2 h-2 bg-brand-yellow rounded-full"></div>
+                <div class="w-2 h-2 bg-brand-lilac rounded-full"></div><div class="w-2 h-2 bg-brand-green rounded-full"></div><div class="w-2 h-2 bg-brand-yellow rounded-full"></div>
             </div>
 
             <!-- 3. Pack Celebración -->
@@ -465,52 +292,44 @@
                 <div class="container mx-auto px-6 max-w-5xl">
                     <div class="flex flex-col md:flex-row items-center gap-12">
 
-                        <!-- VIDEO: HTML5 NATIVO -->
+                        <!-- VIDEO: Contenedor Vertical -->
                         <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-yellow/10 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white">
+                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-yellow/10 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
                                 <video
-                                        class="w-full h-full object-cover lazy-video"
+                                        class="w-full h-full object-cover video-player"
                                         loop
-                                        muted
                                         playsinline
-                                        controls
                                         controlsList="nofullscreen nodownload"
                                         disablePictureInPicture
                                         poster="./assets/landing/videos/portada/3-pc.jpg"
                                 >
-                                    <!-- REEMPLAZAR ESTA RUTA POR TU VIDEO: ./assets/videos/pack-celebracion.mp4 -->
-                                    <source src="assets/landing/videos/3pc.mp4" type="video/mp4">
+                                    <source src="./assets/landing/videos/3pc.mp4" type="video/mp4">
                                     Tu navegador no soporta videos HTML5.
                                 </video>
+                                <!-- Custom Play Overlay -->
+                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
+                                        <svg class="w-8 h-8 text-[#d99600] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <!-- Contenido -->
                         <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#d99600] mb-6 font-hand">Pack
-                                Celebración</h2>
+                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#d99600] mb-6 font-hand">Pack Celebración</h2>
                             <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                                Recetarios con ideas fáciles y rendidoras para cumpleaños, juntadas y encuentros
-                                especiales.
+                                Recetarios con ideas fáciles y rendidoras para cumpleaños, juntadas y encuentros especiales.
                             </p>
                             <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                                Mesas dulces y saladas, pizzas, tacos y opciones tipo catering. Trae de <strong>REGALO
-                                el curso Emprendé Casero</strong>.
+                                Mesas dulces y saladas, pizzas, tacos y opciones tipo catering. Trae de <strong>REGALO el curso Emprendé Casero</strong>.
                             </p>
 
                             <div class="mt-8 p-8 action-box bg-white/60 border-brand-yellow/30">
                                 <h3 class="text-2xl font-bold text-[#d99600] mb-6">¡Quiero festejar la vida YA!</h3>
                                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-celebracion"
-                                       target="_blank"
-                                       class="btn-base btn-solid bg-[#feb202] text-white hover:bg-[#e5a000] w-full sm:w-auto">
-                                        Desde Argentina 🇦🇷
-                                    </a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-celebracion"
-                                       target="_blank"
-                                       class="btn-base btn-outline border-[#feb202] text-[#d99600] w-full sm:w-auto">
-                                        Resto del Mundo 🌍
-                                    </a>
+                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-celebracion" target="_blank" class="btn-base btn-solid bg-[#feb202] text-white hover:bg-[#e5a000] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
+                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-celebracion" target="_blank" class="btn-base btn-outline border-[#feb202] text-[#d99600] w-full sm:w-auto">Resto del Mundo 🌍</a>
                                 </div>
                             </div>
                         </div>
@@ -532,51 +351,44 @@
                         <div class="container mx-auto px-6 max-w-5xl">
                             <div class="flex flex-col md:flex-row-reverse items-center gap-12">
 
-                                <!-- VIDEO: HTML5 NATIVO -->
+                                <!-- VIDEO: Contenedor Vertical -->
                                 <div class="w-full md:w-1/3 flex justify-center">
-                                    <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-lilac/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white">
+                                    <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-lilac/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
                                         <video
-                                                class="w-full h-full object-cover lazy-video"
+                                                class="w-full h-full object-cover video-player"
                                                 loop
-                                                muted
                                                 playsinline
-                                                controls
                                                 controlsList="nofullscreen nodownload"
                                                 disablePictureInPicture
                                                 poster="./assets/landing/videos/portada/4-ma.jpg"
                                         >
-                                            <!-- REEMPLAZAR ESTA RUTA POR TU VIDEO: ./assets/videos/membresia.mp4 -->
-                                            <source src="assets/landing/videos/4ma.mp4" type="video/mp4">
+                                            <source src="./assets/landing/videos/4ma.mp4" type="video/mp4">
                                             Tu navegador no soporta videos HTML5.
                                         </video>
+                                        <!-- Custom Play Overlay -->
+                                        <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10">
+                                            <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
+                                                <svg class="w-8 h-8 text-[#8e6ca6] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <!-- Contenido -->
                                 <div class="w-full md:w-2/3 text-center md:text-left">
-                                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#8e6ca6] mb-6 font-hand">
-                                        Membresía Antiinflamatoria</h2>
+                                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#8e6ca6] mb-6 font-hand">Membresía Antiinflamatoria</h2>
                                     <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                                        Es nuestro espacio más cercano. Trabajamos en comunidad para mejorar tu salud
-                                        desde la alimentación y el cambio de hábitos.
+                                        Es nuestro espacio más cercano. Trabajamos en comunidad para mejorar tu salud desde la alimentación y el cambio de hábitos.
                                     </p>
                                     <p class="text-lg text-gray-600 mb-4 leading-relaxed">
-                                        Contenidos nuevos cada mes, desafíos y comunidad. Ideal si buscás <strong>guía,
-                                        motivación y estructura</strong>.
+                                        Contenidos nuevos cada mes, desafíos y comunidad. Ideal si buscás <strong>guía, motivación y estructura</strong>.
                                     </p>
 
                                     <div class="mt-8 p-8 action-box bg-white/70 border-brand-lilac/30">
-                                        <h3 class="text-2xl font-bold text-[#8e6ca6] mb-6">¡Quiero sumarme a la
-                                            membresía!</h3>
+                                        <h3 class="text-2xl font-bold text-[#8e6ca6] mb-6">¡Quiero sumarme a la membresía!</h3>
                                         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                            <a href="https://forms.gle/NWrWDVV55HjrZjb87" target="_blank"
-                                               class="btn-base btn-solid bg-[#e1b8ee] text-[#5e3c76] hover:bg-[#d49de6] w-full sm:w-auto">
-                                                Desde Argentina 🇦🇷
-                                            </a>
-                                            <a href="https://forms.gle/NWrWDVV55HjrZjb87" target="_blank"
-                                               class="btn-base btn-outline border-[#e1b8ee] text-[#8e6ca6] w-full sm:w-auto">
-                                                Resto del Mundo 🌍
-                                            </a>
+                                            <a href="https://forms.gle/NWrWDVV55HjrZjb87" target="_blank" class="btn-base btn-solid bg-[#e1b8ee] text-[#5e3c76] hover:bg-[#d49de6] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
+                                            <a href="https://forms.gle/NWrWDVV55HjrZjb87" target="_blank" class="btn-base btn-outline border-[#e1b8ee] text-[#8e6ca6] w-full sm:w-auto">Resto del Mundo 🌍</a>
                                         </div>
                                     </div>
                                 </div>
@@ -590,9 +402,7 @@
             <div class="container mx-auto px-6 pb-12 mt-12 relative z-10">
                 <div class="max-w-3xl mx-auto bg-white/70 border-l-4 border-brand-yellow rounded-r-xl p-6 text-center shadow-sm">
                     <p class="text-sm md:text-base text-gray-600 italic">
-                        <span class="font-bold text-[#d99600]">Nota importante:</span> No todos los recetarios son sin
-                        gluten/sin lácteos y huevos, por eso, quiero contarte que todos los packs cuentan con una guía
-                        de reemplazos.
+                        <span class="font-bold text-[#d99600]">Nota importante:</span> No todos los recetarios son sin gluten/sin lácteos y huevos, por eso, quiero contarte que todos los packs cuentan con una guía de reemplazos.
                     </p>
                 </div>
             </div>
@@ -603,93 +413,65 @@
         <footer class="text-center py-12 px-6 bg-white/40 border-t border-white relative z-10">
             <p class="text-gray-600 mb-4 font-bold font-hand text-xl">Lic. Vanina Minniti | Nutriarte</p>
             <p class="text-sm text-gray-400 mb-8">&copy; 2026 Todos los derechos reservados.</p>
-
-            <!--            <div class="flex justify-center gap-6 opacity-60">
-                            <div class="w-8 h-8 rounded-full bg-brand-lilac flex items-center justify-center text-white font-bold text-xs">
-                                IG
-                            </div>
-                            <div class="w-8 h-8 rounded-full bg-brand-green flex items-center justify-center text-white font-bold text-xs">
-                                FB
-                            </div>
-                            <div class="w-8 h-8 rounded-full bg-brand-yellow flex items-center justify-center text-white font-bold text-xs">
-                                WA
-                            </div>
-                        </div>-->
         </footer>
 
     </div>
 
-    <!-- BOTÓN FLOTANTE: Ir a la Tienda -->
-    <!-- Modificado: Centrado en mobile, derecha en desktop -->
+    <!-- BOTÓN FLOTANTE: Ir a la Tienda (Coral) -->
     <div class="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center sm:bottom-8 sm:left-auto sm:right-8 sm:translate-x-0 sm:items-end">
 
         <!-- Opciones del Menú (Ocultas por defecto) -->
         <div id="floating-menu" class="flex flex-col gap-3 mb-4 transition-all duration-300 transform scale-0 opacity-0 origin-bottom sm:origin-bottom-right">
-
             <a href="https://tiendanutriarte.myshopify.com/" target="_blank"
                class="flex items-center gap-3 bg-white text-gray-700 px-5 py-3 rounded-full shadow-md border-2 border-brand-green hover:bg-brand-green hover:text-brand-text transition-colors font-patrick text-lg">
                 <span>Resto del Mundo</span> <span class="text-2xl">🌍</span>
             </a>
-
             <a href="https://nutriarte.empretienda.com.ar/" target="_blank"
                class="flex items-center gap-3 bg-white text-gray-700 px-5 py-3 rounded-full shadow-md border-2 border-brand-yellow hover:bg-brand-yellow hover:text-white transition-colors font-patrick text-lg">
                 <span>Argentina</span> <span class="text-2xl">🇦🇷</span>
             </a>
-
         </div>
 
-        <!-- Botón Principal (CORAL) - Texto Actualizado -->
+        <!-- Botón Principal -->
         <button id="floating-btn"
                 class="group bg-brand-coral text-white font-patrick text-xl px-6 py-3 rounded-full shadow-lg border-4 border-white hover:scale-105 active:scale-95 transition-all duration-300 flex items-center gap-2 animate-custom-pulse">
             <span class="text-2xl group-hover:rotate-12 transition-transform">✨</span>
             <span>Ir a la Tienda</span>
         </button>
-
     </div>
 
 </div>
 
-<!-- SCRIPT PARA AUTOPLAY AL SCROLL -->
+<!-- SCRIPT PARA INTERACTIVIDAD -->
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const videos = document.querySelectorAll(".lazy-video");
 
-        // Configuración del Intersection Observer
-        const observerOptions = {
-            root: null, // viewport
-            rootMargin: "0px",
-            threshold: 0.5 // Se activa cuando el 50% del video es visible
-        };
+        // --- 1. Lógica para los Videos "Click to Play" ---
+        const playOverlays = document.querySelectorAll('.play-overlay');
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    // Si el video entra en pantalla, reproducir
-                    const playPromise = entry.target.play();
-                    if (playPromise !== undefined) {
-                        playPromise.catch(error => {
-                            // Prevenir errores de autoplay si el navegador bloquea
-                            console.log("Autoplay prevenido por el navegador:", error);
-                        });
-                    }
-                } else {
-                    // Si el video sale de pantalla, pausar
-                    entry.target.pause();
+        playOverlays.forEach(overlay => {
+            overlay.addEventListener('click', function() {
+                // Encontrar el video hermano dentro del contenedor padre
+                const video = this.parentElement.querySelector('video');
+
+                if (video) {
+                    // Reproducir
+                    video.play();
+                    // Habilitar controles nativos
+                    video.controls = true;
+                    // Ocultar este botón de overlay para siempre (o hasta recargar)
+                    this.style.display = 'none';
                 }
             });
-        }, observerOptions);
-
-        videos.forEach(video => {
-            observer.observe(video);
         });
 
-        // SCRIPT PARA EL BOTÓN FLOTANTE
+        // --- 2. Lógica para el Botón Flotante ---
         const floatBtn = document.getElementById('floating-btn');
         const floatMenu = document.getElementById('floating-menu');
         let isMenuOpen = false;
 
         floatBtn.addEventListener('click', (e) => {
-            e.stopPropagation(); // Evitar que el click se propague al document
+            e.stopPropagation();
             isMenuOpen = !isMenuOpen;
             if (isMenuOpen) {
                 floatMenu.classList.remove('scale-0', 'opacity-0');
@@ -700,7 +482,6 @@
             }
         });
 
-        // Cerrar al hacer click fuera
         document.addEventListener('click', (e) => {
             if (isMenuOpen && !floatMenu.contains(e.target) && e.target !== floatBtn) {
                 isMenuOpen = false;
