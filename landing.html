@@ -1,4 +1,4 @@
-<!-- Version: 1.2.1 - Mejora de Contraste en Aviso de Cuotas (Badge + Color Vibrante) -->
+<!-- Version: 1.4.0 - Simplificación de Servicios: Pack Integral, Planes y Membresía -->
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -21,7 +21,7 @@
                     colors: {
                         'brand-lilac': '#e1b8ee',
                         'brand-yellow': '#feb202',
-                        'brand-green': '#cdefb5',
+                        'brand-green': '#33590e',
                         'brand-cream': '#f3ece4',
                         'brand-text': '#4a4a4a',
                         'brand-coral': '#ff5e78', /* Coral más oscuro y vibrante para mejor contraste */
@@ -130,28 +130,20 @@
                 </p>
             </div>
 
-            <!-- Navegación: Ajustada a Flex Wrap para soportar 5 items centrados -->
-            <div class="flex flex-wrap justify-center gap-6 w-full max-w-6xl mt-4">
-                <a href="#pack-organizacion" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)]">
-                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">🗓️</span>
-                    <h3 class="text-lg md:text-xl font-extrabold text-[#8e6ca6] mt-3 font-hand tracking-wide leading-tight break-words">Pack <br> Organización</h3>
-                </a>
-                <a href="#pack-antiinflamatorio" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)]">
-                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">🌿</span>
-                    <h3 class="text-lg md:text-xl font-extrabold text-[#7da36d] mt-3 font-hand tracking-wide leading-tight break-words">Pack <br>Antiinflamatorio</h3>
-                </a>
-                <a href="#pack-celebracion" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)]">
-                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">🎉</span>
-                    <h3 class="text-lg md:text-xl font-extrabold text-[#d99600] mt-3 font-hand tracking-wide leading-tight break-words">Pack <br>Celebración</h3>
-                </a>
-                <a href="#pack-integral" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)]">
+            <!-- Navegación: Ajustada para los 3 servicios principales -->
+            <div class="flex flex-wrap justify-center gap-6 w-full max-w-5xl mt-4">
+                <a href="#pack-integral" class="nav-card p-6 text-center group w-full sm:w-[calc(33.333%-1rem)] border-brand-coral/50">
                     <span class="text-4xl block transform group-hover:scale-110 transition-transform">🚀</span>
                     <h3 class="text-lg md:text-xl font-extrabold text-brand-coral mt-3 font-hand tracking-wide leading-tight break-words">Pack <br>Integral</h3>
                 </a>
-                <a href="#membresia" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)]">
+                <a href="#planes-estructurados" class="nav-card p-6 text-center group w-full sm:w-[calc(33.333%-1rem)] border-brand-green/50">
+                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">📋</span>
+                    <h3 class="text-lg md:text-xl font-extrabold text-brand-green mt-3 font-hand tracking-wide leading-tight break-words">Planes <br>Estructurados</h3>
+                </a>
+<!--                <a href="#membresia" class="nav-card p-6 text-center group w-full sm:w-[calc(33.333%-1rem)] border-brand-lilac/50">
                     <span class="text-4xl block transform group-hover:scale-110 transition-transform">🤝</span>
                     <h3 class="text-lg md:text-xl font-extrabold text-[#8e6ca6] mt-3 font-hand tracking-wide leading-tight break-words">Membresía <br>Antiinflamatoria</h3>
-                </a>
+                </a>-->
             </div>
         </header>
 
@@ -161,39 +153,80 @@
         </div>
 
         <main>
-            <div class="container mx-auto px-6 pt-2 text-center">
-                <span class="inline-block py-2 px-6 rounded-full bg-white border-2 border-brand-lilac text-brand-text text-sm font-bold tracking-wider mb-4 shadow-sm">✨ AUTOGESTIÓN ✨</span>
-
-                <!-- AVISO GENERAL DE CUOTAS CON MEJOR CONTRASTE -->
-                <div class="mb-4">
-                    <span class="inline-block bg-brand-coral text-white px-6 py-2 rounded-full font-patrick text-xl font-bold shadow-md animate-pulse transform hover:scale-105 transition-transform duration-300">
-                        💳 3 cuotas sin interés en todos los packs
-                    </span>
-                </div>
+            <div class="container mx-auto px-6 pt-2 text-center mb-8">
+                <span class="inline-block py-2 px-6 rounded-full bg-white border-2 border-brand-lilac text-brand-text text-sm font-bold tracking-wider shadow-sm">✨ MIS SERVICIOS ✨</span>
             </div>
 
-            <!-- 1. Pack Organización -->
-            <section id="pack-organizacion" class="py-20 scroll-mt-20 relative">
+            <!-- 1. PACK INTEGRAL (Tema CORAL) -->
+            <section id="pack-integral" class="py-20 scroll-mt-20 relative">
                 <div class="container mx-auto px-6 max-w-5xl">
                     <div class="flex flex-col md:flex-row items-center gap-12">
+
+                        <!-- VIDEO PLACEHOLDER PREPARADO -->
                         <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-lilac/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
-                                <video class="w-full h-full object-cover video-player" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/1-po.jpg">
-                                    <source src="./assets/landing/videos/1po.mp4" type="video/mp4">
+                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-coral/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
+                                <!-- Estructura lista para el video -->
+                                <video class="w-full h-full object-cover video-player" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/PlanIntegral.jpg">
+                                    <!-- RUTA DEL FUTURO VIDEO -->
+                                    <source src="./assets/landing/videos/PackIntegral.mp4" type="video/mp4">
                                 </video>
-                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10"><div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110"><svg class="w-8 h-8 text-[#8e6ca6] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+
+                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
+                                        <svg class="w-8 h-8 text-brand-coral ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Contenido -->
                         <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#8e6ca6] mb-6 font-hand">Pack Organización</h2>
-                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">Más de <strong>400 recetas fáciles, económicas e imprimibles</strong> para desayunos, almuerzos, cenas, viandas, snacks y más, pensadas para organizar tu semana sin estrés.</p>
-                            <p class="text-lg text-gray-600 mb-4 leading-relaxed">Incluye <strong>2 cursos</strong>: uno de planificación con mi método <em>Organiza y fluye</em> y otro de nutrición y cambio de hábitos para sostener resultados.<br><br>Ideal si querés comer mejor, ahorrar tiempo, dejar de improvisar todos los días qué cocinar y llevarte un sistema que puedas implementar incluso en momentos caóticos.</p>
-                            <div class="mt-8 p-8 action-box bg-white/60 border-brand-lilac/30">
-                                <h3 class="text-2xl font-bold text-[#8e6ca6] mb-2">¡Quiero organizarme YA!</h3>
-                                <p class="text-base text-brand-coral mb-6 font-extrabold tracking-wide">💳 3 cuotas sin interés</p>
+                            <h2 class="text-4xl md:text-5xl font-extrabold text-brand-coral mb-2 font-hand">Pack integral</h2>
+                            <br>
+                            <h3 class="text-xl font-bold text-gray-500 mb-6 font-patrick">El sistema alimentario de organización completo.</h3>
+
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                                Si sentís que todos los días terminás improvisando qué comer,<br>
+                                que empezás con ganas pero no lográs sostenerlo<br>
+                                y que organizar tu alimentación se vuelve un esfuerzo constante…<br>
+                                <strong>Este sistema es para vos.</strong>
+                            </p>
+
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                                El Pack Integral es un sistema completo para ordenar tu alimentación y dejar de improvisar.
+                                Combina mis tres pilares de trabajo: <strong>organización + enfoque antiinflamatorio + cocina para compartir</strong>, para que tengas claridad, estructura y soluciones reales en tu día a día, los fines de semana y también en momentos especiales.
+                            </p>
+
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                                No son solo recetas.<br>
+                                Es una forma de aprender a organizarte, mejorar tu alimentación y sostenerlo en el tiempo sin volver a empezar cada lunes. <strong>Incluye:</strong>
+                            </p>
+
+                            <ul class="text-left text-gray-600 mb-6 space-y-4 pl-4 md:pl-0">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-coral mt-1">✨</span>
+                                    <span><strong>Pack Organización (Premium):</strong> más de 400 recetas y recursos para planificar la semana, resolver comidas diarias y ganar orden incluso en momentos caóticos. Incluye el curso <em>Organiza y fluye</em> y el curso de nutrición y cambio de hábitos para que puedas sostener resultados reales.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-coral mt-1">✨</span>
+                                    <span><strong>Pack Antiinflamatorio:</strong> más de 100 recetas y criterios prácticos para mejorar digestión, energía, microbiota y bienestar, sin dietas extremas.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-coral mt-1">✨</span>
+                                    <span><strong>Pack Cocina para Compartir:</strong> recetas pensadas para disfrutar, agasajar y resolver comidas en casa, juntadas o momentos especiales, con opciones rendidoras, ricas y repetibles.</span>
+                                </li>
+                            </ul>
+
+                            <p class="text-lg text-gray-600 italic mb-8">
+                                Este pack es el sistema que te permite organizar tu alimentación, sentirte mejor y disfrutar la comida sin esfuerzo constante.
+                            </p>
+
+                            <div class="mt-8 p-8 action-box bg-white/60 border-brand-coral/30">
+                                <h3 class="text-2xl font-bold text-brand-coral mb-2">Quiero un cambio completo</h3>
+                                <p class="text-base text-brand-coral mb-6 font-extrabold tracking-wide">💳 6 cuotas sin interés</p>
                                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-organizacion-400-recetas-y-2-cursos" target="_blank" class="btn-base btn-solid bg-[#e1b8ee] text-[#5e3c76] hover:bg-[#d49de6] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-organizacion-400-recetas-y-2-cursos" target="_blank" class="btn-base btn-outline border-[#e1b8ee] text-[#8e6ca6] w-full sm:w-auto">Resto del Mundo 🌍</a>
+                                    <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-brand-coral text-white hover:bg-red-300 w-full sm:w-auto">Desde Argentina 🇦🇷</a>
+                                    <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-brand-coral text-brand-coral w-full sm:w-auto">Resto del Mundo 🌍</a>
                                 </div>
                             </div>
                         </div>
@@ -204,28 +237,71 @@
             <!-- Separador -->
             <div class="flex justify-center items-center gap-8 py-4 opacity-40 overflow-hidden"><span class="text-2xl">🍅</span><span class="text-2xl">🥦</span><span class="text-2xl">🥕</span><span class="text-2xl">🥑</span><span class="text-2xl">🍋</span></div>
 
-            <!-- 2. Pack Antiinflamatorio -->
-            <section id="pack-antiinflamatorio" class="py-20 scroll-mt-20 relative">
+            <!-- 2. PLANES ESTRUCTURADOS ANTIINFLAMATORIOS (Tema VERDE) -->
+            <section id="planes-estructurados" class="py-20 scroll-mt-20 relative">
                 <div class="container mx-auto px-6 max-w-5xl">
                     <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+
+                        <!-- VIDEO PLACEHOLDER PREPARADO -->
                         <div class="w-full md:w-1/3 flex justify-center">
                             <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-green/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
-                                <video class="w-full h-full object-cover video-player" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/2-pa.jpg">
-                                    <source src="./assets/landing/videos/2pa.mp4" type="video/mp4">
+                                <video class="w-full h-full object-cover video-player" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/PlacaPlanesEstructurados.jpg">
+                                    <!-- RUTA DEL FUTURO VIDEO -->
+                                    <source src="./assets/landing/videos/PlanesEstructurados.mp4" type="video/mp4">
                                 </video>
-                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10"><div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110"><svg class="w-8 h-8 text-[#7da36d] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
+                                        <svg class="w-8 h-8 text-brand-green ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <!-- Contenido -->
                         <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#7da36d] mb-6 font-hand">Pack Antiinflamatorio</h2>
-                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">Más de <strong>100 recetas</strong> pensadas para nutrir la microbiota, mejorar la digestión, regular la glucosa y ayudar a reducir la inflamación.</p>
-                            <p class="text-lg text-gray-600 mb-4 leading-relaxed">Incluye desayunos, meriendas, ensaladas completas, recetas económicas con legumbres y propuestas para alcanzar las <strong>20–30 plantas semanales</strong> recomendadas para un intestino sano.<br><br>Ideal si querés empezar a cuidar tu salud desde la comida, de forma práctica, rica y sin dietas extremas.</p>
+                            <h2 class="text-4xl md:text-5xl font-extrabold text-brand-green mb-6 font-hand">Planes estructurados antiinflamatorios</h2>
+                            <br>
+
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                                Si querés mejorar tu composición corporal descendiendo de peso (de manera saludable y sostenible) y no querés pensar más que comer cada día, mis planes estructurados antiinflamatorios son para vos.
+                            </p>
+
+                            <p class="text-lg text-gray-600 mb-4 font-bold">Incluyen:</p>
+
+                            <ul class="text-left text-gray-600 mb-6 space-y-3 pl-4 md:pl-0">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-green mt-1">✨</span>
+                                    <span>Tu plan personalizado de acuerdo a tus requerimientos energéticos y objetivo</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-green mt-1">✨</span>
+                                    <span>Menú semanal para resolver por todo el año : ¿¿y hoy que como??</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-green mt-1">✨</span>
+                                    <span>Recetario</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-green mt-1">✨</span>
+                                    <span>Listado de compras</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-green mt-1">✨</span>
+                                    <span>Material educativo antiinflamatorio</span>
+                                </li>
+                            </ul>
+
+                            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                                No te llevas solo un plan adecuado a tu objetivo, te llevas herramientas, te llevas sostén (una guía clara de qué hacer para que no te sientas perdida hoy en día con el exceso de información que circula) y te llevas calma y poder de transformación. <br><br>
+                                Es un gran recurso hecho con mucho amor y desde la experiencia profesional y personal. En mi tienda vas a poder ver algunos testimonios de mujeres que lo tuvieron y en mi cuenta @nutriarte.argentina encontrarás muchos más.
+                            </p>
+
                             <div class="mt-8 p-8 action-box bg-white/60 border-brand-green/30">
-                                <h3 class="text-2xl font-bold text-[#7da36d] mb-2">¡Quiero desinflamarme YA!</h3>
-                                <p class="text-base text-brand-coral mb-6 font-extrabold tracking-wide">💳 3 cuotas sin interés</p>
+                                <h3 class="text-2xl font-bold text-brand-green mb-2">¡Quiero mi plan estructurado!</h3>
+                                <p class="text-base text-brand-green mb-6 font-extrabold tracking-wide">💳 6 cuotas sin interés</p>
                                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-antinflamatorio-semanal" target="_blank" class="btn-base btn-solid bg-[#cdefb5] text-[#4d6b40] hover:bg-[#bcefa0] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-antinflamatorio-semanal" target="_blank" class="btn-base btn-outline border-[#cdefb5] text-[#7da36d] w-full sm:w-auto">Resto del Mundo 🌍</a>
+                                    <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-brand-green text-[#fcfcfc] hover:bg-[#bcefa0] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
+                                    <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-brand-green text-[#4d6b40] w-full sm:w-auto">Resto del Mundo 🌍</a>
                                 </div>
                             </div>
                         </div>
@@ -236,105 +312,16 @@
             <!-- Separador -->
             <div class="w-full flex justify-center gap-2 py-4"><div class="w-2 h-2 bg-brand-lilac rounded-full"></div><div class="w-2 h-2 bg-brand-green rounded-full"></div><div class="w-2 h-2 bg-brand-yellow rounded-full"></div></div>
 
-            <!-- 3. Pack Cocina Para Compartir -->
-            <section id="pack-celebracion" class="py-20 scroll-mt-20 relative">
-                <div class="container mx-auto px-6 max-w-5xl">
-                    <div class="flex flex-col md:flex-row items-center gap-12">
-                        <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-yellow/10 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
-                                <video class="w-full h-full object-cover video-player" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/3-pc.jpg">
-                                    <source src="./assets/landing/videos/3cpc.mp4" type="video/mp4">
-                                </video>
-                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10"><div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110"><svg class="w-8 h-8 text-[#d99600] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#d99600] mb-6 font-hand">Pack Cocina para Compartir</h2>
-                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">Recetarios con ideas fáciles, rendidoras y riquísimas para resolver comidas en casa, fines de semana, juntadas, mates y momentos especiales.</p>
-                            <p class="text-lg text-gray-600 mb-4 leading-relaxed">Ideal para cuando vienen otros, pero también para el día a día: recetas que lucen, rinden y te permiten disfrutar sin pasar horas en la cocina.<br><br>Incluye mesas dulces y saladas, pizzas, tacos, canastitas, empanadas, budines y opciones tipo catering casero que siempre gustan y se pueden repetir una y otra vez.</p>
-                            <div class="mt-8 p-8 action-box bg-white/60 border-brand-yellow/30">
-                                <h3 class="text-2xl font-bold text-[#d99600] mb-2">¡Quiero cocinar y compartir!</h3>
-                                <p class="text-base text-brand-coral mb-6 font-extrabold tracking-wide">💳 3 cuotas sin interés</p>
-                                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-cocina-para-compartir" target="_blank" class="btn-base btn-solid bg-[#feb202] text-white hover:bg-[#e5a000] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-cocina-para-compartir" target="_blank" class="btn-base btn-outline border-[#feb202] text-[#d99600] w-full sm:w-auto">Resto del Mundo 🌍</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Separador Estrella -->
-            <div class="w-full flex justify-center items-center py-8 opacity-60 text-brand-coral">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-            </div>
-
-            <!-- 3.5 NUEVO: PACK INTEGRAL (Tema CORAL) -->
-            <section id="pack-integral" class="py-20 scroll-mt-20 relative">
-                <div class="container mx-auto px-6 max-w-5xl">
-                    <div class="flex flex-col md:flex-row-reverse items-center gap-12">
-
-                        <!-- VIDEO PLACEHOLDER (Hasta que tengas el video real) -->
-                        <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-coral/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
-                                <!-- Usamos una imagen de placeholder por ahora o video si lo tuvieras -->
-                                <img src="./assets/landing/videos/portada/5-pi.jpg" alt="Pack Integral" class="w-full h-full object-cover opacity-80">
-                                <!-- Botón de play falso por estética -->
-                                <!--<div class="absolute inset-0 flex items-center justify-center bg-black/10">
-                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
-                                        <svg class="w-8 h-8 text-brand-coral ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                    </div>
-                                </div>-->
-                            </div>
-                        </div>
-
-                        <!-- Contenido -->
-                        <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-brand-coral mb-2 font-hand">Pack Integral</h2>
-                            <h3 class="text-xl font-bold text-gray-500 mb-6 font-patrick">Organización, salud y disfrute en un solo lugar</h3>
-
-                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                                El Pack Integral combina mis tres pilares de trabajo: <strong>organización + enfoque antiinflamatorio + cocina para agasajar y compartir</strong>, para que tengas una visión completa y soluciones concretas para el día a día, los fines de semana y los momentos especiales.
-                            </p>
-
-                            <ul class="text-left text-gray-600 mb-8 space-y-3 pl-4 md:pl-0">
-                                <li class="flex items-start gap-2">
-                                    <span class="text-brand-coral mt-1">✨</span>
-                                    <span><strong>Pack Organización (Premium):</strong> recetarios y recursos para planificar la semana, resolver comidas diarias y dejar de improvisar.</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-brand-coral mt-1">✨</span>
-                                    <span><strong>Pack Antiinflamatorio:</strong> recetas y criterios para mejorar digestión, energía y bienestar.</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-brand-coral mt-1">✨</span>
-                                    <span><strong>Pack Cocina para compartir:</strong> recetas pensadas para disfrutar, celebrar y compartir en reuniones, eventos y momentos especiales, incluso con salida emprendedora.</span>
-                                </li>
-                            </ul>
-
-                            <div class="mt-8 p-8 action-box bg-white/60 border-brand-coral/30">
-                                <h3 class="text-2xl font-bold text-brand-coral mb-2">¡Quiero un cambio completo!</h3>
-                                <p class="text-base text-brand-coral mb-6 font-extrabold tracking-wide">💳 3 cuotas sin interés</p>
-                                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-integral-organizacion-antiinflamacion-cocina-para-compartir" target="_blank" class="btn-base btn-solid bg-brand-coral text-white hover:bg-red-300 w-full sm:w-auto">Desde Argentina 🇦🇷</a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-integral-organizacion-antiinflamacion-celebracion" target="_blank" class="btn-base btn-outline border-brand-coral text-brand-coral w-full sm:w-auto">Resto del Mundo 🌍</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             <!-- SECCIÓN COMUNIDAD -->
-            <div class="py-12 mt-10 relative">
+            <!--<div class="py-12 mt-10 relative">
                 <div class="absolute inset-0 bg-white/40 skew-y-2 z-0 transform origin-bottom-right"></div>
                 <div class="relative z-10">
                     <div class="container mx-auto px-6 text-center mb-8">
                         <span class="inline-block py-2 px-6 rounded-full bg-brand-lilac text-white text-sm font-bold tracking-wider">ACOMPAÑAMIENTO EN COMUNIDAD</span>
                     </div>
 
-                    <!-- 4. Membresía Antiinflamatoria -->
+                    &lt;!&ndash; 3. Membresía Antiinflamatoria &ndash;&gt;
                     <section id="membresia" class="pb-12 scroll-mt-20">
                         <div class="container mx-auto px-6 max-w-5xl">
                             <div class="flex flex-col md:flex-row items-center gap-12">
@@ -348,8 +335,9 @@
                                 </div>
                                 <div class="w-full md:w-2/3 text-center md:text-left">
                                     <h2 class="text-4xl md:text-5xl font-extrabold text-[#8e6ca6] mb-6 font-hand">Membresía Antiinflamatoria</h2>
+                                    <br>
                                     <p class="text-lg text-gray-600 mb-6 leading-relaxed">Es nuestro espacio más cercano, de trabajo en comunidad para mejorar tu salud desde la alimentación, la organización y el cambio de hábitos con un enfoque antiinflamatorio.</p>
-                                    <p class="text-lg text-gray-600 mb-4 leading-relaxed">Cada mes trabajamos con contenidos nuevos, actualizaciones constantes,desafíos prácticos y comunidad para sostener el proceso en el tiempo.<br><br>Ideal si no querés solo recetas, sino guía, motivación y estructura para avanzar paso a paso.</p>
+                                    <p class="text-lg text-gray-600 mb-4 leading-relaxed">Cada mes trabajamos con contenidos nuevos, actualizaciones constantes, desafíos prácticos y comunidad para sostener el proceso en el tiempo.<br><br>Ideal si no querés solo recetas, sino guía, motivación y estructura para avanzar paso a paso.</p>
                                     <div class="mt-8 p-8 action-box bg-white/70 border-brand-lilac/30">
                                         <h3 class="text-2xl font-bold text-[#8e6ca6] mb-6">¡Quiero sumarme a la membresía!</h3>
                                         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -362,7 +350,7 @@
                         </div>
                     </section>
                 </div>
-            </div>
+            </div>-->
 
             <!-- NOTA IMPORTANTE -->
             <div class="container mx-auto px-6 pb-12 mt-12 relative z-10">

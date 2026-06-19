@@ -1,4 +1,4 @@
-<!-- Version: 0.0.24 - Ajustes de Grilla: Títulos Responsivos y Bordes Unificados -->
+<!-- Version: 2.3.0 - Cambios guardados por el usuario -->
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -22,9 +22,10 @@
                         'brand-lilac': '#e1b8ee',
                         'brand-yellow': '#feb202',
                         'brand-green': '#cdefb5',
+                        'brand-green-dark': '#527a35',
                         'brand-cream': '#f3ece4',
                         'brand-text': '#4a4a4a',
-                        'brand-coral': '#FF85A1',
+                        'brand-coral': '#ff5e78',
                     },
                     fontFamily: {
                         sans: ['Nunito', 'sans-serif'],
@@ -94,12 +95,18 @@
 
         /* ANIMACIÓN PULSE */
         @keyframes subtle-pulse {
-            0% { box-shadow: 0 0 0 0 rgba(255, 133, 161, 0.7); transform: scale(1); }
-            70% { box-shadow: 0 0 0 15px rgba(255, 133, 161, 0); transform: scale(1.05); }
-            100% { box-shadow: 0 0 0 0 rgba(255, 133, 161, 0); transform: scale(1); }
+            0% { box-shadow: 0 0 0 0 rgba(255, 94, 120, 0.7); transform: scale(1); }
+            70% { box-shadow: 0 0 0 15px rgba(255, 94, 120, 0); transform: scale(1.05); }
+            100% { box-shadow: 0 0 0 0 rgba(255, 94, 120, 0); transform: scale(1); }
         }
         .animate-custom-pulse { animation: subtle-pulse 2s infinite; }
         .animate-custom-pulse:hover { animation: none; }
+
+        /* FIX PARA BORDES DEL VIDEO (Chrome/Safari Bug) */
+        .video-mask {
+            -webkit-mask-image: -webkit-radial-gradient(white, black);
+            mask-image: radial-gradient(white, black);
+        }
     </style>
 </head>
 
@@ -130,28 +137,23 @@
                 </p>
             </div>
 
-            <!-- Navegación: Ajustada a Flex Wrap para soportar 5 items centrados -->
-            <div class="flex flex-wrap justify-center gap-6 w-full max-w-6xl mt-4">
-                <a href="#pack-organizacion" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)]">
-                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">🗓️</span>
-                    <h3 class="text-lg md:text-xl font-extrabold text-[#8e6ca6] mt-3 font-hand tracking-wide leading-tight break-words">Pack <br> Organización</h3>
+            <!-- Navegación: Ajustada para los 4 servicios principales -->
+            <div class="flex flex-wrap justify-center gap-4 w-full max-w-6xl mt-4">
+                <a href="#biblioteca" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] border-brand-lilac/50">
+                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">📚</span>
+                    <h3 class="text-lg md:text-xl font-extrabold text-[#8e6ca6] mt-3 font-hand tracking-wide leading-tight break-words">Biblioteca <br>Nutriarte</h3>
                 </a>
-                <a href="#pack-antiinflamatorio" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)]">
-                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">🌿</span>
-                    <h3 class="text-lg md:text-xl font-extrabold text-[#7da36d] mt-3 font-hand tracking-wide leading-tight break-words">Pack <br>Antiinflamatorio</h3>
+                <a href="#ediciones" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] border-brand-yellow/50">
+                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">🍲</span>
+                    <h3 class="text-lg md:text-xl font-extrabold text-[#d99600] mt-3 font-hand tracking-wide leading-tight break-words">Ediciones <br>Especiales</h3>
                 </a>
-                <a href="#pack-celebracion" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)]">
-                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">🎉</span>
-                    <h3 class="text-lg md:text-xl font-extrabold text-[#d99600] mt-3 font-hand tracking-wide leading-tight break-words">Pack <br>Celebración</h3>
+                <a href="#reinicio" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] border-brand-coral/50">
+                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">🧘‍♀️</span>
+                    <h3 class="text-lg md:text-xl font-extrabold text-brand-coral mt-3 font-hand tracking-wide leading-tight break-words">Reinicio <br>Intestinal</h3>
                 </a>
-                <!-- Nuevo Botón Pack Integral -->
-                <a href="#pack-integral" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)]">
-                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">🚀</span>
-                    <h3 class="text-lg md:text-xl font-extrabold text-brand-coral mt-3 font-hand tracking-wide leading-tight break-words">Pack <br>Integral</h3>
-                </a>
-                <a href="#membresia" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(20%-1.5rem)]">
-                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">🤝</span>
-                    <h3 class="text-lg md:text-xl font-extrabold text-[#8e6ca6] mt-3 font-hand tracking-wide leading-tight break-words">Membresía <br>Antiinflamatoria</h3>
+                <a href="#planes-estructurados" class="nav-card p-6 text-center group w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] border-brand-green-dark/50">
+                    <span class="text-4xl block transform group-hover:scale-110 transition-transform">📋</span>
+                    <h3 class="text-lg md:text-xl font-extrabold text-brand-green-dark mt-3 font-hand tracking-wide leading-tight break-words">Planes <br>Estructurados</h3>
                 </a>
             </div>
         </header>
@@ -162,215 +164,530 @@
         </div>
 
         <main>
-            <div class="container mx-auto px-6 pt-2 text-center">
-                <span class="inline-block py-2 px-6 rounded-full bg-white border-2 border-brand-lilac text-brand-text text-sm font-bold tracking-wider mb-2 shadow-sm">✨ AUTOGESTIÓN ✨</span>
+            <div class="container mx-auto px-6 pt-2 text-center mb-12">
+                <span class="inline-block py-2 px-6 rounded-full bg-white border-2 border-brand-lilac text-brand-text text-sm font-bold tracking-wider shadow-sm">✨ MIS SERVICIOS ✨</span>
             </div>
 
-            <!-- 1. Pack Organización -->
-            <section id="pack-organizacion" class="py-20 scroll-mt-20 relative">
-                <div class="container mx-auto px-6 max-w-5xl">
-                    <div class="flex flex-col md:flex-row items-center gap-12">
-                        <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-lilac/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
-                                <video class="w-full h-full object-cover video-player" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/1-po.jpg">
-                                    <source src="./assets/landing/videos/1po.mp4" type="video/mp4">
-                                </video>
-                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10"><div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110"><svg class="w-8 h-8 text-[#8e6ca6] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+            <!-- 1. BIBLIOTECA NUTRIARTE (Tema LILA) -->
+            <section id="biblioteca" class="py-20 scroll-mt-20 relative">
+                <div class="container mx-auto px-6 max-w-6xl">
+
+                    <!-- TÍTULO DE SECCIÓN -->
+                    <div class="text-center max-w-3xl mx-auto mb-12 relative z-10">
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-[#8e6ca6] mb-4 font-hand">Biblioteca Nutriarte</h2>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-500 font-patrick">Si no sabés por dónde empezar, es por acá: <br>62 recetarios + 2 cursos + más de 600 recetas</h3>
+                    </div>
+
+                    <!-- VIDEO CENTRADO Y DECORADO -->
+                    <div class="relative flex justify-center mb-16">
+                        <!-- Aura de fondo ampliada para llenar el ancho -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-brand-lilac/30 blur-3xl rounded-full z-0 pointer-events-none"></div>
+
+                        <div class="relative z-10 w-full max-w-[300px] lg:max-w-[340px]">
+                            <!-- Badges Flotantes (Solo en desktop) -->
+                            <div class="hidden md:flex absolute -left-28 lg:-left-44 top-16 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-lilac z-20 transform -rotate-6 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
+                                <span class="text-2xl">💡</span>
+                                <span class="font-bold text-[#8e6ca6] text-sm whitespace-nowrap">Cero improvisación</span>
                             </div>
-                        </div>
-                        <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#8e6ca6] mb-6 font-hand">Pack Organización</h2>
-                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">Más de <strong>400 recetas fáciles, económicas e imprimibles</strong> para desayunos, almuerzos, cenas, viandas, snacks y más, pensadas para organizar tu semana sin estrés.</p>
-                            <p class="text-lg text-gray-600 mb-4 leading-relaxed">Incluye <strong>2 cursos</strong>: uno de planificación con mi método <em>"Organiza y fluye"</em> y otro de nutrición y cambio de hábitos.</p>
-                            <div class="mt-8 p-8 action-box bg-white/60 border-brand-lilac/30">
-                                <h3 class="text-2xl font-bold text-[#8e6ca6] mb-6">¡Quiero organizarme YA!</h3>
-                                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-organizacion-400-recetas-y-2-cursos" target="_blank" class="btn-base btn-solid bg-[#e1b8ee] text-[#5e3c76] hover:bg-[#d49de6] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-organizacion-400-recetas-y-2-cursos" target="_blank" class="btn-base btn-outline border-[#e1b8ee] text-[#8e6ca6] w-full sm:w-auto">Resto del Mundo 🌍</a>
+                            <div class="hidden md:flex absolute -right-28 lg:-right-44 bottom-24 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-lilac z-20 transform rotate-3 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
+                                <span class="text-2xl">🗓️</span>
+                                <span class="font-bold text-[#8e6ca6] text-sm whitespace-nowrap">Organización total</span>
+                            </div>
+
+                            <!-- Contenedor del video -->
+                            <div class="video-mask transform-gpu aspect-[9/16] bg-brand-lilac/20 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white group hover:-translate-y-2 transition-transform duration-300">
+                                <video class="w-full h-full object-cover video-player rounded-[1.7rem]" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/Biblioteca.jpg">
+                                    <source src="./assets/landing/videos/Biblioteca.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
+                                        <svg class="w-8 h-8 text-[#8e6ca6] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- TEXTO EN 2 COLUMNAS -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 relative z-10 text-center md:text-left mb-16">
+
+                        <!-- Columna 1 -->
+                        <div>
+                            <p class="text-lg text-gray-600 mb-4 leading-relaxed">
+                                La Biblioteca Nutriarte no es SOLO una colección de recetas.<br>
+                                Es un <strong>sistema completo de organización alimentaria</strong> diseñado para ayudarte a planificar, cocinar, comprar y comer mejor durante todo el año.
+                            </p>
+                            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                                Si sentís que todos los días terminás preguntándote qué cocinar, que improvisás más de lo que te gustaría o que te cuesta sostener hábitos saludables en el tiempo, acá vas a encontrar una solución práctica y realista.
+                            </p>
+
+                            <h4 class="text-2xl font-bold text-[#8e6ca6] mb-4">¿Qué incluye?</h4>
+                            <ul class="text-left text-gray-600 space-y-4 pl-4 md:pl-0">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-[#8e6ca6] mt-1 font-bold">✔</span>
+                                    <span><strong>62 recetarios digitales</strong> desarrollados a lo largo de años de trabajo profesional.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-[#8e6ca6] mt-1 font-bold">✔</span>
+                                    <span><strong>Más de 600 recetas</strong> para desayunos, meriendas, almuerzos, cenas, viandas, freezer, legumbres, organización de comidas, cocina familiar, opciones antiinflamatorias, eventos y mucho más.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-[#8e6ca6] mt-1 font-bold">✔</span>
+                                    <span><strong>Curso Organiza y Fluye</strong>, donde te enseño mi método para planificar comidas, ordenar compras y lograr que la organización sea sostenible.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-[#8e6ca6] mt-1 font-bold">✔</span>
+                                    <span><strong>Curso Nutrición Integral y Cambio de Hábitos</strong>, para entender qué necesita tu cuerpo y construir una alimentación que puedas mantener en el tiempo.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Columna 2 -->
+                        <div>
+                            <h4 class="text-2xl font-bold text-[#8e6ca6] mb-4">¿Por qué es diferente?</h4>
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                                Porque el problema no suele ser la falta de recetas. <strong>El problema es no tener un sistema.</strong><br>
+                                La Biblioteca Nutriarte te ayuda a:
+                            </p>
+                            <ul class="text-left text-gray-600 mb-8 space-y-3 pl-4 md:pl-0">
+                                <li class="flex items-start gap-2"><span class="text-brand-yellow mt-1">✨</span><span>Organizar tu semana alimentaria con menos esfuerzo.</span></li>
+                                <li class="flex items-start gap-2"><span class="text-brand-yellow mt-1">✨</span><span>Ahorrar tiempo cocinando y comprando.</span></li>
+                                <li class="flex items-start gap-2"><span class="text-brand-yellow mt-1">✨</span><span>Tener siempre ideas para resolver comidas.</span></li>
+                                <li class="flex items-start gap-2"><span class="text-brand-yellow mt-1">✨</span><span>Cocinar con anticipación y aprovechar el freezer.</span></li>
+                                <li class="flex items-start gap-2"><span class="text-brand-yellow mt-1">✨</span><span>Reducir la improvisación y el estrés diario.</span></li>
+                                <li class="flex items-start gap-2"><span class="text-brand-yellow mt-1">✨</span><span>Mejorar tu alimentación sin empezar de cero cada lunes.</span></li>
+                            </ul>
+
+                            <h4 class="text-xl font-bold text-[#8e6ca6] mb-2">Una inversión que te acompaña durante años</h4>
+                            <p class="text-lg text-gray-600 leading-relaxed italic bg-white/50 p-4 rounded-xl border border-[#e1b8ee]/50">
+                                Accedés una sola vez y el contenido queda para siempre disponible para vos. Recetas, cursos, herramientas de planificación y estrategias de organización reunidas en un mismo lugar para que la comida deje de ser una preocupación constante y se convierta en una parte más simple de tu vida.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CTA CENTRADO -->
+                    <div class="flex justify-center relative z-10">
+                        <div class="p-8 action-box bg-white/80 border-brand-lilac/40 text-center shadow-lg transform transition-transform hover:-translate-y-1 w-full max-w-2xl rounded-3xl">
+                            <h3 class="text-3xl font-bold text-[#8e6ca6] mb-2">¡Quiero mi Biblioteca!</h3>
+                            <p class="text-base text-[#8e6ca6] mb-8 font-extrabold tracking-wide">💳 6 cuotas sin interés</p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-[#e1b8ee] text-[#5e3c76] hover:bg-[#d49de6] w-full sm:w-auto text-lg py-4">Desde Argentina 🇦🇷</a>
+                                <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-[#e1b8ee] text-[#8e6ca6] w-full sm:w-auto text-lg py-4">Resto del Mundo 🌍</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TESTIMONIOS (IMÁGENES) -->
+                    <!--<div class="mt-24 pt-12 border-t-2 border-brand-lilac/30 relative z-10">
+                        <h3 class="text-3xl md:text-4xl font-bold text-[#8e6ca6] mb-12 text-center font-hand">Testimonios</h3>
+
+                        &lt;!&ndash; Grilla estilo Masonry para imágenes &ndash;&gt;
+                        <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+                            <img src="./assets/landing/testimonios/biblio-1.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
+                            <img src="./assets/landing/testimonios/biblio-2.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
+                            <img src="./assets/landing/testimonios/biblio-3.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
+                            <img src="./assets/landing/testimonios/biblio-4.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
+                        </div>
+                    </div>-->
+
                 </div>
             </section>
 
             <!-- Separador -->
             <div class="flex justify-center items-center gap-8 py-4 opacity-40 overflow-hidden"><span class="text-2xl">🍅</span><span class="text-2xl">🥦</span><span class="text-2xl">🥕</span><span class="text-2xl">🥑</span><span class="text-2xl">🍋</span></div>
 
-            <!-- 2. Pack Antiinflamatorio -->
-            <section id="pack-antiinflamatorio" class="py-20 scroll-mt-20 relative">
-                <div class="container mx-auto px-6 max-w-5xl">
-                    <div class="flex flex-col md:flex-row-reverse items-center gap-12">
-                        <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-green/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
-                                <video class="w-full h-full object-cover video-player" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/2-pa.jpg">
-                                    <source src="./assets/landing/videos/2pa.mp4" type="video/mp4">
-                                </video>
-                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10"><div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110"><svg class="w-8 h-8 text-[#7da36d] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
+
+            <!-- 2. COLECCIÓN EDICIONES ESPECIALES (Tema AMARILLO) -->
+            <section id="ediciones" class="py-20 scroll-mt-20 relative">
+                <div class="container mx-auto px-6 max-w-6xl">
+
+                    <!-- TÍTULO DE SECCIÓN -->
+                    <div class="text-center max-w-3xl mx-auto mb-12 relative z-10">
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-[#d99600] mb-4 font-hand">Colección Ediciones Especiales 2026</h2>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-500 font-patrick">Organización, stock y tranquilidad.</h3>
+                    </div>
+
+                    <!-- VIDEO CENTRADO Y DECORADO -->
+                    <div class="relative flex justify-center mb-16">
+                        <!-- Aura de fondo -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-brand-yellow/30 blur-3xl rounded-full z-0 pointer-events-none"></div>
+
+                        <div class="relative z-10 w-full max-w-[300px] lg:max-w-[340px]">
+                            <!-- Badges Flotantes -->
+                            <div class="hidden md:flex absolute -left-28 lg:-left-44 top-16 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-yellow z-20 transform -rotate-6 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
+                                <span class="text-2xl">❄️</span>
+                                <span class="font-bold text-[#d99600] text-sm whitespace-nowrap">Stock inteligente</span>
                             </div>
-                        </div>
-                        <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#7da36d] mb-6 font-hand">Pack Antiinflamatorio</h2>
-                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">Más de <strong>100 recetas</strong> pensadas para nutrir la microbiota, mejorar la digestión, regular la glucosa y ayudar a reducir la inflamación.</p>
-                            <p class="text-lg text-gray-600 mb-4 leading-relaxed">Propuestas para alcanzar las <strong>20–30 plantas semanales</strong>. Una forma práctica, rica y sin dietas extremas de cuidarte.</p>
-                            <div class="mt-8 p-8 action-box bg-white/60 border-brand-green/30">
-                                <h3 class="text-2xl font-bold text-[#7da36d] mb-6">¡Quiero desinflamarme YA!</h3>
-                                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-antinflamatorio-semanal" target="_blank" class="btn-base btn-solid bg-[#cdefb5] text-[#4d6b40] hover:bg-[#bcefa0] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-antinflamatorio-semanal" target="_blank" class="btn-base btn-outline border-[#cdefb5] text-[#7da36d] w-full sm:w-auto">Resto del Mundo 🌍</a>
+                            <div class="hidden md:flex absolute -right-28 lg:-right-44 bottom-24 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-yellow z-20 transform rotate-3 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
+                                <span class="text-2xl">⏳</span>
+                                <span class="font-bold text-[#d99600] text-sm whitespace-nowrap">Cociná menos días</span>
+                            </div>
+
+                            <div class="video-mask transform-gpu aspect-[9/16] bg-brand-yellow/20 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white group hover:-translate-y-2 transition-transform duration-300">
+                                <video class="w-full h-full object-cover video-player rounded-[1.7rem]" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/Especiales.jpg">
+                                    <source src="./assets/landing/videos/Especial.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
+                                        <svg class="w-8 h-8 text-[#d99600] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- TEXTO EN 2 COLUMNAS -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 relative z-10 text-center md:text-left mb-16">
+
+                        <!-- Columna 1 -->
+                        <div>
+                            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                                <span class="text-brand-yellow font-bold">✨</span> <strong>"Cocinar en cantidad me salva"</strong> reúne mis ediciones especiales 2026 más prácticas, pensadas para ayudarte a organizar tu alimentación, generar stock, aprovechar el freezer y resolver comidas durante días o incluso semanas.<br><br>
+                                <span class="text-brand-yellow font-bold">✨</span> No son recetas sueltas.<br>
+                                <span class="text-brand-yellow font-bold">✨</span> Es un sistema para que la comida deje de depender del apuro, el cansancio o la inspiración del momento.
+                            </p>
+
+                            <h4 class="text-2xl font-bold text-[#d99600] mb-6">¿Qué incluye?</h4>
+                            <div class="space-y-6 text-left">
+                                <div class="bg-white/50 p-4 rounded-xl border border-brand-yellow/20">
+                                    <h5 class="text-lg font-bold text-gray-800 flex items-center gap-2"><span class="text-brand-yellow">✨</span> Viandas en Sartén 1 y 2</h5>
+                                    <p class="text-gray-600 pl-6 text-sm mt-1">Recetas rápidas, económicas y nutritivas elaboradas con ingredientes simples y accesibles. Ideales para quienes quieren comer casero sin pasar horas en la cocina.</p>
+                                </div>
+                                <div class="bg-white/50 p-4 rounded-xl border border-brand-yellow/20">
+                                    <h5 class="text-lg font-bold text-gray-800 flex items-center gap-2"><span class="text-brand-yellow">✨</span> Galletitas, Snacks y Talitas</h5>
+                                    <p class="text-gray-600 pl-6 text-sm mt-1">Una colección de recetas ideales para desayunos, meriendas, viandas escolares, colaciones y para acompañar el mate.</p>
+                                </div>
+                                <div class="bg-white/50 p-4 rounded-xl border border-brand-yellow/20">
+                                    <h5 class="text-lg font-bold text-gray-800 flex items-center gap-2"><span class="text-brand-yellow">✨</span> Viandas Inteligentes: Almuerzos y Cenas</h5>
+                                    <p class="text-gray-600 pl-6 text-sm mt-1">Mi sistema para cocinar una vez y resolver gran parte de la semana. Comidas completas pensadas para generar stock y congelar.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Columna 2 -->
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <div class="space-y-6 text-left mb-10">
+                                    <div class="bg-white/50 p-4 rounded-xl border border-brand-yellow/20">
+                                        <h5 class="text-lg font-bold text-gray-800 flex items-center gap-2"><span class="text-brand-yellow">✨</span> Viandas Inteligentes: Desayunos y Meriendas</h5>
+                                        <p class="text-gray-600 pl-6 text-sm mt-1">Preparaciones ideales para cocinar en cantidad, congelar y resolver semanas. Incluye ideas para armar un catering casero para eventos.</p>
+                                    </div>
+                                    <div class="bg-white/50 p-4 rounded-xl border border-brand-yellow/20">
+                                        <h5 class="text-lg font-bold text-gray-800 flex items-center gap-2"><span class="text-brand-yellow">✨</span> Recetas de Bodegón Saludable</h5>
+                                        <p class="text-gray-600 pl-6 text-sm mt-1">Comidas abundantes, calentitas, rendidoras y llenas de sabor. Ideales para cocinar de más y disfrutar la experiencia de un bodegón en casa.</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="text-xl font-bold text-[#d99600] mb-4">¿Por qué esta colección es diferente?</h4>
+                                <p class="text-lg text-gray-600 mb-4 leading-relaxed">Porque no busca que cocines todos los días.</p>
+
+                                <ul class="text-left text-gray-600 mb-6 space-y-2 pl-4 md:pl-0 font-medium grid grid-cols-2 gap-x-4">
+                                    <li class="flex items-start gap-2"><span class="text-[#d99600]">✔</span><span>Menos tiempo</span></li>
+                                    <li class="flex items-start gap-2"><span class="text-[#d99600]">✔</span><span>Menos improvisación</span></li>
+                                    <li class="flex items-start gap-2"><span class="text-[#d99600]">✔</span><span>Menos gasto</span></li>
+                                    <li class="flex items-start gap-2"><span class="text-[#d99600]">✔</span><span>Más organización</span></li>
+                                    <li class="flex items-start gap-2"><span class="text-[#d99600]">✔</span><span>Más stock casero</span></li>
+                                    <li class="flex items-start gap-2"><span class="text-[#d99600]">✔</span><span>Más tranquilidad</span></li>
+                                </ul>
+
+                                <p class="text-lg text-gray-600 italic border-l-4 border-brand-yellow pl-4">
+                                    Cada receta fue pensada para adaptarse a la vida real: trabajo, familia, colegio, actividades y poco tiempo. Porque cuando aprendés a cocinar en cantidad, no solo ganás comidas. <strong>Ganás tiempo y energía.</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA CENTRADO -->
+                    <div class="flex justify-center relative z-10">
+                        <div class="p-8 action-box bg-white/80 border-brand-yellow/40 text-center shadow-lg transform transition-transform hover:-translate-y-1 w-full max-w-2xl rounded-3xl">
+                            <h3 class="text-3xl font-bold text-[#d99600] mb-2">¡Quiero la colección!</h3>
+                            <p class="text-base text-[#d99600] mb-8 font-extrabold tracking-wide">💳 6 cuotas sin interés</p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-[#feb202] text-white hover:bg-[#e5a000] w-full sm:w-auto text-lg py-4">Desde Argentina 🇦🇷</a>
+                                <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-[#feb202] text-[#d99600] w-full sm:w-auto text-lg py-4">Resto del Mundo 🌍</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
             <!-- Separador -->
-            <div class="w-full flex justify-center gap-2 py-4"><div class="w-2 h-2 bg-brand-lilac rounded-full"></div><div class="w-2 h-2 bg-brand-green rounded-full"></div><div class="w-2 h-2 bg-brand-yellow rounded-full"></div></div>
+            <div class="flex justify-center gap-2 py-4"><div class="w-2 h-2 bg-brand-lilac rounded-full"></div><div class="w-2 h-2 bg-brand-green rounded-full"></div><div class="w-2 h-2 bg-brand-yellow rounded-full"></div></div>
 
-            <!-- 3. Pack Cocina Para Compartir -->
-            <section id="pack-celebracion" class="py-20 scroll-mt-20 relative">
-                <div class="container mx-auto px-6 max-w-5xl">
-                    <div class="flex flex-col md:flex-row items-center gap-12">
-                        <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-yellow/10 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
-                                <video class="w-full h-full object-cover video-player" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/3-cpc.jpg">
-                                    <source src="./assets/landing/videos/3cpc.mp4" type="video/mp4">
-                                </video>
-                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10"><div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110"><svg class="w-8 h-8 text-[#d99600] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-[#d99600] mb-6 font-hand">Pack Cocina para Compartir</h2>
-                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">Recetarios con ideas fáciles, rendidoras y riquísimas para resolver comidas en casa, fines de semana, juntadas, mates y momentos especiales.</p>
-                            <p class="text-lg text-gray-600 mb-4 leading-relaxed">Incluye mesas dulces y saladas, pizzas, tacos, canastitas, empanadas, budines y opciones tipo catering casero. Trae de <strong>REGALO el curso Emprendé Casero</strong>.</p>
-                            <div class="mt-8 p-8 action-box bg-white/60 border-brand-yellow/30">
-                                <h3 class="text-2xl font-bold text-[#d99600] mb-6">¡Quiero cocinar y compartir!</h3>
-                                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-cocina-para-compartir" target="_blank" class="btn-base btn-solid bg-[#feb202] text-white hover:bg-[#e5a000] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-cocina-para-compartir" target="_blank" class="btn-base btn-outline border-[#feb202] text-[#d99600] w-full sm:w-auto">Resto del Mundo 🌍</a>
-                                </div>
-                            </div>
-                        </div>
+
+            <!-- 3. REINICIO INTESTINAL (Tema CORAL) -->
+            <section id="reinicio" class="py-20 scroll-mt-20 relative">
+                <div class="container mx-auto px-6 max-w-6xl">
+
+                    <!-- TÍTULO DE SECCIÓN -->
+                    <div class="text-center max-w-3xl mx-auto mb-12 relative z-10">
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-brand-coral mb-4 font-hand leading-tight">Reinicio intestinal <br>de 30 días</h2>
+                        <h3 class="text-2xl font-bold text-gray-500 font-patrick">Deshinchate y desinflamate</h3>
                     </div>
-                </div>
-            </section>
 
-            <!-- Separador Estrella -->
-            <div class="w-full flex justify-center items-center py-8 opacity-60 text-brand-coral">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
-            </div>
+                    <!-- VIDEO CENTRADO Y DECORADO -->
+                    <div class="relative flex justify-center mb-16">
+                        <!-- Aura de fondo -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-brand-coral/30 blur-3xl rounded-full z-0 pointer-events-none"></div>
 
-            <!-- 3.5 NUEVO: PACK INTEGRAL (Tema CORAL) -->
-            <section id="pack-integral" class="py-20 scroll-mt-20 relative">
-                <div class="container mx-auto px-6 max-w-5xl">
-                    <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                        <div class="relative z-10 w-full max-w-[300px] lg:max-w-[340px]">
+                            <!-- Badges Flotantes -->
+                            <div class="hidden md:flex absolute -left-28 lg:-left-44 top-16 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-coral z-20 transform -rotate-6 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
+                                <span class="text-2xl">✨</span>
+                                <span class="font-bold text-brand-coral text-sm whitespace-nowrap">Chau inflamación</span>
+                            </div>
+                            <div class="hidden md:flex absolute -right-28 lg:-right-44 bottom-24 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-coral z-20 transform rotate-3 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
+                                <span class="text-2xl">🦠</span>
+                                <span class="font-bold text-brand-coral text-sm whitespace-nowrap">Microbiota feliz</span>
+                            </div>
 
-                        <!-- VIDEO PLACEHOLDER (Hasta que tengas el video real) -->
-                        <div class="w-full md:w-1/3 flex justify-center">
-                            <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-coral/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
-                                <!-- Usamos una imagen de placeholder por ahora o video si lo tuvieras -->
-                                <img src="./assets/landing/videos/portada/5-pi.jpg" alt="Pack Integral" class="w-full h-full object-cover opacity-80">
-                                <!-- Botón de play falso por estética -->
-                                <!--<div class="absolute inset-0 flex items-center justify-center bg-black/10">
-                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg">
+                            <div class="video-mask transform-gpu aspect-[9/16] bg-brand-coral/20 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white group hover:-translate-y-2 transition-transform duration-300">
+                                <video class="w-full h-full object-cover video-player rounded-[1.7rem]" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/Reinicio.png">
+                                    <source src="./assets/landing/videos/Reinicio.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
                                         <svg class="w-8 h-8 text-brand-coral ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                                     </div>
-                                </div>-->
-                            </div>
-                        </div>
-
-                        <!-- Contenido -->
-                        <div class="w-full md:w-2/3 text-center md:text-left">
-                            <h2 class="text-4xl md:text-5xl font-extrabold text-brand-coral mb-2 font-hand">Pack Integral</h2>
-                            <h3 class="text-xl font-bold text-gray-500 mb-6 font-patrick">Organización, salud y disfrute en un solo lugar</h3>
-
-                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                                El Pack Integral combina mis tres pilares de trabajo: <strong>organización + enfoque antiinflamatorio + cocina para agasajar</strong>, para que tengas una visión completa y soluciones concretas para el día a día, los fines de semana y momentos especiales.
-                            </p>
-
-                            <ul class="text-left text-gray-600 mb-8 space-y-3 pl-4 md:pl-0">
-                                <li class="flex items-start gap-2">
-                                    <span class="text-brand-coral mt-1">✨</span>
-                                    <span><strong>Pack Organización (Premium):</strong> planificar la semana y resolver comidas diarias.</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-brand-coral mt-1">✨</span>
-                                    <span><strong>Pack Antiinflamatorio:</strong> mejorar digestión, energía y bienestar.</span>
-                                </li>
-                                <li class="flex items-start gap-2">
-                                    <span class="text-brand-coral mt-1">✨</span>
-                                    <span><strong>Pack Cocina para compartir:</strong> disfrutar y celebrar en reuniones.</span>
-                                </li>
-                            </ul>
-
-                            <div class="mt-8 p-8 action-box bg-white/60 border-brand-coral/30">
-                                <h3 class="text-2xl font-bold text-brand-coral mb-6">¡Quiero un cambio completo!</h3>
-                                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                    <a href="https://nutriarte.empretienda.com.ar/recetarios/pack-integral-organizacion-antiinflamacion-cocina-para-compartir" target="_blank" class="btn-base btn-solid bg-brand-coral text-white hover:bg-red-300 w-full sm:w-auto">Desde Argentina 🇦🇷</a>
-                                    <a href="https://tiendanutriarte.myshopify.com/products/pack-integral-organizacion-antiinflamacion-celebracion" target="_blank" class="btn-base btn-outline border-brand-coral text-brand-coral w-full sm:w-auto">Resto del Mundo 🌍</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- TEXTO EN 2 COLUMNAS -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 relative z-10 text-center md:text-left mb-16">
+
+                        <!-- Columna 1 -->
+                        <div>
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed font-medium">
+                                ¿Vivís con la panza hinchada, digestiones pesadas y sintiendo que todo lo que comés te cae mal?<br>
+                                <span class="text-brand-coral font-bold text-xl block mt-2">¡Ya está disponible mi programa reinicio intestinal!</span>
+                            </p>
+
+                            <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                                Incluye un plan de autogestión de 30 días para deshinchar tu abdomen, recuperar tu microbiota y sanar de forma integral. Sin restricciones eternas ni listas de permitidos y prohibidos. <strong>Porque no se trata de sacar TODO para sanar.</strong>
+                            </p>
+
+                            <div class="bg-brand-coral/10 p-6 rounded-2xl mb-8 border-l-4 border-brand-coral text-left">
+                                <p class="text-gray-700 italic text-sm md:text-base">
+                                    "Sé exactamente lo que se siente vivir hinchada, estuve así durante muchos años. Te levantás con la panza chata, comés algo y terminás con el pantalón que no te prende. Te da miedo comer alimentos sanos como legumbres o verduras porque 'te inflaman', y terminás deambulando buscando una respuesta.<br><br>
+                                    <strong>El problema muchas veces no es la comida. El problema es el contexto y el estado de tu intestino.</strong>"
+                                </p>
+                            </div>
+
+                            <h4 class="text-2xl font-bold text-brand-coral mb-4">¿Para quién es este programa?</h4>
+                            <ul class="text-left text-gray-600 mb-8 space-y-3 pl-4 md:pl-0 font-medium">
+                                <li class="flex items-start gap-2"><span class="text-brand-coral mt-1">✔</span><span>Si sentís distensión, gases o molestias frecuentes.</span></li>
+                                <li class="flex items-start gap-2"><span class="text-brand-coral mt-1">✔</span><span>Estás cansada de dietas restrictivas que empeoran todo.</span></li>
+                                <li class="flex items-start gap-2"><span class="text-brand-coral mt-1">✔</span><span>Querés organizar tus compras para que el caos diario no afecte tu salud.</span></li>
+                                <li class="flex items-start gap-2"><span class="text-brand-coral mt-1">✔</span><span>Estás lista para entender el impacto del estrés y las emociones.</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Columna 2 -->
+                        <div class="flex flex-col justify-between">
+                            <div>
+                                <h4 class="text-2xl font-bold text-brand-coral mb-6">El Método en 2 Etapas</h4>
+                                <div class="space-y-6 text-left mb-8">
+                                    <div class="bg-white/80 p-5 rounded-xl shadow-sm border border-green-100">
+                                        <h5 class="text-xl font-extrabold text-green-600 mb-2 flex items-center gap-2">🟢 ETAPA 1: Deshinchar <span class="text-sm font-normal text-gray-500">(30 días)</span></h5>
+                                        <p class="text-gray-600 text-sm">Reducción temporal de alimentos fermentables para dar un respiro al sistema y alivio inmediato. <br><strong>Incluye:</strong> Plan alimentario guiado de 30 días.</p>
+                                    </div>
+                                    <div class="bg-white/80 p-5 rounded-xl shadow-sm border border-blue-100">
+                                        <h5 class="text-xl font-extrabold text-blue-600 mb-2">🔵 ETAPA 2: Desinflamar</h5>
+                                        <p class="text-gray-600 text-sm mb-2">Salud Sistémica y Microbiota. Magia a largo plazo.</p>
+                                        <ul class="text-sm space-y-1 text-gray-600">
+                                            <li><strong class="text-gray-800">Video Clases:</strong> Inflamación, Ejes del intestino, Prebióticos.</li>
+                                            <li><strong class="text-gray-800">Recetario:</strong> Para fortalecer la mucosa (¡y tolerar legumbres!).</li>
+                                            <li><strong class="text-gray-800">Guía de Plantas:</strong> Para nutrir bacterias buenas.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <h4 class="text-2xl font-bold text-brand-coral mb-6">Los Bonus Incluidos</h4>
+                                <ul class="text-left text-gray-600 mb-8 space-y-4 pl-4 md:pl-0">
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-2xl mt-1">📦</span>
+                                        <span><strong class="text-gray-800">1. Kit del Caos al Control:</strong> Audios y guías de planificación.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-2xl mt-1">🛒</span>
+                                        <span><strong class="text-gray-800">2. Listados de Compras:</strong> Omnívora y Vegetariana.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-2xl mt-1">🎧</span>
+                                        <span><strong class="text-gray-800">3. Cápsulas de Mentalidad:</strong> Audios para salir del perfeccionismo.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="text-2xl mt-1">🧉</span>
+                                        <span><strong class="text-gray-800">4. Micro-clases:</strong> Mate, edulcorantes, Omega 3.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- CTA CENTRADO ESPECIAL -->
+                    <div class="flex justify-center relative z-10">
+                        <div class="p-8 action-box bg-white/80 border-brand-coral/40 text-center shadow-lg transform transition-transform hover:-translate-y-1 w-full max-w-3xl rounded-3xl">
+                            <p class="text-lg text-gray-700 font-bold mb-6 text-center bg-white/50 py-2 rounded-xl border border-brand-coral/20 inline-block px-6">
+                                Acceso inmediato a todo el material
+                            </p>
+
+                            <div class="mb-6 flex flex-col items-center justify-center">
+                                <span class="text-gray-400 line-through text-xl font-medium mb-1">Precio Regular: $60.000</span>
+                                <span class="text-4xl md:text-5xl font-extrabold text-brand-coral mb-2">Precio Especial: $40.000</span>
+                                <span class="inline-block bg-brand-yellow text-white px-3 py-1 rounded-full text-sm font-bold animate-pulse uppercase tracking-wide mt-2">¡Lanzamiento!</span>
+                            </div>
+
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-brand-coral text-white hover:bg-red-400 w-full sm:w-auto text-lg py-4">Desde Argentina 🇦🇷</a>
+                                <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-brand-coral text-brand-coral w-full sm:w-auto text-lg py-4">Resto del Mundo 🌍</a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
-            <!-- SECCIÓN COMUNIDAD -->
-            <div class="py-12 mt-10 relative">
-                <div class="absolute inset-0 bg-white/40 skew-y-2 z-0 transform origin-bottom-right"></div>
-                <div class="relative z-10">
-                    <div class="container mx-auto px-6 text-center mb-8">
-                        <span class="inline-block py-2 px-6 rounded-full bg-brand-lilac text-white text-sm font-bold tracking-wider">ACOMPAÑAMIENTO EN COMUNIDAD</span>
+            <!-- Separador -->
+            <div class="flex justify-center items-center gap-8 py-4 opacity-40 overflow-hidden"><span class="text-2xl">🍅</span><span class="text-2xl">🥦</span><span class="text-2xl">🥕</span><span class="text-2xl">🥑</span><span class="text-2xl">🍋</span></div>
+
+            <!-- 4. PLANES ESTRUCTURADOS ANTIINFLAMATORIOS (Tema VERDE OSCURO) -->
+            <section id="planes-estructurados" class="py-20 scroll-mt-20 relative">
+                <div class="container mx-auto px-6 max-w-6xl">
+
+                    <!-- TÍTULO DE SECCIÓN -->
+                    <div class="text-center max-w-3xl mx-auto mb-12 relative z-10">
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-brand-green-dark mb-4 font-hand">Planes estructurados antiinflamatorios</h2>
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-500 font-patrick">Personalizado, directo y al punto.</h3>
                     </div>
 
-                    <!-- 4. Membresía Antiinflamatoria -->
-                    <section id="membresia" class="pb-12 scroll-mt-20">
-                        <div class="container mx-auto px-6 max-w-5xl">
-                            <div class="flex flex-col md:flex-row items-center gap-12">
-                                <div class="w-full md:w-1/3 flex justify-center">
-                                    <div class="relative w-full max-w-[300px] aspect-[9/16] bg-brand-lilac/20 rounded-[2rem] overflow-hidden shadow-xl border-4 border-white group">
-                                        <video class="w-full h-full object-cover video-player" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/4-ma.jpg">
-                                            <source src="./assets/landing/videos/4ma.mp4" type="video/mp4">
-                                        </video>
-                                        <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10"><div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110"><svg class="w-8 h-8 text-[#8e6ca6] ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div></div>
-                                    </div>
-                                </div>
-                                <div class="w-full md:w-2/3 text-center md:text-left">
-                                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#8e6ca6] mb-6 font-hand">Membresía Antiinflamatoria</h2>
-                                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">Es nuestro espacio más cercano. Trabajamos en comunidad para mejorar tu salud desde la alimentación y el cambio de hábitos.</p>
-                                    <p class="text-lg text-gray-600 mb-4 leading-relaxed">Contenidos nuevos cada mes, desafíos y comunidad. Ideal si buscás <strong>guía, motivación y estructura</strong>.</p>
-                                    <div class="mt-8 p-8 action-box bg-white/70 border-brand-lilac/30">
-                                        <h3 class="text-2xl font-bold text-[#8e6ca6] mb-6">¡Quiero sumarme a la membresía!</h3>
-                                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                                            <a href="https://forms.gle/NWrWDVV55HjrZjb87" target="_blank" class="btn-base btn-solid bg-[#e1b8ee] text-[#5e3c76] hover:bg-[#d49de6] w-full sm:w-auto">Desde Argentina 🇦🇷</a>
-                                            <a href="https://forms.gle/NWrWDVV55HjrZjb87" target="_blank" class="btn-base btn-outline border-[#e1b8ee] text-[#8e6ca6] w-full sm:w-auto">Resto del Mundo 🌍</a>
-                                        </div>
+                    <!-- VIDEO CENTRADO Y DECORADO -->
+                    <div class="relative flex justify-center mb-16">
+                        <!-- Aura de fondo -->
+                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-brand-green/30 blur-3xl rounded-full z-0 pointer-events-none"></div>
+
+                        <div class="relative z-10 w-full max-w-[300px] lg:max-w-[340px]">
+                            <!-- Badges Flotantes -->
+                            <div class="hidden md:flex absolute -left-28 lg:-left-44 top-16 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-green-dark z-20 transform -rotate-6 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
+                                <span class="text-2xl">🎯</span>
+                                <span class="font-bold text-brand-green-dark text-sm whitespace-nowrap">100% Personalizado</span>
+                            </div>
+                            <div class="hidden md:flex absolute -right-28 lg:-right-44 bottom-24 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-green-dark z-20 transform rotate-3 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
+                                <span class="text-2xl">⚖️</span>
+                                <span class="font-bold text-brand-green-dark text-sm whitespace-nowrap">Lográ tu objetivo</span>
+                            </div>
+
+                            <div class="video-mask transform-gpu aspect-[9/16] bg-brand-green/20 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white group hover:-translate-y-2 transition-transform duration-300">
+                                <video class="w-full h-full object-cover video-player rounded-[1.7rem]" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/PlacaPlanesEstructurados.jpg">
+                                    <source src="./assets/landing/videos/PlanesEstructurados.mp4" type="video/mp4">
+                                </video>
+                                <div class="play-overlay absolute inset-0 flex items-center justify-center bg-black/10 group-hover:bg-black/20 transition-all cursor-pointer z-10">
+                                    <div class="w-20 h-20 bg-white/90 rounded-full flex items-center justify-center shadow-lg transform transition-transform group-hover:scale-110">
+                                        <svg class="w-8 h-8 text-brand-green-dark ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </div>
-            </div>
+                    </div>
 
-            <!-- NOTA IMPORTANTE -->
+                    <!-- TEXTO EN 2 COLUMNAS -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 relative z-10 text-center md:text-left mb-16">
+
+                        <!-- Columna 1 -->
+                        <div>
+                            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                                Si querés mejorar tu composición corporal descendiendo de peso (de manera saludable y sostenible) y no querés pensar más que comer cada día, mis planes estructurados antiinflamatorios son para vos.
+                            </p>
+
+                            <h4 class="text-2xl font-bold text-brand-green-dark mb-6">Incluyen:</h4>
+                            <ul class="text-left text-gray-600 space-y-4 pl-4 md:pl-0 bg-white/50 p-6 rounded-2xl border border-brand-green/30">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-green-dark mt-1 font-bold">✨</span>
+                                    <span><strong>Tu plan personalizado</strong> de acuerdo a tus requerimientos energéticos y objetivo.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-green-dark mt-1 font-bold">✨</span>
+                                    <span><strong>Menú semanal</strong> para resolver por todo el año: ¿¿y hoy que como??</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-green-dark mt-1 font-bold">✨</span>
+                                    <span><strong>Recetario</strong> completo de apoyo.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-green-dark mt-1 font-bold">✨</span>
+                                    <span><strong>Listado de compras</strong> listo para ir al súper.</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-brand-green-dark mt-1 font-bold">✨</span>
+                                    <span><strong>Material educativo</strong> antiinflamatorio.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Columna 2 -->
+                        <div class="flex flex-col justify-center">
+                            <div class="text-left border-l-4 border-brand-green-dark pl-6">
+                                <p class="text-xl text-gray-700 font-medium mb-6 leading-relaxed">
+                                    "No te llevas solo un plan adecuado a tu objetivo, te llevas herramientas, te llevas sostén (una guía clara de qué hacer para que no te sientas perdida hoy en día con el exceso de información que circula) y te llevas calma y poder de transformación."
+                                </p>
+                                <p class="text-lg text-gray-600 leading-relaxed italic">
+                                    Es un gran recurso hecho con mucho amor y desde la experiencia profesional y personal. Podés ver testimonios increíbles de mujeres que ya lo lograron.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- CTA CENTRADO -->
+                    <div class="flex justify-center relative z-10">
+                        <div class="p-8 action-box bg-white/80 border-brand-green-dark/30 text-center shadow-lg transform transition-transform hover:-translate-y-1 w-full max-w-2xl rounded-3xl">
+                            <h3 class="text-3xl font-bold text-brand-green-dark mb-2">¡Quiero mi plan estructurado!</h3>
+                            <p class="text-base text-brand-green-dark mb-8 font-extrabold tracking-wide">💳 6 cuotas sin interés</p>
+                            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                                <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-brand-green-dark text-white hover:bg-[#3f5d28] w-full sm:w-auto text-lg py-4">Desde Argentina 🇦🇷</a>
+                                <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-brand-green-dark text-brand-green-dark w-full sm:w-auto text-lg py-4">Resto del Mundo 🌍</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TESTIMONIOS PLANES ESTRUCTURADOS (IMÁGENES) -->
+                    <!--                    <div class="mt-24 pt-12 border-t-2 border-brand-green-dark/30 relative z-10">
+                                            <h3 class="text-3xl md:text-4xl font-bold text-brand-green-dark mb-12 text-center font-hand">Experiencias y Transformaciones</h3>
+
+                                            &lt;!&ndash; Grilla estilo Masonry para imágenes &ndash;&gt;
+                                            <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+                                                <img src="./assets/landing/testimonios/planes-1.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
+                                                <img src="./assets/landing/testimonios/planes-2.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
+                                                <img src="./assets/landing/testimonios/planes-3.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
+                                                <img src="./assets/landing/testimonios/planes-4.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
+                                            </div>
+                                        </div>-->
+
+                </div>
+            </section>
+
+            <!-- NOTA IMPORTANTE GENERAL -->
             <div class="container mx-auto px-6 pb-12 mt-12 relative z-10">
-                <div class="max-w-3xl mx-auto bg-white/70 border-l-4 border-brand-yellow rounded-r-xl p-6 text-center shadow-sm">
-                    <p class="text-sm md:text-base text-gray-600 italic">
-                        <span class="font-bold text-[#d99600]">Nota importante:</span> No todos los recetarios son sin gluten/sin lácteos y huevos, por eso, quiero contarte que todos los packs cuentan con una guía de reemplazos.
+                <div class="max-w-3xl mx-auto bg-white/70 border-l-4 border-brand-yellow rounded-r-xl p-8 text-center shadow-sm">
+                    <p class="text-base md:text-lg text-gray-700 italic">
+                        <span class="font-bold text-[#d99600]">Nota importante:</span> No todos los recetarios son sin gluten / sin lácteos y huevos, por eso, quiero contarte que todos los programas y packs cuentan con una guía de reemplazos súper completa.
                     </p>
                 </div>
             </div>
         </main>
 
+        <!-- Footer -->
         <footer class="text-center py-12 px-6 bg-white/40 border-t border-white relative z-10">
             <p class="text-gray-600 mb-4 font-bold font-hand text-xl">Lic. Vanina Minniti | Nutriarte</p>
             <p class="text-sm text-gray-400 mb-8">&copy; 2026 Todos los derechos reservados.</p>
         </footer>
     </div>
 
-    <!-- BOTÓN FLOTANTE -->
+    <!-- BOTÓN FLOTANTE (Queda con los nuevos enlaces de la navegación) -->
     <div class="fixed bottom-4 left-1/2 z-50 flex -translate-x-1/2 flex-col items-center sm:bottom-8 sm:left-auto sm:right-8 sm:translate-x-0 sm:items-end">
         <div id="floating-menu" class="flex flex-col gap-3 mb-4 transition-all duration-300 transform scale-0 opacity-0 origin-bottom sm:origin-bottom-right">
             <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="flex items-center gap-3 bg-white text-gray-700 px-5 py-3 rounded-full shadow-md border-2 border-brand-green hover:bg-brand-green hover:text-brand-text transition-colors font-patrick text-lg"><span>Resto del Mundo</span> <span class="text-2xl">🌍</span></a>
