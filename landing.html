@@ -1,4 +1,4 @@
-<!-- Version: 2.3.0 - Cambios guardados por el usuario -->
+<!-- Version: 2.4.0 - Testimonios estilo Masonry (Pinterest) para distintos tamaños de imágenes -->
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -258,8 +258,7 @@
                     <!-- CTA CENTRADO -->
                     <div class="flex justify-center relative z-10">
                         <div class="p-8 action-box bg-white/80 border-brand-lilac/40 text-center shadow-lg transform transition-transform hover:-translate-y-1 w-full max-w-2xl rounded-3xl">
-                            <h3 class="text-3xl font-bold text-[#8e6ca6] mb-2">¡Quiero mi Biblioteca!</h3>
-                            <p class="text-base text-[#8e6ca6] mb-8 font-extrabold tracking-wide">💳 6 cuotas sin interés</p>
+                            <h3 class="text-3xl font-bold text-[#8e6ca6] mb-8">¡Quiero mi Biblioteca!</h3>
                             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-[#e1b8ee] text-[#5e3c76] hover:bg-[#d49de6] w-full sm:w-auto text-lg py-4">Desde Argentina 🇦🇷</a>
                                 <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-[#e1b8ee] text-[#8e6ca6] w-full sm:w-auto text-lg py-4">Resto del Mundo 🌍</a>
@@ -267,18 +266,31 @@
                         </div>
                     </div>
 
-                    <!-- TESTIMONIOS (IMÁGENES) -->
-                    <!--<div class="mt-24 pt-12 border-t-2 border-brand-lilac/30 relative z-10">
+                    <!-- TESTIMONIOS (IMÁGENES MASONRY) -->
+                    <div class="mt-24 pt-12 border-t-2 border-brand-lilac/30 relative z-10">
                         <h3 class="text-3xl md:text-4xl font-bold text-[#8e6ca6] mb-12 text-center font-hand">Testimonios</h3>
 
-                        &lt;!&ndash; Grilla estilo Masonry para imágenes &ndash;&gt;
+                        <!-- Grilla estilo Masonry para imágenes de distintos tamaños -->
                         <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-                            <img src="./assets/landing/testimonios/biblio-1.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                            <img src="./assets/landing/testimonios/biblio-2.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                            <img src="./assets/landing/testimonios/biblio-3.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                            <img src="./assets/landing/testimonios/biblio-4.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
+                            <!-- Ejemplo con placeholders de distintos tamaños. Solo tenes que cambiar el 'src' por la ruta de tus imagenes. -->
+                            <!-- Ej: <div class="break-inside-avoid"><img src="./assets/landing/testimonios/biblio-1.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div> -->
+
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/1.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/2.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/3.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/4.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/5.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/6.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/7.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/8.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/9.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/10.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/11.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/12.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/13.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/14.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
                         </div>
-                    </div>-->
+                    </div>
 
                 </div>
             </section>
@@ -604,8 +616,7 @@
                     <!-- CTA CENTRADO -->
                     <div class="flex justify-center relative z-10">
                         <div class="p-8 action-box bg-white/80 border-brand-green-dark/30 text-center shadow-lg transform transition-transform hover:-translate-y-1 w-full max-w-2xl rounded-3xl">
-                            <h3 class="text-3xl font-bold text-brand-green-dark mb-2">¡Quiero mi plan estructurado!</h3>
-                            <p class="text-base text-brand-green-dark mb-8 font-extrabold tracking-wide">💳 6 cuotas sin interés</p>
+                            <h3 class="text-3xl font-bold text-brand-green-dark mb-8">¡Quiero mi plan estructurado!</h3>
                             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-brand-green-dark text-white hover:bg-[#3f5d28] w-full sm:w-auto text-lg py-4">Desde Argentina 🇦🇷</a>
                                 <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-brand-green-dark text-brand-green-dark w-full sm:w-auto text-lg py-4">Resto del Mundo 🌍</a>
@@ -613,18 +624,24 @@
                         </div>
                     </div>
 
-                    <!-- TESTIMONIOS PLANES ESTRUCTURADOS (IMÁGENES) -->
-                    <!--                    <div class="mt-24 pt-12 border-t-2 border-brand-green-dark/30 relative z-10">
-                                            <h3 class="text-3xl md:text-4xl font-bold text-brand-green-dark mb-12 text-center font-hand">Experiencias y Transformaciones</h3>
+                    <!-- TESTIMONIOS PLANES ESTRUCTURADOS (IMÁGENES MASONRY) -->
+                    <div class="mt-24 pt-12 border-t-2 border-brand-green-dark/30 relative z-10">
+                        <h3 class="text-3xl md:text-4xl font-bold text-brand-green-dark mb-12 text-center font-hand">Experiencias y Transformaciones</h3>
 
-                                            &lt;!&ndash; Grilla estilo Masonry para imágenes &ndash;&gt;
-                                            <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-                                                <img src="./assets/landing/testimonios/planes-1.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                                                <img src="./assets/landing/testimonios/planes-2.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                                                <img src="./assets/landing/testimonios/planes-3.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                                                <img src="./assets/landing/testimonios/planes-4.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                                            </div>
-                                        </div>-->
+                        <!-- Grilla estilo Masonry para imágenes de distintos tamaños -->
+                        <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+                            <!-- Ejemplo con placeholders de distintos tamaños. Solo tenes que cambiar el 'src' por la ruta de tus imagenes. -->
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/1.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/2.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/3.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/4.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/5.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/6.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/7.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/8.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/9.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                        </div>
+                    </div>
 
                 </div>
             </section>

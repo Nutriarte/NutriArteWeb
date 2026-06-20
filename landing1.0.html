@@ -1,4 +1,4 @@
-<!-- Version: 2.3.0 - Cambios guardados por el usuario -->
+<!-- Version: 2.4.0 - Testimonios estilo Masonry (Pinterest) para distintos tamaños de imágenes -->
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
 <head>
@@ -184,16 +184,6 @@
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-brand-lilac/30 blur-3xl rounded-full z-0 pointer-events-none"></div>
 
                         <div class="relative z-10 w-full max-w-[300px] lg:max-w-[340px]">
-                            <!-- Badges Flotantes (Solo en desktop) -->
-                            <div class="hidden md:flex absolute -left-28 lg:-left-44 top-16 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-lilac z-20 transform -rotate-6 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
-                                <span class="text-2xl">💡</span>
-                                <span class="font-bold text-[#8e6ca6] text-sm whitespace-nowrap">Cero improvisación</span>
-                            </div>
-                            <div class="hidden md:flex absolute -right-28 lg:-right-44 bottom-24 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-lilac z-20 transform rotate-3 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
-                                <span class="text-2xl">🗓️</span>
-                                <span class="font-bold text-[#8e6ca6] text-sm whitespace-nowrap">Organización total</span>
-                            </div>
-
                             <!-- Contenedor del video -->
                             <div class="video-mask transform-gpu aspect-[9/16] bg-brand-lilac/20 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white group hover:-translate-y-2 transition-transform duration-300">
                                 <video class="w-full h-full object-cover video-player rounded-[1.7rem]" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/Biblioteca.jpg">
@@ -268,8 +258,7 @@
                     <!-- CTA CENTRADO -->
                     <div class="flex justify-center relative z-10">
                         <div class="p-8 action-box bg-white/80 border-brand-lilac/40 text-center shadow-lg transform transition-transform hover:-translate-y-1 w-full max-w-2xl rounded-3xl">
-                            <h3 class="text-3xl font-bold text-[#8e6ca6] mb-2">¡Quiero mi Biblioteca!</h3>
-                            <p class="text-base text-[#8e6ca6] mb-8 font-extrabold tracking-wide">💳 6 cuotas sin interés</p>
+                            <h3 class="text-3xl font-bold text-[#8e6ca6] mb-8">¡Quiero mi Biblioteca!</h3>
                             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-[#e1b8ee] text-[#5e3c76] hover:bg-[#d49de6] w-full sm:w-auto text-lg py-4">Desde Argentina 🇦🇷</a>
                                 <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-[#e1b8ee] text-[#8e6ca6] w-full sm:w-auto text-lg py-4">Resto del Mundo 🌍</a>
@@ -277,18 +266,31 @@
                         </div>
                     </div>
 
-                    <!-- TESTIMONIOS (IMÁGENES) -->
-                    <!--<div class="mt-24 pt-12 border-t-2 border-brand-lilac/30 relative z-10">
+                    <!-- TESTIMONIOS (IMÁGENES MASONRY) -->
+                    <div class="mt-24 pt-12 border-t-2 border-brand-lilac/30 relative z-10">
                         <h3 class="text-3xl md:text-4xl font-bold text-[#8e6ca6] mb-12 text-center font-hand">Testimonios</h3>
 
-                        &lt;!&ndash; Grilla estilo Masonry para imágenes &ndash;&gt;
+                        <!-- Grilla estilo Masonry para imágenes de distintos tamaños -->
                         <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-                            <img src="./assets/landing/testimonios/biblio-1.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                            <img src="./assets/landing/testimonios/biblio-2.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                            <img src="./assets/landing/testimonios/biblio-3.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                            <img src="./assets/landing/testimonios/biblio-4.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
+                            <!-- Ejemplo con placeholders de distintos tamaños. Solo tenes que cambiar el 'src' por la ruta de tus imagenes. -->
+                            <!-- Ej: <div class="break-inside-avoid"><img src="./assets/landing/testimonios/biblio-1.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div> -->
+
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/1.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/2.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/3.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/4.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/5.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/6.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/7.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/8.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/9.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/10.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/11.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/12.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/13.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Biblioteca/14.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
                         </div>
-                    </div>-->
+                    </div>
 
                 </div>
             </section>
@@ -313,16 +315,6 @@
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-brand-yellow/30 blur-3xl rounded-full z-0 pointer-events-none"></div>
 
                         <div class="relative z-10 w-full max-w-[300px] lg:max-w-[340px]">
-                            <!-- Badges Flotantes -->
-                            <div class="hidden md:flex absolute -left-28 lg:-left-44 top-16 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-yellow z-20 transform -rotate-6 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
-                                <span class="text-2xl">❄️</span>
-                                <span class="font-bold text-[#d99600] text-sm whitespace-nowrap">Stock inteligente</span>
-                            </div>
-                            <div class="hidden md:flex absolute -right-28 lg:-right-44 bottom-24 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-yellow z-20 transform rotate-3 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
-                                <span class="text-2xl">⏳</span>
-                                <span class="font-bold text-[#d99600] text-sm whitespace-nowrap">Cociná menos días</span>
-                            </div>
-
                             <div class="video-mask transform-gpu aspect-[9/16] bg-brand-yellow/20 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white group hover:-translate-y-2 transition-transform duration-300">
                                 <video class="w-full h-full object-cover video-player rounded-[1.7rem]" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/Especiales.jpg">
                                     <source src="./assets/landing/videos/Especial.mp4" type="video/mp4">
@@ -400,8 +392,7 @@
                     <!-- CTA CENTRADO -->
                     <div class="flex justify-center relative z-10">
                         <div class="p-8 action-box bg-white/80 border-brand-yellow/40 text-center shadow-lg transform transition-transform hover:-translate-y-1 w-full max-w-2xl rounded-3xl">
-                            <h3 class="text-3xl font-bold text-[#d99600] mb-2">¡Quiero la colección!</h3>
-                            <p class="text-base text-[#d99600] mb-8 font-extrabold tracking-wide">💳 6 cuotas sin interés</p>
+                            <h3 class="text-3xl font-bold text-[#d99600] mb-8">¡Quiero la colección!</h3>
                             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-[#feb202] text-white hover:bg-[#e5a000] w-full sm:w-auto text-lg py-4">Desde Argentina 🇦🇷</a>
                                 <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-[#feb202] text-[#d99600] w-full sm:w-auto text-lg py-4">Resto del Mundo 🌍</a>
@@ -432,16 +423,6 @@
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-brand-coral/30 blur-3xl rounded-full z-0 pointer-events-none"></div>
 
                         <div class="relative z-10 w-full max-w-[300px] lg:max-w-[340px]">
-                            <!-- Badges Flotantes -->
-                            <div class="hidden md:flex absolute -left-28 lg:-left-44 top-16 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-coral z-20 transform -rotate-6 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
-                                <span class="text-2xl">✨</span>
-                                <span class="font-bold text-brand-coral text-sm whitespace-nowrap">Chau inflamación</span>
-                            </div>
-                            <div class="hidden md:flex absolute -right-28 lg:-right-44 bottom-24 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-coral z-20 transform rotate-3 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
-                                <span class="text-2xl">🦠</span>
-                                <span class="font-bold text-brand-coral text-sm whitespace-nowrap">Microbiota feliz</span>
-                            </div>
-
                             <div class="video-mask transform-gpu aspect-[9/16] bg-brand-coral/20 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white group hover:-translate-y-2 transition-transform duration-300">
                                 <video class="w-full h-full object-cover video-player rounded-[1.7rem]" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/Reinicio.png">
                                     <source src="./assets/landing/videos/Reinicio.mp4" type="video/mp4">
@@ -571,16 +552,6 @@
                         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] md:w-[600px] h-[320px] md:h-[600px] bg-brand-green/30 blur-3xl rounded-full z-0 pointer-events-none"></div>
 
                         <div class="relative z-10 w-full max-w-[300px] lg:max-w-[340px]">
-                            <!-- Badges Flotantes -->
-                            <div class="hidden md:flex absolute -left-28 lg:-left-44 top-16 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-green-dark z-20 transform -rotate-6 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
-                                <span class="text-2xl">🎯</span>
-                                <span class="font-bold text-brand-green-dark text-sm whitespace-nowrap">100% Personalizado</span>
-                            </div>
-                            <div class="hidden md:flex absolute -right-28 lg:-right-44 bottom-24 bg-white px-5 py-3 rounded-2xl shadow-xl border-2 border-brand-green-dark z-20 transform rotate-3 hover:rotate-0 transition-transform items-center gap-3 cursor-default">
-                                <span class="text-2xl">⚖️</span>
-                                <span class="font-bold text-brand-green-dark text-sm whitespace-nowrap">Lográ tu objetivo</span>
-                            </div>
-
                             <div class="video-mask transform-gpu aspect-[9/16] bg-brand-green/20 rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white group hover:-translate-y-2 transition-transform duration-300">
                                 <video class="w-full h-full object-cover video-player rounded-[1.7rem]" loop playsinline controlsList="nofullscreen nodownload" disablePictureInPicture poster="./assets/landing/videos/portada/PlacaPlanesEstructurados.jpg">
                                     <source src="./assets/landing/videos/PlanesEstructurados.mp4" type="video/mp4">
@@ -645,8 +616,7 @@
                     <!-- CTA CENTRADO -->
                     <div class="flex justify-center relative z-10">
                         <div class="p-8 action-box bg-white/80 border-brand-green-dark/30 text-center shadow-lg transform transition-transform hover:-translate-y-1 w-full max-w-2xl rounded-3xl">
-                            <h3 class="text-3xl font-bold text-brand-green-dark mb-2">¡Quiero mi plan estructurado!</h3>
-                            <p class="text-base text-brand-green-dark mb-8 font-extrabold tracking-wide">💳 6 cuotas sin interés</p>
+                            <h3 class="text-3xl font-bold text-brand-green-dark mb-8">¡Quiero mi plan estructurado!</h3>
                             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                                 <a href="https://nutriarte.empretienda.com.ar/" target="_blank" class="btn-base btn-solid bg-brand-green-dark text-white hover:bg-[#3f5d28] w-full sm:w-auto text-lg py-4">Desde Argentina 🇦🇷</a>
                                 <a href="https://tiendanutriarte.myshopify.com/" target="_blank" class="btn-base btn-outline border-brand-green-dark text-brand-green-dark w-full sm:w-auto text-lg py-4">Resto del Mundo 🌍</a>
@@ -654,30 +624,28 @@
                         </div>
                     </div>
 
-                    <!-- TESTIMONIOS PLANES ESTRUCTURADOS (IMÁGENES) -->
-                    <!--                    <div class="mt-24 pt-12 border-t-2 border-brand-green-dark/30 relative z-10">
-                                            <h3 class="text-3xl md:text-4xl font-bold text-brand-green-dark mb-12 text-center font-hand">Experiencias y Transformaciones</h3>
+                    <!-- TESTIMONIOS PLANES ESTRUCTURADOS (IMÁGENES MASONRY) -->
+                    <div class="mt-24 pt-12 border-t-2 border-brand-green-dark/30 relative z-10">
+                        <h3 class="text-3xl md:text-4xl font-bold text-brand-green-dark mb-12 text-center font-hand">Experiencias y Transformaciones</h3>
 
-                                            &lt;!&ndash; Grilla estilo Masonry para imágenes &ndash;&gt;
-                                            <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-                                                <img src="./assets/landing/testimonios/planes-1.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                                                <img src="./assets/landing/testimonios/planes-2.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                                                <img src="./assets/landing/testimonios/planes-3.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                                                <img src="./assets/landing/testimonios/planes-4.jpg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white break-inside-avoid object-cover hover:scale-[1.02] transition-transform">
-                                            </div>
-                                        </div>-->
+                        <!-- Grilla estilo Masonry para imágenes de distintos tamaños -->
+                        <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+                            <!-- Ejemplo con placeholders de distintos tamaños. Solo tenes que cambiar el 'src' por la ruta de tus imagenes. -->
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/1.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/2.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/3.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/4.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/5.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/6.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/7.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/8.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                            <div class="break-inside-avoid"><img src="./assets/landing/Testimonios/Planes/9.jpeg" alt="Testimonio" class="w-full h-auto rounded-xl shadow-md border-2 border-white hover:scale-[1.02] transition-transform"></div>
+                        </div>
+                    </div>
 
                 </div>
             </section>
 
-            <!-- NOTA IMPORTANTE GENERAL -->
-            <div class="container mx-auto px-6 pb-12 mt-12 relative z-10">
-                <div class="max-w-3xl mx-auto bg-white/70 border-l-4 border-brand-yellow rounded-r-xl p-8 text-center shadow-sm">
-                    <p class="text-base md:text-lg text-gray-700 italic">
-                        <span class="font-bold text-[#d99600]">Nota importante:</span> No todos los recetarios son sin gluten / sin lácteos y huevos, por eso, quiero contarte que todos los programas y packs cuentan con una guía de reemplazos súper completa.
-                    </p>
-                </div>
-            </div>
         </main>
 
         <!-- Footer -->
